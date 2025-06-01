@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { useState } from 'react';
 import { routing } from '@/i18n/routing';
+import Image from 'next/image';
 
 export default function LanguageSwitcher() {
     const t = useTranslations('header');
@@ -16,11 +17,12 @@ export default function LanguageSwitcher() {
         cn: '中文',
     };
 
-    const flags = {
-        en: '🇺🇸',
-        ja: '🇯🇵',
-        vi: '🇻🇳',
-        cn: '🇨🇳',
+    // Ánh xạ locale → mã quốc gia dùng trong flagcdn
+    const countryCodes: Record<string, string> = {
+        en: 'us',
+        ja: 'jp',
+        vi: 'vn',
+        cn: 'cn',
     };
 
     const toggleDropdown = () => {
@@ -33,11 +35,18 @@ export default function LanguageSwitcher() {
                 onClick={toggleDropdown}
                 className="px-4 py-2 border border-gray-300 rounded-full flex items-center"
             >
-                <span className="mr-2">
-                    <b>{flags[locale as keyof typeof flags]} </b>| {t('language')}
+                <span className="mr-2 flex items-center gap-2">
+                    <Image
+                        src={`https://flagcdn.com/${countryCodes[locale]}.svg`}
+                        alt={locale}
+                        width={24}
+                        height={18}
+                        className="inline"
+                    />
+                    | {t('language')}
                 </span>
                 <svg
-                    className="w-4 h-4"
+                    className="w-4 h-4 ml-2"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -53,18 +62,24 @@ export default function LanguageSwitcher() {
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-2 py-2 w-48 rounded-md shadow-lg z-10">
+                <div className="absolute right-0 mt-2 py-2 w-48 rounded-md shadow-lg z-10 bg-[#fefefe]">
                     {routing.locales.map((lang) => (
                         <Link
-                            href={'/'}
+                            href="/"
                             key={lang}
                             locale={lang}
-                            className={`block px-4 py-2 text-sm hover:bg-gray-100 ${
+                            className={`flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 ${
                                 locale === lang ? 'font-bold' : ''
                             }`}
                             onClick={() => setIsOpen(false)}
                         >
-                            {flags[lang as keyof typeof flags]} | {languages[lang as keyof typeof languages]}
+                            <Image
+                                src={`https://flagcdn.com/${countryCodes[lang]}.svg`}
+                                alt={lang}
+                                width={20}
+                                height={15}
+                            />
+                            | {languages[lang as keyof typeof languages]}
                         </Link>
                     ))}
                 </div>
