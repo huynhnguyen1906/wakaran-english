@@ -1,1 +1,42 @@
-@import "tailwindcss";
+/* src/globals.css */
+
+@import 'tailwindcss';
+
+:root {
+    --color-bg: #edece8;
+    --color-text: #222222;
+    --color-text-light: #474747;
+}
+
+.bg-bgcolor {
+    background-color: var(--color-bg);
+}
+
+.text-text {
+    color: var(--color-text);
+}
+
+.text-text-light {
+    color: var(--color-text-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-text);
+}
+
+p {
+    color: var(--color-text-light);
+}
+
+a,
+span,
+li,
+ul,
+ol {
+    color: var(--color-text);
+}

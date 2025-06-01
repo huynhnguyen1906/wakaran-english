@@ -10,30 +10,26 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <header className="w-full bg-gray-100">
-            <div className="max-w-[1120px] mx-auto">
-                {/* Top section with logo and title - 40px padding top */}
+        <header className="w-full">
+            <div className="max-w-[1120px] mx-auto relative">
+                <div className="absolute top right-0 w-[325px] h-[325px]">
+                    <Image
+                        src="/images/wakaranenglogo1.png"
+                        alt="Wakaran English Logo"
+                        width={325}
+                        height={325}
+                        className="object-contain"
+                    />
+                </div>
+
                 <div className="pt-10 pb-6">
-                    <div className="flex items-center">
-                        <h1 className="text-4xl font-bold tracking-wide">WAKARAN ENGLISH</h1>
-                        <div className="ml-auto">
-                            <Image
-                                src="/images/wakaranenglogo1.png"
-                                alt="Wakaran English Logo"
-                                width={150}
-                                height={150}
-                                className="object-contain"
-                            />
-                        </div>
-                    </div>
-                    {/* Subtitle with 24px spacing */}
+                    <h1 className="text-4xl font-bold tracking-wide">WAKARAN ENGLISH</h1>
                     <div className="mt-6">
                         <p className="text-lg font-medium">{t('subtitle')}</p>
                     </div>
                 </div>
 
-                {/* Navigation bar with 24px spacing */}
-                <div className="mt-6 pb-12 border-t border-gray-300">
+                <div className="pb-12 border-t border-gray-300 mt-6">
                     <nav className="flex items-center justify-between pt-6">
                         <ul className="flex space-x-8">
                             <li className="text-base">

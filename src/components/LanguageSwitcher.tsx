@@ -9,7 +9,6 @@ export default function LanguageSwitcher() {
     const locale = useLocale();
     const [isOpen, setIsOpen] = useState(false);
 
-    // Create language names mapping
     const languages = {
         en: 'English',
         ja: '日本語',
@@ -17,7 +16,13 @@ export default function LanguageSwitcher() {
         cn: '中文',
     };
 
-    // Handle dropdown toggle
+    const flags = {
+        en: '🇺🇸',
+        ja: '🇯🇵',
+        vi: '🇻🇳',
+        cn: '🇨🇳',
+    };
+
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
@@ -28,7 +33,9 @@ export default function LanguageSwitcher() {
                 onClick={toggleDropdown}
                 className="px-4 py-2 border border-gray-300 rounded-full flex items-center"
             >
-                <span className="mr-2">{t('language')}</span>
+                <span className="mr-2">
+                    <b>{flags[locale as keyof typeof flags]} </b>| {t('language')}
+                </span>
                 <svg
                     className="w-4 h-4"
                     fill="none"
@@ -46,7 +53,7 @@ export default function LanguageSwitcher() {
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-lg z-10">
+                <div className="absolute right-0 mt-2 py-2 w-48 rounded-md shadow-lg z-10">
                     {routing.locales.map((lang) => (
                         <Link
                             href={'/'}
@@ -57,7 +64,7 @@ export default function LanguageSwitcher() {
                             }`}
                             onClick={() => setIsOpen(false)}
                         >
-                            {languages[lang as keyof typeof languages]}
+                            {flags[lang as keyof typeof flags]} | {languages[lang as keyof typeof languages]}
                         </Link>
                     ))}
                 </div>
