@@ -1,7 +1,15 @@
-import Image from 'next/image'
-import Link from 'next/link'
+'use client'
 
+import Image from 'next/image'
+
+// 文章をjsonデータから取得して表示させる必要がある
+// 全体写真とQRコードを後で差し替える
 export default function Contact() {
+    const snsLink = (event: React.MouseEvent<HTMLAnchorElement>, href: string, windowName: string) => {
+        event.preventDefault()
+        window.open(href, windowName)
+    }
+
     return (
         <div className='bg-[#E1D9D6] py-12'>
             <div className='mx-auto max-w-[1120px]'>
@@ -29,7 +37,16 @@ export default function Contact() {
                                 className='aspect-square rounded-2xl border-2 border-gray-800 object-cover'
                             />
                             <div className='flex flex-col justify-end'>
-                                <Link href='#'>
+                                <a
+                                    href='https://www.instagram.com/wakaran.eng/#'
+                                    onClick={(event) =>
+                                        snsLink(
+                                            event,
+                                            'https://www.instagram.com/wakaran.eng/#',
+                                            'WAKARANENGLISHのinstagram'
+                                        )
+                                    }
+                                >
                                     <Image
                                         src={'/images/instagram_logo.svg'}
                                         alt='Instagramのlogo'
@@ -37,7 +54,7 @@ export default function Contact() {
                                         height={40}
                                         className='h-10 w-10 object-cover'
                                     />
-                                </Link>
+                                </a>
                                 <p className='text-2xl font-medium'>
                                     Instagramは、メインストリームソーシャルメディアアプリです。
                                 </p>
@@ -52,7 +69,16 @@ export default function Contact() {
                                 className='aspect-square rounded-2xl border-2 border-gray-800 object-cover'
                             />
                             <div className='flex flex-col justify-end'>
-                                <Link href='#'>
+                                <a
+                                    href='https://www.youtube.com/@WakaranEnglish'
+                                    onClick={(event) =>
+                                        snsLink(
+                                            event,
+                                            'https://www.youtube.com/@WakaranEnglish',
+                                            'WAKARANENGLISHのyoutube'
+                                        )
+                                    }
+                                >
                                     <Image
                                         src={'/images/youtube_logo.svg'}
                                         alt='youtubeのlogo'
@@ -60,7 +86,7 @@ export default function Contact() {
                                         height={40}
                                         className='h-10 w-10 object-cover'
                                     />
-                                </Link>
+                                </a>
                                 <p className='text-2xl font-medium'>
                                     Youtubeは、メインストリームソーシャルメディアアプリです。
                                 </p>

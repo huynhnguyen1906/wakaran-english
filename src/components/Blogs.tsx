@@ -1,5 +1,8 @@
+'use client'
+
 import Link from 'next/link'
 
+// ブログコンテンツができたら、ulの中身を変更する
 export default function Blogs() {
     return (
         <div className='mx-auto mb-24 max-w-[1120px]'>
