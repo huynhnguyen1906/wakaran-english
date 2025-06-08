@@ -1,23 +1,43 @@
-/* src/globals.css */
-
 @import 'tailwindcss';
 
+/* Color Variables */
 :root {
     --color-bg: #edece8;
     --color-text: #222222;
-    --color-text-light: #474747;
+    --color-text-light: #4c4c4c;
+    --color-primary: #ff5e2d;
+    --color-off: #e1d9d6;
+    --color-on: #43424a;
 }
 
+/* Main Color */
+.main-color {
+    color: var(--color-primary);
+}
+
+/* Background Color */
 .bg-bgcolor {
     background-color: var(--color-bg);
 }
 
-.text-text {
+/* Text Color */
+.text-main-color {
     color: var(--color-text);
 }
 
-.text-text-light {
+/* Sub Text Color */
+.text-sub-color {
     color: var(--color-text-light);
+}
+
+/* Off Color */
+.off-color {
+    color: var(--color-off);
+}
+
+/* On Color */
+.on-color {
+    color: var(--color-on);
 }
 
 h1,
