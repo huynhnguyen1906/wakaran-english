@@ -2,6 +2,12 @@
 
 import Image from 'next/image'
 
+// 残り行うこと
+// 1.各メンバーの写真を変更する
+// 2.写真にドロップシャドウをつける
+// 3.情報をmessage>jsonデータから取得するように変更する
+// 4.liの文字色を白に変更する
+
 export default function Members() {
     return (
         <div className='relative top-0 mx-auto max-w-[1120px]'>
