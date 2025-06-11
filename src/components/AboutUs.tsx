@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function AboutUs() {
     return (
-        <div className='mb-48 flex w-full items-center justify-between gap-12 px-20'>
+        <div className='mx-auto mb-48 flex w-full max-w-[1120px] items-center justify-between gap-12'>
             <div className='relative h-[500px] w-[500px] shrink-0'>
                 <Image
                     src='/images/jumpHoju.jpg'
@@ -15,15 +15,16 @@ export default function AboutUs() {
                 />
             </div>
             <div className='pt-12 pb-23.5'>
-                <h2 className='mb-4 text-base text-[#FF5E2D]'>About Us</h2>
-                <h3 className='mb-4 text-[32px] font-semibold'>
+                <h2 className='main-color mb-4 text-base'>About Us</h2>
+                <h3 className='text-main-color mb-4 text-[32px] leading-12 font-semibold'>
                     THE STORY OF WAKARAN ENGLISH
                     <br />ー THIS IS HOW WE CAME TO BE!
                 </h3>
-                <p className='mb-4'>
-                    Wakarana English was founded with the mission to provide high-quality English language education to
-                    students around the world. Our team of experienced educators is dedicated to helping learners
-                    achieve their language goals through personalized instruction and engaging learning materials.
+                <p className='text-sub-color font-regular mb-4 text-base leading-8'>
+                    Our mission is to improve our English skills by creating fun and useful content — and to share our
+                    progress with you along the way. From quiz games and daily blogs to English news, we’re learning by
+                    doing and bringing you the best of our journey. Join us as we grow, learn, and explore English
+                    together!
                 </p>
                 <div className='items-left flex gap-6'>
                     <Link href=''>
