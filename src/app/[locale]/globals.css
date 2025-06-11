@@ -40,6 +40,11 @@
     color: var(--color-on);
 }
 
+/* Drop Shadow */
+.drop-shadow-light {
+    filter: drop-shadow(0 0 15px rgba(34, 34, 34, 0.25));
+}
+
 h1,
 h2,
 h3,
