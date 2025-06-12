@@ -56,11 +56,7 @@ export default function FeaturedProjects() {
             </div>
             <div
                 ref={scrollContainerRef}
-<<<<<<< HEAD
-                className='scrollbar-hide -mr-[50vw] mb-10 flex w-auto gap-4 overflow-x-scroll overflow-y-visible pr-[50vw]'
-=======
                 className='scrollbar-hide -mr-[50vw] mb-10 flex w-auto gap-4 overflow-x-scroll pr-[50vw]'
->>>>>>> df1e1cc (Implement code changes to enhance functionality)
                 onScroll={checkScrollButtons}
             >
                 <div className='relative h-[478px] w-[413px] shrink-0'>
