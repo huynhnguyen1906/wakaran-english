@@ -16,8 +16,9 @@ export default function Contact() {
                 <p className='mb-6 text-center text-2xl'>Contact</p>
                 <h2 className='mb-4 text-center text-5xl font-semibold'>WAKARAN ENGLISHのSNSをぜひフォローしてね!</h2>
                 <p className='mb-8 text-center text-lg'>
-                    Lorem Ipsumは、印刷および型版画業界のダミーテキストです。 Lorem Ipsumは、
-                    1500年代以来、業界の標準的なダミーテキストです。
+                    WAKARAN ENGLISHは、SNSアカウントを運営しています
+                    <br />
+                    ぜひフォローして、最新の情報や学習リソースを手に入れてください
                 </p>
                 <div className='flex gap-6'>
                     <Image
