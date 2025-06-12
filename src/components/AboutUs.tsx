@@ -8,10 +8,10 @@ export default function AboutUs() {
         <div className='mx-auto mb-48 flex w-full max-w-[1120px] items-center justify-between gap-12'>
             <div className='relative h-[500px] w-[500px] shrink-0'>
                 <Image
-                    src='/images/jumpHoju.jpg'
+                    src='/images/weareWakaran.webp'
                     alt='About Us Image'
                     fill
-                    className='object-cover object-center'
+                    className='object-cover object-[30%_50%]'
                 />
             </div>
             <div className='pt-12 pb-23.5'>
@@ -27,7 +27,10 @@ export default function AboutUs() {
                     together!
                 </p>
                 <div className='items-left flex gap-6'>
-                    <Link href=''>
+                    <Link
+                        href='https://www.youtube.com/@WakaranEnglish'
+                        target='_blank'
+                    >
                         <Image
                             src='/images/youtubeIcon.png'
                             alt='To YouTube Channel'
@@ -36,7 +39,10 @@ export default function AboutUs() {
                             className='object-cover object-center'
                         />
                     </Link>
-                    <Link href=''>
+                    <Link
+                        href='https://www.instagram.com/wakaran.eng/'
+                        target='_blank'
+                    >
                         <Image
                             src='/images/instagramIcon.png'
                             alt='To Instagram Account'
