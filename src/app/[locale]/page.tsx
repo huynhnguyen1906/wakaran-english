@@ -4,7 +4,7 @@ import Hero from '@/components/Hero'
 
 export default function HomePage() {
     return (
-        <div className='w-full'>
+        <div className='w-full overflow-x-hidden'>
             <Header />
             <Hero />
             <Abouts />

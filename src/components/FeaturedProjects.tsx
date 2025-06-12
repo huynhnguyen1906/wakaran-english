@@ -59,7 +59,7 @@ export default function FeaturedProjects() {
                 className='scrollbar-hide -mr-[50vw] mb-10 flex w-auto gap-4 overflow-x-scroll overflow-y-visible pr-[50vw]'
                 onScroll={checkScrollButtons}
             >
-                <div className='drop-shadow-light relative h-[478px] w-[413px] shrink-0'>
+                <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
                         alt='Yuki & Iain Thumbnail'
@@ -80,7 +80,7 @@ export default function FeaturedProjects() {
                         <p className='text-2xl font-medium text-white'>Interview Quiz with IAIN</p>
                     </div>
                 </div>
-                <div className='drop-shadow-light relative h-[478px] w-[413px] shrink-0'>
+                <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
                         alt='Yuki & Iain Thumbnail'
@@ -101,7 +101,7 @@ export default function FeaturedProjects() {
                         <p className='text-2xl font-medium text-white'>Interview Quiz with IAIN</p>
                     </div>
                 </div>
-                <div className='drop-shadow-light relative h-[478px] w-[413px] shrink-0'>
+                <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
                         alt='Yuki & Iain Thumbnail'
@@ -120,7 +120,7 @@ export default function FeaturedProjects() {
                         <p className='text-2xl font-medium text-white'>Interview Quiz with IAIN</p>
                     </div>
                 </div>
-                <div className='drop-shadow-light relative h-[478px] w-[413px] shrink-0'>
+                <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
                         alt='Yuki & Iain Thumbnail'

@@ -9,7 +9,7 @@ export default function Hero() {
                 src='/images/heroImg.jpg'
                 alt='Hero Image'
                 fill
-                className='object-cover object-[50%_90%]'
+                className='object-cover object-[50%_60%]'
             />
         </div>
     )
