@@ -44,24 +44,3 @@
 .drop-shadow-light {
     filter: drop-shadow(0 0 15px rgba(34, 34, 34, 0.25));
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--color-text);
-}
-
-p {
-    color: var(--color-text-light);
-}
-
-a,
-span,
-li,
-ul,
-ol {
-    color: var(--color-text);
-}
