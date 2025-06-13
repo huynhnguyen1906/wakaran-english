@@ -7,5 +7,33 @@
         "blogs": "Blogs",
         "contact": "Contact",
         "language": "English"
+    },
+    "aboutUs": {
+        "title": "About Us",
+        "heading": "THE STORY OF WAKARAN ENGLISH",
+        "subheading": "ー THIS IS HOW WE CAME TO BE!",
+        "description": "Our mission is to improve our English skills by creating fun and useful content — and to share our progress with you along the way. From quiz games and daily blogs to English news, we're learning by doing and bringing you the best of our journey. Join us as we grow, learn, and explore English together!",
+        "youtubeAlt": "To YouTube Channel",
+        "instagramAlt": "To Instagram Account"
+    },
+    "featuredProjects": {
+        "title": "WE ARE WAKARAN ENGLISH AND",
+        "titleMiddle": "THIS IS",
+        "titleHighlight": "OUR PROJECTS!",
+        "description": "Our featured projects showcase the innovative ways we are learning and using English. From interactive quizzes to engaging blog posts, we invite you to explore our work and join us on this exciting journey!",
+        "videoDate": "2025.05.13",
+        "videoTitle": "Interview Quiz with IAIN",
+        "playButtonAlt": "YouTube Play Button",
+        "thumbnailAlt": "Yuki & Iain Thumbnail",
+        "previousButton": "Previous",
+        "nextButton": "Next"
+    },
+    "selfIntroduction": {
+        "greeting": "Hello",
+        "title": "WE ARE",
+        "titleHighlight": "WAKARAN ENGLISH!",
+        "description": "We are a group of students from ECC Computer College's Website Design Course, creating English-learning content to improve our skills and connect with learners like you.",
+        "thumbnailAlt": "Self Introduction Thumbnail",
+        "playButtonAlt": "YouTube Play Button"
     }
 }

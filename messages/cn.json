@@ -7,5 +7,33 @@
         "blogs": "博客",
         "contact": "联系",
         "language": "中文"
+    },
+    "aboutUs": {
+        "title": "关于我们",
+        "heading": "WAKARAN ENGLISH的故事",
+        "subheading": "ー 这就是我们的开始！",
+        "description": "我们的使命是通过创造有趣且有用的内容来提高我们的英语技能，并与您分享我们的进步过程。从问答游戏到日常博客，再到英语新闻，我们边学边做，为您带来我们旅程中的精彩部分。让我们一起成长、学习和探索英语！",
+        "youtubeAlt": "前往YouTube频道",
+        "instagramAlt": "前往Instagram账户"
+    },
+    "featuredProjects": {
+        "title": "我们是WAKARAN ENGLISH",
+        "titleMiddle": "这是",
+        "titleHighlight": "我们的项目！",
+        "description": "我们的特色项目展示了我们学习和使用英语的创新方式。从互动问答到引人入胜的博客文章，我们邀请您探索我们的作品，加入这个激动人心的旅程！",
+        "videoDate": "2025.05.13",
+        "videoTitle": "与IAIN的访谈问答",
+        "playButtonAlt": "YouTube播放按钮",
+        "thumbnailAlt": "Yuki和Iain的缩略图",
+        "previousButton": "上一个",
+        "nextButton": "下一个"
+    },
+    "selfIntroduction": {
+        "greeting": "你好",
+        "title": "我们是",
+        "titleHighlight": "WAKARAN ENGLISH！",
+        "description": "我们是ECC计算机专门学校网页设计课程的学生小组，创建英语学习内容来提高我们的技能，并与像您一样的学习者建立联系。",
+        "thumbnailAlt": "自我介绍缩略图",
+        "playButtonAlt": "YouTube播放按钮"
     }
 }

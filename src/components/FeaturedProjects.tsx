@@ -5,7 +5,10 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { useTranslations } from 'next-intl'
+
 export default function FeaturedProjects() {
+    const t = useTranslations('featuredProjects')
     const scrollContainerRef = useRef<HTMLDivElement>(null)
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [canScrollRight, setCanScrollRight] = useState(true)
@@ -43,16 +46,11 @@ export default function FeaturedProjects() {
         <div className='mx-auto mb-48 w-full max-w-[1120px]'>
             <div className='mx-auto'>
                 <h2 className='mb-4 text-5xl leading-18 font-semibold'>
-                    We ARE WAKARAN ENGLISH AND
+                    {t('title')}
                     <br />
-                    THIS IS <span className='main-color'>OUR PROJECTS!</span>
+                    {t('titleMiddle')} <span className='main-color'>{t('titleHighlight')}</span>
                 </h2>
-                <p className='text-sub-color mb-6 text-base leading-8'>
-                    Our featured projects showcase the innovative ways we are learning and using English. From
-                    interactive quizzes to engaging
-                    <br />
-                    blog posts, we invite you to explore our work and join us on this exciting journey!
-                </p>
+                <p className='text-sub-color mb-6 text-base leading-8'>{t('description')}</p>
             </div>
             <div
                 ref={scrollContainerRef}
@@ -62,81 +60,81 @@ export default function FeaturedProjects() {
                 <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
-                        alt='Yuki & Iain Thumbnail'
+                        alt={t('thumbnailAlt')}
                         fill
                         className='object-cover object-center'
                     />
                     <Link href=''>
                         <Image
                             src='/images/playButton.png'
-                            alt='YouTube Play Button'
+                            alt={t('playButtonAlt')}
                             width={82}
                             height={58}
                             className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover object-center'
                         />
                     </Link>
                     <div className='absolute bottom-4 left-4 flex flex-col'>
-                        <p className='text-base text-white'>2025.05.13</p>
-                        <p className='text-2xl font-medium text-white'>Interview Quiz with IAIN</p>
+                        <p className='text-base text-white'>{t('videoDate')}</p>
+                        <p className='text-2xl font-medium text-white'>{t('videoTitle')}</p>
                     </div>
                 </div>
                 <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
-                        alt='Yuki & Iain Thumbnail'
+                        alt={t('thumbnailAlt')}
                         fill
                         className='object-cover object-center'
                     />
                     <Link href=''>
                         <Image
                             src='/images/playButton.png'
-                            alt='YouTube Play Button'
+                            alt={t('playButtonAlt')}
                             width={82}
                             height={58}
                             className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover object-center'
                         />
                     </Link>
                     <div className='absolute bottom-4 left-4 flex flex-col'>
-                        <p className='text-base text-white'>2025.05.13</p>
-                        <p className='text-2xl font-medium text-white'>Interview Quiz with IAIN</p>
+                        <p className='text-base text-white'>{t('videoDate')}</p>
+                        <p className='text-2xl font-medium text-white'>{t('videoTitle')}</p>
                     </div>
                 </div>
                 <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
-                        alt='Yuki & Iain Thumbnail'
+                        alt={t('thumbnailAlt')}
                         fill
                         className='object-cover object-center'
                     />
                     <Image
                         src='/images/playButton.png'
-                        alt='YouTube Play Button'
+                        alt={t('playButtonAlt')}
                         width={82}
                         height={58}
                         className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover object-center'
                     />
                     <div className='absolute bottom-4 left-4 flex flex-col'>
-                        <p className='text-base text-white'>2025.05.13</p>
-                        <p className='text-2xl font-medium text-white'>Interview Quiz with IAIN</p>
+                        <p className='text-base text-white'>{t('videoDate')}</p>
+                        <p className='text-2xl font-medium text-white'>{t('videoTitle')}</p>
                     </div>
                 </div>
                 <div className='relative h-[478px] w-[413px] shrink-0'>
                     <Image
                         src='/images/shortsThumb.png'
-                        alt='Yuki & Iain Thumbnail'
+                        alt={t('thumbnailAlt')}
                         fill
                         className='object-cover object-center'
                     />
                     <Image
                         src='/images/playButton.png'
-                        alt='YouTube Play Button'
+                        alt={t('playButtonAlt')}
                         width={82}
                         height={58}
                         className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover object-center'
                     />
                     <div className='absolute bottom-4 left-4 flex flex-col'>
-                        <p className='text-base text-white'>2025.05.13</p>
-                        <p className='text-2xl font-medium text-white'>Interview Quiz with IAIN</p>
+                        <p className='text-base text-white'>{t('videoDate')}</p>
+                        <p className='text-2xl font-medium text-white'>{t('videoTitle')}</p>
                     </div>
                 </div>
             </div>
@@ -146,7 +144,7 @@ export default function FeaturedProjects() {
                     className={`flex h-18.5 w-18.5 items-center justify-center rounded-full text-3xl text-white ${
                         canScrollLeft ? 'bg-[var(--color-on)]' : 'bg-[var(--color-off)]'
                     }`}
-                    aria-label='Previous'
+                    aria-label={t('previousButton')}
                 >
                     &lt;
                 </button>
@@ -155,7 +153,7 @@ export default function FeaturedProjects() {
                     className={`flex h-18.5 w-18.5 items-center justify-center rounded-full text-3xl text-white ${
                         canScrollRight ? 'bg-[var(--color-on)]' : 'bg-[var(--color-off)]'
                     }`}
-                    aria-label='Next'
+                    aria-label={t('nextButton')}
                 >
                     &gt;
                 </button>
