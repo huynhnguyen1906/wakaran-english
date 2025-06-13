@@ -31,9 +31,6 @@
     color: var(--color-text-light);
 }
 
-.text-light {
-    color: #f1f1f1;
-}
 /* Off Color */
 .off-color {
     color: var(--color-off);
