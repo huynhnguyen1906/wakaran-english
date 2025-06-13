@@ -25,13 +25,13 @@
     color: var(--color-text);
 }
 
-/* a */
 /* Sub Text Color */
 .text-sub-color {
     color: var(--color-text-light);
 }
 
 /* Off Color */
+/* a */
 .off-color {
     color: var(--color-off);
 }
