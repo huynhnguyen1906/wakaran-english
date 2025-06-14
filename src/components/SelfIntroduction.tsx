@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { renderTextWithLineBreaks } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
 export default function SelfIntroduction() {
@@ -14,7 +15,9 @@ export default function SelfIntroduction() {
             <h3 className='mb-4 text-center text-5xl font-semibold'>
                 {t('title')} <span className='main-color'>{t('titleHighlight')}</span>
             </h3>
-            <p className='text-sub-color mx-auto mb-4 w-4/5 text-center text-base leading-8'>{t('description')}</p>
+            <p className='text-sub-color mx-auto mb-4 w-4/5 text-center text-base leading-8'>
+                {renderTextWithLineBreaks(t('description'))}
+            </p>
             <div className='w-full'>
                 <div className='relative h-[510px] w-full overflow-hidden rounded-2xl'>
                     <Image

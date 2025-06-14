@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { renderTextWithLineBreaks } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
 export default function FeaturedProjects() {
@@ -48,9 +49,10 @@ export default function FeaturedProjects() {
                 <h2 className='mb-4 text-5xl leading-18 font-semibold'>
                     {t('title')}
                     <br />
-                    {t('titleMiddle')} <span className='main-color'>{t('titleHighlight')}</span>
+                    {t('titleMiddle')}
+                    <span className='main-color'>{t('titleHighlight')}</span>
                 </h2>
-                <p className='text-sub-color mb-6 text-base leading-8'>{t('description')}</p>
+                <p className='text-sub-color mb-6 text-base leading-8'>{renderTextWithLineBreaks(t('description'))}</p>
             </div>
             <div
                 ref={scrollContainerRef}
