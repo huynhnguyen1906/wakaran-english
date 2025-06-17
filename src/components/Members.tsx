@@ -30,9 +30,9 @@ export default function Members() {
                         <h3 className='text-main-color text-2xl font-normal'>aya</h3>
                         <p className='text-main-color text-base'>洋楽大好きでーす！ 海外にも行ってみたい！</p>
                         <ul className='flex gap-2'>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#女性</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#ESFJ-T</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#女性</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#ESFJ-T</li>
                         </ul>
                     </div>
                 </div>
@@ -51,9 +51,9 @@ export default function Members() {
                         <h3 className='text-main-color text-2xl font-normal'>ふうたま</h3>
                         <p className='text-main-color text-base'>海外文化に興味があります!</p>
                         <ul className='flex gap-2'>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#男性</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#ENFP-T</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#男性</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#ENFP-T</li>
                         </ul>
                     </div>
                 </div>
@@ -72,9 +72,9 @@ export default function Members() {
                         <h3 className='text-main-color text-2xl font-normal'>いくちゃん</h3>
                         <p className='text-main-color text-base'>ヨーロッパに行ってみたい!!!</p>
                         <ul className='flex gap-2'>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#沖縄県</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#男性</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#INFP-T</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#沖縄県</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#男性</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#INFP-T</li>
                         </ul>
                     </div>
                 </div>
@@ -93,9 +93,9 @@ export default function Members() {
                         <h3 className='text-main-color text-2xl font-normal'>HuYnH</h3>
                         <p className='text-main-color text-base'>日本で生活するのに精一杯です :((((</p>
                         <ul className='flex gap-2'>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#ベトナム</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#男性</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#ENTP-A</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#ベトナム</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#男性</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#ENTP-A</li>
                         </ul>
                     </div>
                 </div>
@@ -114,9 +114,9 @@ export default function Members() {
                         <h3 className='text-main-color text-2xl font-normal'>ユキ a.k.a Alex</h3>
                         <p className='text-main-color text-base'>言語を勉強する時に一番大事なのは「Speaking」です!</p>
                         <ul className='flex gap-2'>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#ミャンマー</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#Non-Binary</li>
-                            <li className='tag-bg-color tag-color rounded-[80px] px-5 py-1 text-base'>#ENFJ</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#ミャンマー</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#Non-Binary</li>
+                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#ENFJ</li>
                         </ul>
                     </div>
                 </div>
