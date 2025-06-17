@@ -7,5 +7,10 @@
         "blogs": "ブログ",
         "contact": "コンタクト",
         "language": "日本語"
+    },
+    "members": {
+        "subtitle": "WAKARAN ENGLISHの",
+        "title": "愉快な仲間たち！",
+        "description": "私たちは様々な国籍の生徒が集まった英語を勉強するためのチームです。私たちについて知ってもらえると嬉しいです！"
     }
 }

@@ -3,13 +3,12 @@
 import Image from 'next/image'
 
 // 残り行うこと
-// 2.写真にドロップシャドウをつける
 // 3.情報をmessage>jsonデータから取得するように変更する
 
 export default function Members() {
     return (
-        <div className='relative top-0 mx-auto max-w-[1120px]'>
-            <div className='sticky top-0 z-50 flex h-full w-full flex-col items-center justify-center text-center'>
+        <div className='relative mx-auto max-w-[1120px]'>
+            <div className='sticky top-0 z-20 flex h-screen flex-col items-center justify-center text-center'>
                 <p className='mb-6 text-2xl'>こんにちは</p>
                 <h2 className='mb-4 text-4xl font-semibold'>愉快なメンバーたちの紹介</h2>
                 <p className='mb-[18px] px-24 text-lg'>
@@ -19,7 +18,7 @@ export default function Members() {
             </div>
             {/* aya */}
             <div className='box-border flex w-full items-center justify-start pt-[30vh]'>
-                <div className='w-1/2'>
+                <div className='w-[calc(50%-6rem)]'>
                     <Image
                         src='/images/aya.webp'
                         alt='ayaの写真'
@@ -40,7 +39,7 @@ export default function Members() {
             </div>
             {/* ふうたま */}
             <div className='box-border flex w-full items-center justify-end'>
-                <div className='w-1/2'>
+                <div className='w-[calc(50%-6rem)]'>
                     <Image
                         src='/images/futama.webp'
                         alt='ふうたまの写真'
@@ -61,7 +60,7 @@ export default function Members() {
             </div>
             {/* いくちゃん */}
             <div className='box-border flex w-full items-center justify-start'>
-                <div className='w-1/2'>
+                <div className='w-[calc(50%-6rem)]'>
                     <Image
                         src='/images/ikuchan.webp'
                         alt='いくちゃんの写真'
@@ -82,7 +81,7 @@ export default function Members() {
             </div>
             {/* HuYnH */}
             <div className='box-border flex w-full items-center justify-end'>
-                <div className='w-1/2'>
+                <div className='w-[calc(50%-6rem)]'>
                     <Image
                         src='/images/huynh.webp'
                         alt='HuYnHの写真'
@@ -102,8 +101,8 @@ export default function Members() {
                 </div>
             </div>
             {/* ユキ a.k.a Alex */}
-            <div className='box-border flex w-full items-center justify-start pb-[80vh]'>
-                <div className='w-1/2'>
+            <div className='box-border flex w-full items-center justify-start pb-[100vh]'>
+                <div className='w-[calc(50%-6rem)]'>
                     <Image
                         src='/images/yuki.webp'
                         alt='ユキの写真'
