@@ -39,6 +39,7 @@
 /* On Color */
 .on-color {
     color: var(--color-on);
+    background-color: var(--color-on);
 }
 
 /* Most White Color */
