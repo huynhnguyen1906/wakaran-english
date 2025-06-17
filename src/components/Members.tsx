@@ -30,9 +30,9 @@ export default function Members() {
                         <h3 className='text-main-color text-2xl font-normal'>aya</h3>
                         <p className='text-main-color text-base'>洋楽大好きでーす！ 海外にも行ってみたい！</p>
                         <ul className='flex gap-2'>
-                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
-                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#女性</li>
-                            <li className='tag-bg-color most-white rounded-[80px] px-5 py-1 text-base'>#ESFJ-T</li>
+                            <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#ESFJ-T</li>
+                            <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#女性</li>
+                            <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
                         </ul>
                     </div>
                 </div>
