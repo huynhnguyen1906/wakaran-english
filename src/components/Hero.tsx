@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Hero() {
     return (
-        <div className='relative mb-24 h-[482px] w-full'>
+        <div className='relative mb-24 hidden h-[482px] w-full md:block'>
             <Image
                 src='/images/heroImg.jpg'
                 alt='Hero Image'
