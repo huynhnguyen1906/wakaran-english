@@ -7,5 +7,33 @@
         "blogs": "博客",
         "contact": "联系",
         "language": "中文"
+    },
+    "aboutUs": {
+        "title": "关于我们",
+        "heading": "什么是WAKARAN ENGLISH",
+        "subheading": "ー 这里就是我们的开始！",
+        "description": "我们的目的是通过创造和发布有趣且有用的内容来提高我们的英语技能，并在与您分享我们的进步过程中一起成长。从英语的问答题到日常的博客，我们边学边做，为您带来英语的精彩部分。让我们一起成长、学习和探索英语吧！",
+        "youtubeAlt": "前往YouTube频道",
+        "instagramAlt": "前往Instagram账户"
+    },
+    "featuredProjects": {
+        "title": "我们是WAKARAN ENGLISH",
+        "titleMiddle": "这是",
+        "titleHighlight": "我们推荐的视频！",
+        "description": "我们在特色视频中展示了我们学习和使用英语的方式。\n欢迎您观看我们的作品！",
+        "videoDate": "2025.05.13",
+        "videoTitle": "与IAIN的访谈问答",
+        "playButtonAlt": "YouTube播放按钮",
+        "thumbnailAlt": "Yuki和Iain的缩略图",
+        "previousButton": "上一个",
+        "nextButton": "下一个"
+    },
+    "selfIntroduction": {
+        "greeting": "你好",
+        "title": "我们是",
+        "titleHighlight": "WAKARAN ENGLISH！",
+        "description": "我们是网页设计课的学生，我们通过制作关于英语学习的内容来提高我们的英语水平，\n并希望能与像您一样的学习者建立联系。",
+        "thumbnailAlt": "自我介绍缩略图",
+        "playButtonAlt": "YouTube播放按钮"
     }
 }

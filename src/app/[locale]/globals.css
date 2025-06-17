@@ -8,8 +8,7 @@
     --color-primary: #ff5e2d;
     --color-off: #e1d9d6;
     --color-on: #43424a;
-    --color-mostWhite: #fefefe;
-    --color-mostBlack: #222222;
+    --color-most-white: #fefefe;
 }
 
 /* Main Color */
@@ -42,14 +41,9 @@
     color: var(--color-on);
 }
 
-/* tag bg color */
-.tag-bg-color {
-    background-color: var(--color-on);
-}
-
-/* tag color */
-.tag-color {
-    color: var(--color-mostWhite);
+/* Most White Color */
+.most-white {
+    color: var(--color-most-white);
 }
 
 /* Drop Shadow */
