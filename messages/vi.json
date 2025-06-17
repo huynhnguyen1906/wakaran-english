@@ -7,5 +7,33 @@
         "blogs": "Blog",
         "contact": "Liên hệ",
         "language": "Tiếng Việt"
+    },
+    "aboutUs": {
+        "title": "Về chúng tôi",
+        "heading": "CÂU CHUYỆN CỦA WAKARAN ENGLISH",
+        "subheading": "ー ĐÂY LÀ CÁCH CHÚNG TÔI RA ĐỜI!",
+        "description": "Sứ mệnh của chúng tôi là cải thiện kỹ năng tiếng Anh bằng cách tạo ra nội dung thú vị và hữu ích — và chia sẻ tiến trình của chúng tôi với bạn trong suốt hành trình. Từ trò chơi đố vui đến blog hàng ngày, tin tức tiếng Anh, chúng tôi học bằng cách thực hành và mang đến cho bạn những điều tuyệt nhất trong hành trình của chúng tôi. Hãy cùng chúng tôi phát triển, học hỏi và khám phá tiếng Anh!",
+        "youtubeAlt": "Đến kênh YouTube",
+        "instagramAlt": "Đến tài khoản Instagram"
+    },
+    "featuredProjects": {
+        "title": "Chúng tôi là WAKARAN ENGLISH VÀ",
+        "titleMiddle": "ĐÂY LÀ",
+        "titleHighlight": "CÁC DỰ ÁN CỦA CHÚNG TÔI!",
+        "description": "Các dự án nổi bật của chúng tôi thể hiện những cách sáng tạo mà chúng tôi đang học và sử dụng tiếng Anh. Từ các câu đố tương tác đến các bài blog hấp dẫn, chúng tôi mời bạn khám phá công việc của chúng tôi và tham gia vào hành trình thú vị này!",
+        "videoDate": "2025.05.13",
+        "videoTitle": "Câu đố phỏng vấn với IAIN",
+        "playButtonAlt": "Nút phát YouTube",
+        "thumbnailAlt": "Hình thu nhỏ Yuki & Iain",
+        "previousButton": "Trước",
+        "nextButton": "Tiếp theo"
+    },
+    "selfIntroduction": {
+        "greeting": "Xin chào",
+        "title": "CHÚNG TÔI LÀ",
+        "titleHighlight": "WAKARAN ENGLISH!",
+        "description": "Chúng tôi là một nhóm sinh viên từ Khóa học Thiết kế Website của Trường Cao đẳng Máy tính ECC, tạo ra nội dung học tiếng Anh để cải thiện kỹ năng của chúng tôi và kết nối với những người học như bạn.",
+        "thumbnailAlt": "Hình thu nhỏ tự giới thiệu",
+        "playButtonAlt": "Nút phát YouTube"
     }
 }

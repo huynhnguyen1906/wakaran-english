@@ -7,5 +7,33 @@
         "blogs": "ブログ",
         "contact": "コンタクト",
         "language": "日本語"
+    },
+    "aboutUs": {
+        "title": "私たちについて",
+        "heading": "英語を学び、",
+        "subheading": "最も楽しい方法で日本の知識を得る。",
+        "description": "私たちの目標は、楽しくて役に立つコンテンツを通して英語力を高めること、そしてその過程を皆さんと共有することで一緒に成長することです。英語のクイズや日常のブログ、英語でのニュース解説など、私たちは「やってみる」ということに重点を置き日々の学びを発信しています。",
+        "youtubeAlt": "YouTubeチャンネルへ",
+        "instagramAlt": "Instagramアカウントへ"
+    },
+    "featuredProjects": {
+        "title": "私たちはWAKARAN ENGLISHであり、",
+        "titleMiddle": "これが",
+        "titleHighlight": "私たちのプロジェクトです！",
+        "description": "私達は英語でスピーキング力を高めたいと考えているため、\nネイティブへのインタビューなどスピーキング力を鍛えられるような動画を中心に発信しています。",
+        "videoDate": "2025.05.13",
+        "videoTitle": "IAINとのインタビュークイズ",
+        "playButtonAlt": "YouTube再生ボタン",
+        "thumbnailAlt": "ユキ＆イアンのサムネイル",
+        "previousButton": "前へ",
+        "nextButton": "次へ"
+    },
+    "selfIntroduction": {
+        "greeting": "こんにちは",
+        "title": "私たちは",
+        "titleHighlight": "WAKARAN ENGLISH！",
+        "description": "私たちはECCコンピュータ専門学校のWebデザインコースに通う学生で、英語学習のコンテンツを作りながら\n自分たちのスキルを伸ばしつつ英語学習者のみなさんとつながることを目指しています。",
+        "thumbnailAlt": "自己紹介サムネイル",
+        "playButtonAlt": "YouTube再生ボタン"
     }
 }
