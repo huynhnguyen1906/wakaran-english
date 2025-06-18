@@ -5,11 +5,12 @@ import Members from '@/components/Members'
 
 export default function HomePage() {
     return (
-        <div className='w-full overflow-x-hidden'>
+        <div className='w-full'>
             <Header />
             <Hero />
             <Abouts />
             <Members />
+            <Abouts />
         </div>
     )
 }
