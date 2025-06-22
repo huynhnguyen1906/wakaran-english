@@ -39,29 +39,35 @@
     "members": {
         "subtitle": "WAKARAN ENGLISHの",
         "title": "愉快な仲間たち！",
-        "description": "私たちは様々な国籍の生徒が集まった英語を勉強するためのチームです。私たちについて知ってもらえると嬉しいです！"
+        "descriptionTop": "私たちは様々な国籍の生徒が集まった英語を勉強するためのチームです。",
+        "descriptionBottom": "私たちについて知ってもらえると嬉しいです！"
     },
     "aya": {
+        "imgAlt": "ayaの写真",
         "name": "aya",
         "msg": "洋楽大好きでーす！ 海外にも行ってみたい！",
         "tags": ["兵庫県", "女性", "ESFJ"]
     },
     "futama": {
+        "imgAlt": "ふうたまの写真",
         "name": "ふうたま",
         "msg": "海外文化に興味があります！",
         "tags": ["兵庫県", "男性", "ENFP"]
     },
     "ikuchan": {
+        "imgAlt": "いくちゃんの写真",
         "name": "いくちゃん",
         "msg": "ヨーロッパに行ってみたい！！！",
         "tags": ["沖縄県", "男性", "INFP"]
     },
     "huynh": {
+        "imgAlt": "HuYnHの写真",
         "name": "HuYnH",
         "msg": "日本で生活するのに精一杯です :((((",
         "tags": ["ベトナム", "男性", "ENTP"]
     },
     "yuki": {
+        "imgAlt": "yukiの写真",
         "name": "ユキ a.k.a Alex",
         "msg": "言語を勉強する時に一番大事なのは「Speaking」です!",
         "tags": ["ミャンマー", "男性", "ENFJ"]

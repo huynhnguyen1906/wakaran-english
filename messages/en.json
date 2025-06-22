@@ -35,5 +35,41 @@
         "description": "We are a group of students from ECC Computer College's Website Design Course, creating English-learning content \nto improve our skills and connect with learners like you.",
         "thumbnailAlt": "Self Introduction Thumbnail",
         "playButtonAlt": "YouTube Play Button"
+    },
+    "members": {
+        "subtitle": "WAKARAN ENGLISH's",
+        "title": "Fun Crew!",
+        "descriptionTop": "We are a team of students from various nationalities gathered to study English.",
+        "descriptionBottom": "We'd be happy if you get to know us!"
+    },
+    "aya": {
+        "imgAlt": "Photo of aya",
+        "name": "aya",
+        "msg": "I love Western music! I want to travel abroad too!",
+        "tags": ["Hyogo", "Female", "ESFJ"]
+    },
+    "futama": {
+        "imgAlt": "Photo of Futama",
+        "name": "Futama",
+        "msg": "I'm interested in foreign cultures!",
+        "tags": ["Hyogo", "Male", "ENFP"]
+    },
+    "ikuchan": {
+        "imgAlt": "Photo of Ikuchan",
+        "name": "Ikuchan",
+        "msg": "I want to go to Europe!!!",
+        "tags": ["Okinawa", "Male", "INFP"]
+    },
+    "huynh": {
+        "imgAlt": "Photo of HuYnH",
+        "name": "HuYnH",
+        "msg": "I'm doing my best to live in Japan :((((",
+        "tags": ["Vietnam", "Male", "ENTP"]
+    },
+    "yuki": {
+        "imgAlt": "Photo of Yuki",
+        "name": "Yuki a.k.a Alex",
+        "msg": "The most important thing when studying languages is 'Speaking'!",
+        "tags": ["Myanmar", "Male", "ENFJ"]
     }
 }

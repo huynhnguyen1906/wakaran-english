@@ -5,23 +5,27 @@ import Image from 'next/image'
 import { useTranslations } from 'use-intl'
 
 // 残り行うこと
-// 3.情報をmessage>jsonデータから取得するように変更する
+// 完了: 情報をmessage>jsonデータから取得するように変更する
+// 完了: tagsを配列として正しく表示する
 
 export default function Members() {
     const t = useTranslations('members')
-    // const aya = useTranslations('aya')
-    // const futama = useTranslations('futama')
-    // const ikuchan = useTranslations('ikuchan')
-    // const huynh = useTranslations('huynh')
-    // const yuki = useTranslations('yuki')
-    // const members = [aya, futama, ikuchan, huynh, yuki]
+    const aya = useTranslations('aya')
+    const futama = useTranslations('futama')
+    const ikuchan = useTranslations('ikuchan')
+    const huynh = useTranslations('huynh')
+    const yuki = useTranslations('yuki')
 
     return (
         <div className='relative mx-auto max-w-[1120px] pt-48 pb-24'>
             <div className='sticky top-1/2 z-20 flex -translate-y-1/2 flex-col items-center justify-center text-center'>
                 <p className='mb-6 text-2xl'>{t('subtitle')}</p>
-                <h2 className='mb-4 text-4xl font-semibold'>{t('title')}</h2>
-                <p className='mb-[18px] px-24 text-lg'>{t('description')}</p>
+                <h2 className='mb-4 text-5xl font-semibold'>{t('title')}</h2>
+                <p className='px-24 text-lg'>
+                    {t('descriptionTop')}
+                    <br />
+                    {t('descriptionBottom')}
+                </p>
             </div>
 
             <div className='relative'>
@@ -30,18 +34,23 @@ export default function Members() {
                     <div className='w-[calc(50%-6rem)]'>
                         <Image
                             src='/images/aya.webp'
-                            alt='ayaの写真'
+                            alt={aya('imgAlt')}
                             width={500}
                             height={500}
                             className='drop-shadow-light aspect-square w-full object-cover object-top'
                         />
                         <div className='flex flex-col gap-2 pt-2 pb-12'>
-                            <h3 className='text-main-color text-2xl font-normal'>aya</h3>
-                            <p className='text-main-color text-base'>洋楽大好きでーす！ 海外にも行ってみたい！</p>
+                            <h3 className='text-main-color text-2xl font-normal'>{aya('name')}</h3>
+                            <p className='text-main-color text-base'>{aya('msg')}</p>
                             <ul className='flex gap-2'>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#ESFJ-T</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#女性</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
+                                {aya.raw('tags').map((tag: string, index: number) => (
+                                    <li
+                                        key={index}
+                                        className='on-color most-white rounded-[80px] px-5 py-1 text-base'
+                                    >
+                                        #{tag}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
@@ -51,18 +60,23 @@ export default function Members() {
                     <div className='w-[calc(50%-6rem)]'>
                         <Image
                             src='/images/futama.webp'
-                            alt='ふうたまの写真'
+                            alt={futama('imgAlt')}
                             width={500}
                             height={500}
                             className='drop-shadow-light aspect-square w-full object-cover object-center'
                         />
                         <div className='flex flex-col gap-2 pt-2 pb-12'>
-                            <h3 className='text-main-color text-2xl font-normal'>ふうたま</h3>
-                            <p className='text-main-color text-base'>海外文化に興味があります!</p>
+                            <h3 className='text-main-color text-2xl font-normal'>{futama('name')}</h3>
+                            <p className='text-main-color text-base'>{futama('msg')}</p>
                             <ul className='flex gap-2'>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#兵庫県</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#男性</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#ENFP-T</li>
+                                {futama.raw('tags').map((tag: string, index: number) => (
+                                    <li
+                                        key={index}
+                                        className='on-color most-white rounded-[80px] px-5 py-1 text-base'
+                                    >
+                                        #{tag}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
@@ -72,18 +86,23 @@ export default function Members() {
                     <div className='w-[calc(50%-6rem)]'>
                         <Image
                             src='/images/ikuchan.webp'
-                            alt='いくちゃんの写真'
+                            alt={ikuchan('imgAlt')}
                             width={500}
                             height={500}
                             className='drop-shadow-light aspect-square w-full object-cover object-center'
                         />
                         <div className='flex flex-col gap-2 pt-2 pb-12'>
-                            <h3 className='text-main-color text-2xl font-normal'>いくちゃん</h3>
-                            <p className='text-main-color text-base'>ヨーロッパに行ってみたい!!!</p>
+                            <h3 className='text-main-color text-2xl font-normal'>{ikuchan('name')}</h3>
+                            <p className='text-main-color text-base'>{ikuchan('msg')}</p>
                             <ul className='flex gap-2'>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#沖縄県</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#男性</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#INFP-T</li>
+                                {ikuchan.raw('tags').map((tag: string, index: number) => (
+                                    <li
+                                        key={index}
+                                        className='on-color most-white rounded-[80px] px-5 py-1 text-base'
+                                    >
+                                        #{tag}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
@@ -93,18 +112,23 @@ export default function Members() {
                     <div className='w-[calc(50%-6rem)]'>
                         <Image
                             src='/images/huynh.webp'
-                            alt='HuYnHの写真'
+                            alt={huynh('imgAlt')}
                             width={500}
                             height={500}
                             className='drop-shadow-light aspect-square w-full object-cover object-center'
                         />
                         <div className='flex flex-col gap-2 pt-2 pb-12'>
-                            <h3 className='text-main-color text-2xl font-normal'>HuYnH</h3>
-                            <p className='text-main-color text-base'>日本で生活するのに精一杯です :((((</p>
+                            <h3 className='text-main-color text-2xl font-normal'>{huynh('name')}</h3>
+                            <p className='text-main-color text-base'>{huynh('msg')}</p>
                             <ul className='flex gap-2'>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#ベトナム</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#男性</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#ENTP-A</li>
+                                {huynh.raw('tags').map((tag: string, index: number) => (
+                                    <li
+                                        key={index}
+                                        className='on-color most-white rounded-[80px] px-5 py-1 text-base'
+                                    >
+                                        #{tag}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
@@ -114,20 +138,23 @@ export default function Members() {
                     <div className='w-[calc(50%-6rem)]'>
                         <Image
                             src='/images/yuki.webp'
-                            alt='ユキの写真'
+                            alt={yuki('imgAlt')}
                             width={500}
                             height={500}
                             className='drop-shadow-light aspect-square w-full object-cover object-center'
                         />
                         <div className='flex flex-col gap-2 pt-2 pb-12'>
-                            <h3 className='text-main-color text-2xl font-normal'>ユキ a.k.a Alex</h3>
-                            <p className='text-main-color text-base'>
-                                言語を勉強する時に一番大事なのは「Speaking」です!
-                            </p>
+                            <h3 className='text-main-color text-2xl font-normal'>{yuki('name')}</h3>
+                            <p className='text-main-color text-base'>{yuki('msg')}</p>
                             <ul className='flex gap-2'>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#ミャンマー</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#男性</li>
-                                <li className='on-color most-white rounded-[80px] px-5 py-1 text-base'>#ENFJ</li>
+                                {yuki.raw('tags').map((tag: string, index: number) => (
+                                    <li
+                                        key={index}
+                                        className='on-color most-white rounded-[80px] px-5 py-1 text-base'
+                                    >
+                                        #{tag}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
