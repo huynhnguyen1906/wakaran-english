@@ -44,6 +44,11 @@
 /* Most White Color */
 .most-white {
     color: var(--color-most-white);
+    background-color: var(--color-most-white);
+}
+
+.text-bg-color {
+    background-color: var(--color-text);
 }
 
 /* Drop Shadow */

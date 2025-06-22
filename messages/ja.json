@@ -35,5 +35,12 @@
         "description": "私たちはECCコンピュータ専門学校のWebデザインコースに通う学生で、英語学習のコンテンツを作りながら\n自分たちのスキルを伸ばしつつ英語学習者のみなさんとつながることを目指しています。",
         "thumbnailAlt": "自己紹介サムネイル",
         "playButtonAlt": "YouTube再生ボタン"
+    },
+    "blog": {
+        "description": "また、大阪での生活の魅力的な情報も共有し、メンバーがブログを書いて皆さんの学習や交流のお手伝いをします",
+        "blogTitle": "ブログ",
+        "blogDescription": "準備中...",
+        "detailBtn": "記事を見る",
+        "nextBtnAlt": "このブログの詳細"
     }
 }

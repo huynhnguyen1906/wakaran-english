@@ -35,5 +35,12 @@
         "description": "我们是网页设计课的学生，我们通过制作关于英语学习的内容来提高我们的英语水平，\n并希望能与像您一样的学习者建立联系。",
         "thumbnailAlt": "自我介绍缩略图",
         "playButtonAlt": "YouTube播放按钮"
+    },
+    "blog": {
+        "description": "我们还会分享大阪生活的有趣信息，成员们会撰写博客来帮助大家的学习和交流",
+        "blogTitle": "博客",
+        "blogDescription": "准备中...",
+        "detailBtn": "查看文章",
+        "nextBtnAlt": "此博客的详情"
     }
 }

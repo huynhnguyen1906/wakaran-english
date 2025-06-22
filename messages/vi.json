@@ -35,5 +35,12 @@
         "description": "Chúng tôi là một nhóm sinh viên từ Khóa học Thiết kế Website của Trường Cao đẳng Máy tính ECC, tạo ra nội dung học tiếng Anh để cải thiện kỹ năng của chúng tôi và kết nối với những người học như bạn.",
         "thumbnailAlt": "Hình thu nhỏ tự giới thiệu",
         "playButtonAlt": "Nút phát YouTube"
+    },
+    "blog": {
+        "description": "Chúng tôi cũng chia sẻ thông tin hấp dẫn về cuộc sống ở Osaka, và các thành viên sẽ viết blog để hỗ trợ việc học tập và giao lưu của mọi người",
+        "blogTitle": "Blog",
+        "blogDescription": "Đang chuẩn bị...",
+        "detailBtn": "Xem bài viết",
+        "nextBtnAlt": "Chi tiết blog này"
     }
 }

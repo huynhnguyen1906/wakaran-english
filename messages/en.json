@@ -35,5 +35,12 @@
         "description": "We are a group of students from ECC Computer College's Website Design Course, creating English-learning content \nto improve our skills and connect with learners like you.",
         "thumbnailAlt": "Self Introduction Thumbnail",
         "playButtonAlt": "YouTube Play Button"
+    },
+    "blog": {
+        "description": "We also share cool things about life in Osaka, and our members write blogs to help you learn and connect.",
+        "blogTitle": "blog",
+        "blogDescription": "Coming Soon...",
+        "detailBtn": "view article",
+        "nextBtnAlt": "this blog's detail"
     }
 }
