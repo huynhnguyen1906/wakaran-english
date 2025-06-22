@@ -42,5 +42,21 @@
         "blogDescription": "准备中...",
         "detailBtn": "查看文章",
         "nextBtnAlt": "此博客的详情"
+    },
+    "contact": {
+        "subtitle": "让我们一起兴奋起来！",
+        "titleTop": "期待您在社交媒体上关注我们！",
+        "titleBottom": "请从下方查看！",
+        "descriptionTop": "我们在社交媒体上分享日常活动和英语学习技巧！",
+        "descriptionBottom": "关注我们，一起享受英语学习的乐趣！",
+        "instagramQr": "WakaranEnglish的Instagram二维码",
+        "instagramAlt": "WakaranEnglish的Instagram",
+        "instagramLogoAlt": "Instagram标志",
+        "instagramDescription": "我们正在分享关于大阪的各种信息！请查看！",
+        "youtubeQr": "WakaranEnglish的YouTube二维码",
+        "youtubeAlt": "WakaranEnglish的YouTube",
+        "youtubeLogoAlt": "YouTube标志",
+        "youtubeDescription": "您想和我们一起以最有趣的方式学习英语吗？",
+        "withIain": "伊安和成员们的合影"
     }
 }

@@ -42,5 +42,21 @@
         "blogDescription": "Đang chuẩn bị...",
         "detailBtn": "Xem bài viết",
         "nextBtnAlt": "Chi tiết blog này"
+    },
+    "contact": {
+        "subtitle": "Hãy cùng nhau hào hứng!",
+        "titleTop": "Chúng tôi đang chờ bạn theo dõi trên mạng xã hội!",
+        "titleBottom": "Hãy kiểm tra chúng tôi bên dưới!",
+        "descriptionTop": "Chúng tôi chia sẻ hoạt động hàng ngày và mẹo học tiếng Anh trên mạng xã hội!",
+        "descriptionBottom": "Hãy theo dõi và cùng thưởng thức tiếng Anh!",
+        "instagramQr": "Mã QR Instagram của WakaranEnglish",
+        "instagramAlt": "Instagram WakaranEnglish",
+        "instagramLogoAlt": "Logo Instagram",
+        "instagramDescription": "Chúng tôi đang chia sẻ mọi thứ về Osaka! Hãy kiểm tra nhé!",
+        "youtubeQr": "Mã QR YouTube của WakaranEnglish",
+        "youtubeAlt": "YouTube WakaranEnglish",
+        "youtubeLogoAlt": "Logo YouTube",
+        "youtubeDescription": "Bạn có muốn học tiếng Anh với chúng tôi theo cách thú vị nhất không?",
+        "withIain": "Ảnh nhóm của Iain và các thành viên"
     }
 }
