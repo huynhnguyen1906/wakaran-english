@@ -47,6 +47,7 @@
                 "imgAlt": "Photo of aya",
                 "name": "aya",
                 "msg": "I love Western music! I want to travel abroad too!",
+                "mobileMsg": "I love Western music!",
                 "tags": ["Hyogo", "Female", "ESFJ"]
             },
             "futama": {
@@ -54,6 +55,7 @@
                 "imgAlt": "Photo of Futama",
                 "name": "Futama",
                 "msg": "I'm interested in foreign cultures!",
+                "mobileMsg": "I'm interested in foreign cultures!",
                 "tags": ["Hyogo", "Male", "ENFP"]
             },
             "ikuchan": {
@@ -61,6 +63,7 @@
                 "imgAlt": "Photo of Ikuchan",
                 "name": "Ikuchan",
                 "msg": "I want to go to Europe!!!",
+                "mobileMsg": "I want to go to Europe!!!",
                 "tags": ["Okinawa", "Male", "INFP"]
             },
             "huynh": {
@@ -68,6 +71,7 @@
                 "imgAlt": "Photo of HuYnH",
                 "name": "HuYnH",
                 "msg": "I'm doing my best to live in Japan :((((",
+                "mobileMsg": "Doing my best in Japan :((((",
                 "tags": ["Vietnam", "Male", "ENTP"]
             },
             "yuki": {
@@ -75,6 +79,7 @@
                 "imgAlt": "Photo of Yuki",
                 "name": "Yuki a.k.a Alex",
                 "msg": "The most important thing when studying languages is 'Speaking'!",
+                "mobileMsg": "Speaking is important!",
                 "tags": ["Myanmar", "Male", "ENFJ"]
             }
         }

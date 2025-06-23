@@ -47,6 +47,7 @@
                 "imgAlt": "aya的照片",
                 "name": "aya",
                 "msg": "我超爱西洋音乐！也想去海外旅行！",
+                "mobileMsg": "我超爱西洋音乐！",
                 "tags": ["兵库县", "女性", "ESFJ"]
             },
             "futama": {
@@ -54,6 +55,7 @@
                 "imgAlt": "Futama的照片",
                 "name": "Futama",
                 "msg": "我对海外文化很感兴趣！",
+                "mobileMsg": "我对海外文化很感兴趣！",
                 "tags": ["兵库县", "男性", "ENFP"]
             },
             "ikuchan": {
@@ -61,6 +63,7 @@
                 "imgAlt": "Ikuchan的照片",
                 "name": "Ikuchan",
                 "msg": "我想去欧洲！！！",
+                "mobileMsg": "我想去欧洲！！！",
                 "tags": ["冲绳县", "男性", "INFP"]
             },
             "huynh": {
@@ -68,6 +71,7 @@
                 "imgAlt": "HuYnH的照片",
                 "name": "HuYnH",
                 "msg": "在日本生活已经竭尽全力了 :((((",
+                "mobileMsg": "在日本竭尽全力 :((((",
                 "tags": ["越南", "男性", "ENTP"]
             },
             "yuki": {
@@ -75,6 +79,7 @@
                 "imgAlt": "Yuki的照片",
                 "name": "Yuki a.k.a Alex",
                 "msg": "学习语言时最重要的是「Speaking」！",
+                "mobileMsg": "Speaking最重要！",
                 "tags": ["缅甸", "男性", "ENFJ"]
             }
         }

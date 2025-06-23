@@ -29,7 +29,7 @@ export default function MemberCard() {
                         <h3 className='text-main-color my-1.5 text-base font-normal'>
                             {t(`memberList.${memberKey}.name`)}
                         </h3>
-                        <p className='most-white on-color rounded-3xl py-1 text-center text-[10px]'>
+                        <p className='on-color most-white rounded-3xl py-1 text-center text-[10px]'>
                             {t(`memberList.${memberKey}.mobileMsg`)}
                         </p>
                     </div>
@@ -64,7 +64,7 @@ export default function MemberCard() {
                                         {t.raw(`memberList.${memberKey}.tags`).map((tag: string, tagIndex: number) => (
                                             <li
                                                 key={tagIndex}
-                                                className='most-white on-color md:rounded-[80px] md:px-5 md:py-1.5 md:text-base'
+                                                className='on-color most-white md:rounded-[80px] md:px-5 md:py-1.5 md:text-base'
                                             >
                                                 #{tag}
                                             </li>
