@@ -15,31 +15,31 @@ export default function Contact() {
     }
 
     return (
-        <div className='bg-[#E1D9D6] py-12'>
-            <div className='text-main-color mx-auto max-w-[1120px]'>
-                <p className='mb-6 text-center text-2xl'>{t('subtitle')}</p>
-                <h2 className='mb-4 text-center text-5xl leading-16 font-semibold'>
+        <div className='bg-[#E1D9D6] p-6 md:py-12'>
+            <div className='text-main-color mx-auto md:max-w-[1120px]'>
+                <p className='hidden md:mb-6 md:block md:text-center md:text-2xl'>{t('subtitle')}</p>
+                <h2 className='mb-2 text-2xl font-semibold md:mb-4 md:text-center md:text-5xl md:leading-16'>
                     {t('titleTop')}
                     <br />
                     {t('titleBottom')}
                 </h2>
-                <p className='text-sub-color mb-10 text-center text-lg font-normal'>
+                <p className='text-sub-color mb-4 text-xs md:mb-10 md:text-center md:text-lg md:font-normal'>
                     {t('descriptionTop')}
                     <br />
                     {t('descriptionBottom')}
                 </p>
-                <div className='flex gap-6'>
-                    <div className='flex w-1/2 flex-col gap-6'>
+                <div className='md:flex md:gap-6'>
+                    <div className='mb-4 flex flex-col gap-y-4 md:w-1/2 md:gap-6'>
                         {/* インスタグラム */}
-                        <div className='flex gap-6'>
+                        <div className='md:flex md:gap-6'>
                             <Image
                                 src='/images/instagram_qr.svg'
                                 alt={t('instagramQr')}
                                 width={170}
                                 height={170}
-                                className='aspect-square rounded-2xl'
+                                className='hidden md:block md:aspect-square md:rounded-2xl'
                             />
-                            <div className='flex flex-col justify-end gap-2'>
+                            <div className='flex flex-col gap-y-2 md:justify-end md:gap-2'>
                                 <a
                                     href='https://www.instagram.com/wakaran.eng/#'
                                     onClick={(event) =>
@@ -51,22 +51,22 @@ export default function Contact() {
                                         alt={t('instagramLogoAlt')}
                                         width={40}
                                         height={40}
-                                        className='h-10 w-10 object-cover'
+                                        className='h-6 w-6 md:h-10 md:w-10 md:object-cover'
                                     />
                                 </a>
-                                <p className='text-2xl font-medium'>{t('instagramDescription')}</p>
+                                <p className='text-xs md:text-2xl md:font-medium'>{t('instagramDescription')}</p>
                             </div>
                         </div>
                         {/* YouTube */}
-                        <div className='flex gap-6'>
+                        <div className='md:flex md:gap-6'>
                             <Image
                                 src='/images/youtube_qr.svg'
                                 alt={t('youtubeQr')}
                                 width={170}
                                 height={170}
-                                className='aspect-square rounded-2xl object-cover'
+                                className='hidden md:block md:aspect-square md:rounded-2xl md:object-cover'
                             />
-                            <div className='flex flex-col justify-end gap-2'>
+                            <div className='md:flex md:flex-col md:justify-end md:gap-2'>
                                 <a
                                     href='https://www.youtube.com/@WakaranEnglish'
                                     onClick={(event) =>
@@ -78,10 +78,10 @@ export default function Contact() {
                                         alt={t('youtubeLogoAlt')}
                                         width={40}
                                         height={40}
-                                        className='h-10 w-10 object-cover'
+                                        className='h-6 w-6 md:h-10 md:w-10 md:object-cover'
                                     />
                                 </a>
-                                <p className='text-2xl font-medium'>{t('youtubeDescription')}</p>
+                                <p className='text-xs md:text-2xl md:font-medium'>{t('youtubeDescription')}</p>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@ export default function Contact() {
                         alt={t('withIain')}
                         width={500}
                         height={400}
-                        className='w-1/2 rounded-3xl object-cover'
+                        className='rounded-[8px] object-cover md:w-1/2 md:rounded-3xl'
                     />
                 </div>
             </div>

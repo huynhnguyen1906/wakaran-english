@@ -1,5 +1,5 @@
 import Abouts from '@/components/Abouts'
-import Blog from '@/components/Blogs'
+import Blog from '@/components/Blog'
 import Contact from '@/components/Contact'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
