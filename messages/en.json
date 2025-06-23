@@ -40,36 +40,43 @@
         "subtitle": "WAKARAN ENGLISH's",
         "title": "Fun Crew!",
         "descriptionTop": "We are a team of students from various nationalities gathered to study English.",
-        "descriptionBottom": "We'd be happy if you get to know us!"
-    },
-    "aya": {
-        "imgAlt": "Photo of aya",
-        "name": "aya",
-        "msg": "I love Western music! I want to travel abroad too!",
-        "tags": ["Hyogo", "Female", "ESFJ"]
-    },
-    "futama": {
-        "imgAlt": "Photo of Futama",
-        "name": "Futama",
-        "msg": "I'm interested in foreign cultures!",
-        "tags": ["Hyogo", "Male", "ENFP"]
-    },
-    "ikuchan": {
-        "imgAlt": "Photo of Ikuchan",
-        "name": "Ikuchan",
-        "msg": "I want to go to Europe!!!",
-        "tags": ["Okinawa", "Male", "INFP"]
-    },
-    "huynh": {
-        "imgAlt": "Photo of HuYnH",
-        "name": "HuYnH",
-        "msg": "I'm doing my best to live in Japan :((((",
-        "tags": ["Vietnam", "Male", "ENTP"]
-    },
-    "yuki": {
-        "imgAlt": "Photo of Yuki",
-        "name": "Yuki a.k.a Alex",
-        "msg": "The most important thing when studying languages is 'Speaking'!",
-        "tags": ["Myanmar", "Male", "ENFJ"]
+        "descriptionBottom": "We'd be happy if you get to know us!",
+        "memberList": {
+            "aya": {
+                "imgPath": "/images/aya.webp",
+                "imgAlt": "Photo of aya",
+                "name": "aya",
+                "msg": "I love Western music! I want to travel abroad too!",
+                "tags": ["Hyogo", "Female", "ESFJ"]
+            },
+            "futama": {
+                "imgPath": "/images/futama.webp",
+                "imgAlt": "Photo of Futama",
+                "name": "Futama",
+                "msg": "I'm interested in foreign cultures!",
+                "tags": ["Hyogo", "Male", "ENFP"]
+            },
+            "ikuchan": {
+                "imgPath": "/images/ikuchan.webp",
+                "imgAlt": "Photo of Ikuchan",
+                "name": "Ikuchan",
+                "msg": "I want to go to Europe!!!",
+                "tags": ["Okinawa", "Male", "INFP"]
+            },
+            "huynh": {
+                "imgPath": "/images/huynh.webp",
+                "imgAlt": "Photo of HuYnH",
+                "name": "HuYnH",
+                "msg": "I'm doing my best to live in Japan :((((",
+                "tags": ["Vietnam", "Male", "ENTP"]
+            },
+            "yuki": {
+                "imgPath": "/images/yuki.webp",
+                "imgAlt": "Photo of Yuki",
+                "name": "Yuki a.k.a Alex",
+                "msg": "The most important thing when studying languages is 'Speaking'!",
+                "tags": ["Myanmar", "Male", "ENFJ"]
+            }
+        }
     }
 }

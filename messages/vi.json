@@ -40,36 +40,43 @@
         "subtitle": "Của WAKARAN ENGLISH",
         "title": "Đội ngũ vui vẻ!",
         "descriptionTop": "Chúng tôi là một nhóm học sinh từ nhiều quốc tịch khác nhau cùng nhau học tiếng Anh.",
-        "descriptionBottom": "Chúng tôi sẽ rất vui nếu bạn hiểu về chúng tôi!"
-    },
-    "aya": {
-        "imgAlt": "Ảnh của aya",
-        "name": "aya",
-        "msg": "Tôi rất yêu nhạc phương Tây! Tôi cũng muốn đi du lịch nước ngoài!",
-        "tags": ["Hyogo", "Nữ", "ESFJ"]
-    },
-    "futama": {
-        "imgAlt": "Ảnh của Futama",
-        "name": "Futama",
-        "msg": "Tôi quan tâm đến văn hóa nước ngoài!",
-        "tags": ["Hyogo", "Nam", "ENFP"]
-    },
-    "ikuchan": {
-        "imgAlt": "Ảnh của Ikuchan",
-        "name": "Ikuchan",
-        "msg": "Tôi muốn đến châu Âu!!!",
-        "tags": ["Okinawa", "Nam", "INFP"]
-    },
-    "huynh": {
-        "imgAlt": "Ảnh của HuYnH",
-        "name": "HuYnH",
-        "msg": "Tôi đang cố gắng hết sức để sống ở Nhật Bản :((((",
-        "tags": ["Việt Nam", "Nam", "ENTP"]
-    },
-    "yuki": {
-        "imgAlt": "Ảnh của Yuki",
-        "name": "Yuki a.k.a Alex",
-        "msg": "Điều quan trọng nhất khi học ngôn ngữ là 'Nói'!",
-        "tags": ["Myanmar", "Nam", "ENFJ"]
+        "descriptionBottom": "Chúng tôi sẽ rất vui nếu bạn hiểu về chúng tôi!",
+        "memberList": {
+            "aya": {
+                "imgPath": "/images/aya.webp",
+                "imgAlt": "Ảnh của aya",
+                "name": "aya",
+                "msg": "Tôi rất yêu nhạc phương Tây! Tôi cũng muốn đi du lịch nước ngoài!",
+                "tags": ["Hyogo", "Nữ", "ESFJ"]
+            },
+            "futama": {
+                "imgPath": "/images/futama.webp",
+                "imgAlt": "Ảnh của Futama",
+                "name": "Futama",
+                "msg": "Tôi quan tâm đến văn hóa nước ngoài!",
+                "tags": ["Hyogo", "Nam", "ENFP"]
+            },
+            "ikuchan": {
+                "imgPath": "/images/ikuchan.webp",
+                "imgAlt": "Ảnh của Ikuchan",
+                "name": "Ikuchan",
+                "msg": "Tôi muốn đến châu Âu!!!",
+                "tags": ["Okinawa", "Nam", "INFP"]
+            },
+            "huynh": {
+                "imgPath": "/images/huynh.webp",
+                "imgAlt": "Ảnh của HuYnH",
+                "name": "HuYnH",
+                "msg": "Tôi đang cố gắng hết sức để sống ở Nhật Bản :((((",
+                "tags": ["Việt Nam", "Nam", "ENTP"]
+            },
+            "yuki": {
+                "imgPath": "/images/yuki.webp",
+                "imgAlt": "Ảnh của Yuki",
+                "name": "Yuki a.k.a Alex",
+                "msg": "Điều quan trọng nhất khi học ngôn ngữ là 'Nói'!",
+                "tags": ["Myanmar", "Nam", "ENFJ"]
+            }
+        }
     }
 }
