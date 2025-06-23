@@ -19,7 +19,9 @@
     "featuredProjects": {
         "title": "WE ARE WAKARAN ENGLISH AND",
         "titleMiddle": "THIS IS",
-        "titleHighlight": "OUR PROJECTS!",
+        "titleHighlight": " OUR PROJECTS!",
+        "mobileTitle": "WE ARE\nWAKARAN ENGLISH\nAND THIS IS",
+        "mobileTitleHighlight": "OUR PROJECTS!",
         "description": "We’re working to improve our English speaking skills by sharing videos that help us practice\nー like interviews with native speakers!",
         "videoDate": "2025.05.13",
         "videoTitle": "Interview Quiz with IAIN",
