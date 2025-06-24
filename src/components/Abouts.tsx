@@ -6,7 +6,7 @@ import Introduction from './SelfIntroduction'
 
 export default function Abouts() {
     return (
-        <div>
+        <div className='w-full'>
             <AboutUs />
             <Projects />
             <Introduction />

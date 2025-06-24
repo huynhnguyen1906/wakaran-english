@@ -16,7 +16,7 @@ export default function Blog() {
                 <p className='hidden text-base md:mb-14 md:block md:text-center'>{t('description')}</p>
                 <section className='mb-8 flex gap-x-4 overflow-x-auto scroll-smooth md:mb-14 md:gap-x-10 md:overflow-x-visible'>
                     {/* blogの詳細ページが完成したら中身調整 */}
-                    <article className='most-white w-[calc(100%-64px)] flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink'>
+                    <article className='most-white-bg most-white w-[calc(100%-64px)] flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink'>
                         <div className='aspect-[4/3] rounded-lg bg-gray-300'></div>
                         <div className='mt-2 mb-4 md:my-4'>
                             <h3 className='text-main-color mb-2 text-2xl font-semibold'>{t('blogTitle')}</h3>
@@ -33,7 +33,7 @@ export default function Blog() {
                         </button>
                     </article>
 
-                    <article className='most-white w-[calc(100%-64px)] flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink'>
+                    <article className='most-white-bg most-white w-[calc(100%-64px)] flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink'>
                         <div className='aspect-[4/3] rounded-lg bg-gray-300'></div>
                         <div className='mt-2 mb-4 md:my-4'>
                             <h3 className='text-main-color mb-2 text-2xl font-semibold'>{t('blogTitle')}</h3>
@@ -50,7 +50,7 @@ export default function Blog() {
                         </button>
                     </article>
 
-                    <article className='most-white w-[calc(100%-64px)] flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink'>
+                    <article className='most-white-bg most-white w-[calc(100%-64px)] flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink'>
                         <div className='aspect-[4/3] rounded-lg bg-gray-300'></div>
                         <div className='mt-2 mb-4 md:my-4'>
                             <h3 className='text-main-color mb-2 text-2xl font-semibold'>{t('blogTitle')}</h3>

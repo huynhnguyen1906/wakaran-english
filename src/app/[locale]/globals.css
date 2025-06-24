@@ -39,14 +39,18 @@
 /* On Color */
 .on-color {
     color: var(--color-on);
+    background-color: var(--color-on);
 }
 
 /* Most White Color */
 .most-white {
     color: var(--color-most-white);
+}
+.most-white-bg {
     background-color: var(--color-most-white);
 }
 
+/* Text Background Color */
 .text-bg-color {
     background-color: var(--color-text);
 }
@@ -54,4 +58,18 @@
 /* Drop Shadow */
 .drop-shadow-light {
     filter: drop-shadow(0 0 15px rgba(34, 34, 34, 0.25));
+}
+
+/* Play Button */
+.drop-shadow-playBtn {
+    filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
+}
+
+/* Scrollbar Styles */
+.scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }
