@@ -10,7 +10,7 @@ export default function SelfIntroduction() {
     const t = useTranslations('selfIntroduction')
 
     return (
-        <div className='mx-auto w-full max-w-[1120px] max-md:px-6'>
+        <div className='mx-auto w-full max-w-[1120px] px-6 lg:px-0'>
             <h2 className='mb-6 text-center text-2xl max-md:hidden'>{t('greeting')}</h2>
             {/* PC用h3 */}
             <h3 className='mb-4 hidden text-center text-5xl font-semibold md:block'>
@@ -26,7 +26,7 @@ export default function SelfIntroduction() {
                 {renderTextWithLineBreaks(t('description'))}
             </p>
             <div className='w-full'>
-                <div className='relative h-[510px] w-full overflow-hidden rounded-2xl max-md:h-[194px]'>
+                <div className='relative h-[510px] w-full overflow-hidden rounded-2xl max-md:h-[194px] md:px-6'>
                     <Image
                         src='/images/introductionThumb.jpg'
                         alt={t('thumbnailAlt')}

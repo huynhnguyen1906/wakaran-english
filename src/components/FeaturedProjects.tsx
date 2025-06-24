@@ -45,9 +45,9 @@ export default function FeaturedProjects() {
     }
     return (
         <div className='mx-auto mb-20 w-full max-w-[1120px] max-md:mb-12 max-md:px-6'>
-            <div className='mx-auto'>
+            <div className='mx-auto md:px-6 lg:px-0'>
                 {/* PC用h2 */}
-                <h2 className='mb-4 hidden text-5xl leading-18 font-semibold md:block'>
+                <h2 className='mb-4 hidden font-semibold md:block md:text-4xl md:leading-14 lg:text-5xl lg:leading-18'>
                     {t('title')}
                     <br />
                     {t('titleMiddle')}
@@ -106,10 +106,10 @@ export default function FeaturedProjects() {
                 />
             </div>
 
-            <div className='flex items-center justify-end gap-16 max-md:hidden'>
+            <div className='flex items-center justify-end gap-12 max-md:hidden md:pr-6 lg:gap-16 lg:pr-0'>
                 <button
                     onClick={scrollLeft}
-                    className={`flex h-18.5 w-18.5 items-center justify-center rounded-full text-3xl text-white ${
+                    className={`flex h-15 w-15 items-center justify-center rounded-full text-3xl text-white lg:h-18.5 lg:w-18.5 ${
                         canScrollLeft ? 'bg-[var(--color-on)]' : 'bg-[var(--color-off)]'
                     }`}
                     aria-label={t('previousButton')}
@@ -118,7 +118,7 @@ export default function FeaturedProjects() {
                 </button>
                 <button
                     onClick={scrollRight}
-                    className={`flex h-18.5 w-18.5 items-center justify-center rounded-full text-3xl text-white ${
+                    className={`flex h-15 w-15 items-center justify-center rounded-full text-3xl text-white lg:h-18.5 lg:w-18.5 ${
                         canScrollRight ? 'bg-[var(--color-on)]' : 'bg-[var(--color-off)]'
                     }`}
                     aria-label={t('nextButton')}

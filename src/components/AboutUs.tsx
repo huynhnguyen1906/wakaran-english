@@ -9,8 +9,8 @@ export default function AboutUs() {
     const t = useTranslations('aboutUs')
 
     return (
-        <div className='mx-auto flex w-full max-w-[1120px] items-center justify-between gap-12 px-0 max-md:px-6 md:mb-48'>
-            <div className='hidden h-[500px] w-[500px] shrink-0 md:block'>
+        <div className='mx-auto flex w-full max-w-[1120px] items-center justify-between gap-12 max-md:px-6 md:mb-48 md:px-6 lg:px-0'>
+            <div className='hidden shrink-0 md:block md:h-[350px] md:w-[350px] lg:h-[500px] lg:w-[500px]'>
                 <Image
                     src='/images/weareWakaran.webp'
                     alt='About Us Image'
