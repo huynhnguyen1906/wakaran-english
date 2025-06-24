@@ -29,7 +29,7 @@ export default async function LocaleLayout({
             lang={locale}
             className={poppins.className}
         >
-            <body className='bg-bgcolor'>
+            <body className='bg-bgcolor no-scroll-x'>
                 <NextIntlClientProvider>{children}</NextIntlClientProvider>
             </body>
         </html>

@@ -85,5 +85,28 @@
                 "tags": ["ミャンマー", "男性", "ENFJ"]
             }
         }
+    },
+    "blog": {
+        "description": "また、大阪での生活の魅力的な情報も共有し、メンバーがブログを書いて皆さんの学習や交流のお手伝いをします",
+        "blogTitle": "ブログ",
+        "blogDescription": "準備中...",
+        "detailBtn": "記事を見る",
+        "nextBtnAlt": "このブログの詳細"
+    },
+    "contact": {
+        "subtitle": "一緒に盛り上がろう!",
+        "titleTop": "SNSでのフォローお待ちしています!",
+        "titleBottom": "以下からチェックしてください！",
+        "descriptionTop": "SNSでは日々の取り組みや英語学習のヒントを発信中!",
+        "descriptionBottom": "フォローして一緒に英語を楽しもう！",
+        "instagramQr": "WakaranEnglishのInstagramQRコード",
+        "instagramAlt": "WakaranEnglishのInstagram",
+        "instagramLogoAlt": "Instagramのロゴ",
+        "instagramDescription": "大阪についてのアレコレを発信中！ぜひチェック！",
+        "youtubeQr": "WakaranEnglishのYoutubeQRコード",
+        "youtubeAlt": "WakaranEnglishのYoutube",
+        "youtubeLogoAlt": "Youtubeのロゴ",
+        "youtubeDescription": "私たちと一緒にもっとも楽しい方法で英語を勉強しませんか",
+        "withIain": "イアンとメンバーの集合写真"
     }
 }

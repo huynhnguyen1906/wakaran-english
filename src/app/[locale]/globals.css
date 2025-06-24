@@ -46,6 +46,14 @@
 .most-white {
     color: var(--color-most-white);
 }
+.most-white-bg {
+    background-color: var(--color-most-white);
+}
+
+/* Text Background Color */
+.text-bg-color {
+    background-color: var(--color-text);
+}
 
 /* Drop Shadow */
 .drop-shadow-light {
@@ -57,8 +65,11 @@
     filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
 }
 
-/* Global Styles */
-html,
-body {
-    overflow-x: hidden;
+/* Scrollbar Styles */
+.scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }

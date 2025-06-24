@@ -85,5 +85,28 @@
                 "tags": ["Myanmar", "Male", "ENFJ"]
             }
         }
+    },
+    "blog": {
+        "description": "We also share cool things about life in Osaka, and our members write blogs to help you learn and connect.",
+        "blogTitle": "blog",
+        "blogDescription": "Coming Soon...",
+        "detailBtn": "view article",
+        "nextBtnAlt": "this blog's detail"
+    },
+    "contact": {
+        "subtitle": "Let’s get social!",
+        "titleTop": "we’d love to see you online!",
+        "titleBottom": "Follow us below!",
+        "descriptionTop": "We share daily activities and English learning tips on SNS!",
+        "descriptionBottom": "Follow us and enjoy English together!",
+        "instagramQr": "WakaranEnglish Instagram QR Code",
+        "instagramAlt": "WakaranEnglish Instagram",
+        "instagramLogoAlt": "Instagram Logo",
+        "instagramDescription": "We're sharing all about Osaka! Please check it out!",
+        "youtubeQr": "WakaranEnglish YouTube QR Code",
+        "youtubeAlt": "WakaranEnglish YouTube",
+        "youtubeLogoAlt": "YouTube Logo",
+        "youtubeDescription": "Would you like to study English with us in the most enjoyable way?",
+        "withIain": "Group photo of Iain and members"
     }
 }
