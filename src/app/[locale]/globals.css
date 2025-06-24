@@ -52,6 +52,13 @@
     filter: drop-shadow(0 0 15px rgba(34, 34, 34, 0.25));
 }
 
+/* Play Button */
 .drop-shadow-playBtn {
     filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
+}
+
+/* Global Styles */
+html,
+body {
+    overflow-x: hidden;
 }

@@ -37,5 +37,53 @@
         "description": "We are a group of students from ECC Computer College's Website Design Course, creating English-learning content \nto improve our skills and connect with learners like you.",
         "thumbnailAlt": "Self Introduction Thumbnail",
         "playButtonAlt": "YouTube Play Button"
+    },
+    "members": {
+        "subtitle": "WAKARAN ENGLISH's",
+        "title": "Fun Crew!",
+        "descriptionTop": "We are a team of students from various nationalities gathered to study English.",
+        "descriptionBottom": "We'd be happy if you get to know us!",
+        "memberList": {
+            "aya": {
+                "imgPath": "/images/aya.webp",
+                "imgAlt": "Photo of aya",
+                "name": "aya",
+                "msg": "I love Western music! I want to travel abroad too!",
+                "mobileMsg": "I love Western music!",
+                "tags": ["Hyogo", "Female", "ESFJ"]
+            },
+            "futama": {
+                "imgPath": "/images/futama.webp",
+                "imgAlt": "Photo of Futama",
+                "name": "Futama",
+                "msg": "I'm interested in foreign cultures!",
+                "mobileMsg": "I'm interested in foreign cultures!",
+                "tags": ["Hyogo", "Male", "ENFP"]
+            },
+            "ikuchan": {
+                "imgPath": "/images/ikuchan.webp",
+                "imgAlt": "Photo of Ikuchan",
+                "name": "Ikuchan",
+                "msg": "I want to go to Europe!!!",
+                "mobileMsg": "I want to go to Europe!!!",
+                "tags": ["Okinawa", "Male", "INFP"]
+            },
+            "huynh": {
+                "imgPath": "/images/huynh.webp",
+                "imgAlt": "Photo of HuYnH",
+                "name": "HuYnH",
+                "msg": "I'm doing my best to live in Japan :((((",
+                "mobileMsg": "Doing my best in Japan :((((",
+                "tags": ["Vietnam", "Male", "ENTP"]
+            },
+            "yuki": {
+                "imgPath": "/images/yuki.webp",
+                "imgAlt": "Photo of Yuki",
+                "name": "Yuki a.k.a Alex",
+                "msg": "The most important thing when studying languages is 'Speaking'!",
+                "mobileMsg": "Speaking is important!",
+                "tags": ["Myanmar", "Male", "ENFJ"]
+            }
+        }
     }
 }
