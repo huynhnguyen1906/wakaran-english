@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Hero() {
     return (
-        <>
+        <div className='mt-4 w-full'>
             <div className='relative mb-24 hidden h-[482px] w-full md:block'>
                 <Image
                     src='/images/heroImg.jpg'
@@ -13,14 +13,15 @@ export default function Hero() {
                     className='object-cover object-[50%_60%]'
                 />
             </div>
-            <div className='relative mb-16 block h-[266px] w-full md:hidden'>
+            <div className='relative mx-auto mb-16 h-[266px] w-[266px] md:hidden'>
                 <Image
                     src='/images/heroImg_phone.webp'
                     alt='Phone Size Hero Imag'
-                    fill
-                    className='object-cover object-[50%_60%]'
+                    width={266}
+                    height={266}
+                    className='object-cover object-center'
                 />
             </div>
-        </>
+        </div>
     )
 }
