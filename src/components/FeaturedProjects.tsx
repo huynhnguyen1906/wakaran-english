@@ -69,7 +69,7 @@ export default function FeaturedProjects() {
                 />
                 <div
                     ref={scrollContainerRef}
-                    className='scrollbar-hide flex gap-4 overflow-x-auto px-6'
+                    className='scrollbar-hide flex gap-4 overflow-x-auto md:px-6'
                     onScroll={checkScrollButtons}
                 >
                     {[1, 2, 3, 4].map((_, i) => (
