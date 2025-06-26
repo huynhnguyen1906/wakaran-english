@@ -59,35 +59,35 @@ export default function MobileHamburgerMenu() {
                         <Link
                             href='/'
                             onClick={() => setOpen(false)}
-                            className={`transition-colors hover:text-gray-600 ${pathname === '/' ? 'font-bold' : ''}`}
+                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/' ? 'font-bold' : ''}`}
                         >
                             {t('about')}
                         </Link>
                         <Link
                             href='/projects'
                             onClick={() => setOpen(false)}
-                            className={`transition-colors hover:text-gray-600 ${pathname === '/projects' ? 'font-bold' : ''}`}
+                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/projects' ? 'font-bold' : ''}`}
                         >
                             {t('projects')}
                         </Link>
                         <Link
                             href='/members'
                             onClick={() => setOpen(false)}
-                            className={`transition-colors hover:text-gray-600 ${pathname === '/members' ? 'font-bold' : ''}`}
+                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/members' ? 'font-bold' : ''}`}
                         >
                             {t('members')}
                         </Link>
                         <Link
                             href='/blogs'
                             onClick={() => setOpen(false)}
-                            className={`transition-colors hover:text-gray-600 ${pathname === '/blogs' ? 'font-bold' : ''}`}
+                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/blogs' ? 'font-bold' : ''}`}
                         >
                             {t('blogs')}
                         </Link>
                         <Link
                             href='/contact'
                             onClick={() => setOpen(false)}
-                            className={`transition-colors hover:text-gray-600 ${pathname === '/contact' ? 'font-bold' : ''}`}
+                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/contact' ? 'font-bold' : ''}`}
                         >
                             {t('contact')}
                         </Link>
