@@ -59,39 +59,61 @@ export default function MobileHamburgerMenu() {
                         <Link
                             href='/'
                             onClick={() => setOpen(false)}
-                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/' ? 'font-bold' : ''}`}
+                            className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
+                                open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
+                            } ${pathname === '/' ? 'font-bold' : ''}`}
+                            style={{ transitionDelay: open ? '200ms' : '0ms' }}
                         >
                             {t('about')}
                         </Link>
                         <Link
                             href='/projects'
                             onClick={() => setOpen(false)}
-                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/projects' ? 'font-bold' : ''}`}
+                            className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
+                                open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
+                            } ${pathname === '/projects' ? 'font-bold' : ''}`}
+                            style={{ transitionDelay: open ? '250ms' : '0ms' }}
                         >
                             {t('projects')}
                         </Link>
                         <Link
                             href='/members'
                             onClick={() => setOpen(false)}
-                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/members' ? 'font-bold' : ''}`}
+                            className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
+                                open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
+                            } ${pathname === '/members' ? 'font-bold' : ''}`}
+                            style={{ transitionDelay: open ? '300ms' : '0ms' }}
                         >
                             {t('members')}
                         </Link>
                         <Link
                             href='/blogs'
                             onClick={() => setOpen(false)}
-                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/blogs' ? 'font-bold' : ''}`}
+                            className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
+                                open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
+                            } ${pathname === '/blogs' ? 'font-bold' : ''}`}
+                            style={{ transitionDelay: open ? '350ms' : '0ms' }}
                         >
                             {t('blogs')}
                         </Link>
                         <Link
                             href='/contact'
                             onClick={() => setOpen(false)}
-                            className={`relative transition-colors after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${pathname === '/contact' ? 'font-bold' : ''}`}
+                            className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
+                                open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
+                            } ${pathname === '/contact' ? 'font-bold' : ''}`}
+                            style={{ transitionDelay: open ? '400ms' : '0ms' }}
                         >
                             {t('contact')}
                         </Link>
-                        <LanguageSwitcher />
+                        <div
+                            className={`transition-all duration-500 ease-out ${
+                                open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
+                            }`}
+                            style={{ transitionDelay: open ? '450ms' : '0ms' }}
+                        >
+                            <LanguageSwitcher />
+                        </div>
                     </div>
 
                     <div className='flex flex-col items-end gap-8'>
