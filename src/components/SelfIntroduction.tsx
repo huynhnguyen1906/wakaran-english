@@ -26,9 +26,9 @@ export default function SelfIntroduction() {
                 {renderTextWithLineBreaks(t('description'))}
             </p>
             <div className='w-full'>
-                <div className='relative h-[510px] w-full overflow-hidden rounded-2xl max-md:h-[194px] md:px-6'>
+                <div className='relative aspect-video w-full overflow-hidden rounded-2xl md:px-6'>
                     <Image
-                        src='/images/introductionThumb.jpg'
+                        src='/images/introductionThumb.webp'
                         alt={t('thumbnailAlt')}
                         fill
                         className='object-cover object-center'
