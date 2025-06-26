@@ -108,5 +108,16 @@
         "youtubeLogoAlt": "YouTube Logo",
         "youtubeDescription": "Would you like to study English with us in the most enjoyable way?",
         "withIain": "Group photo of Iain and members"
+    },
+    "footer": {
+        "subtitle": "Education Website for English Learners",
+        "about": "About Us",
+        "projects": "Projects",
+        "members": "Members",
+        "blogs": "Blogs",
+        "contact": "Contact",
+        "copyright": "2025©WAKARAN ENGISH",
+        "youtubeAlt": "YouTube",
+        "instagramAlt": "Instagram"
     }
 }
