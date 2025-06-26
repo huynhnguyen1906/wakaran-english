@@ -14,7 +14,7 @@ export default function Header() {
 
     return (
         <header className='w-full'>
-            <div className='relative mx-auto max-w-[1120px]'>
+            <div className='relative mx-auto hidden max-w-[1120px] px-5 md:block lg:px-0'>
                 <div className='top absolute right-0 h-[325px] w-[325px]'>
                     <Image
                         src='/images/wakaranenglogo1.png'
