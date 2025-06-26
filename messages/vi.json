@@ -108,5 +108,16 @@
         "youtubeLogoAlt": "Logo YouTube",
         "youtubeDescription": "Bạn có muốn học tiếng Anh với chúng tôi theo cách thú vị nhất không?",
         "withIain": "Ảnh nhóm của Iain và các thành viên"
+    },
+    "footer": {
+        "subtitle": "Trang web giáo dục dành cho người học tiếng Anh",
+        "about": "Về chúng tôi",
+        "projects": "Dự án",
+        "members": "Thành viên",
+        "blogs": "Blog",
+        "contact": "Liên hệ",
+        "copyright": "2025©WAKARAN ENGISH",
+        "youtubeAlt": "YouTube",
+        "instagramAlt": "Instagram"
     }
 }

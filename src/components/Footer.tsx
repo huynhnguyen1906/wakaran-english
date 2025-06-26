@@ -1,6 +1,8 @@
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 export default function Footer() {
+    const t = useTranslations('footer')
     return (
         <footer className='text-bg-color w-full pt-6 pb-12 md:pt-16 md:pb-16'>
             <div className='w-full px-6 md:px-4'>
@@ -8,7 +10,7 @@ export default function Footer() {
                 <div className='hidden md:block'>
                     {/* Top Section */}
                     <div className='mb-12 text-center'>
-                        <p className='most-white mb-14 text-xl'>Education Website for English Leaners</p>
+                        <p className='most-white mb-14 text-xl'>{t('subtitle')}</p>
                         <h1 className='most-white text-6xl font-bold tracking-wider'>WAKARAN ENGLISH</h1>
                     </div>
 
@@ -18,31 +20,31 @@ export default function Footer() {
                             href='#about'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
-                            About Us
+                            {t('about')}
                         </a>
                         <a
                             href='#projects'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
-                            Projects
+                            {t('projects')}
                         </a>
                         <a
                             href='#members'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
-                            Members
+                            {t('members')}
                         </a>
                         <a
                             href='#blogs'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
-                            Blogs
+                            {t('blogs')}
                         </a>
                         <a
                             href='#contact'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
-                            Contact
+                            {t('contact')}
                         </a>
                     </div>
 
@@ -56,7 +58,7 @@ export default function Footer() {
                         >
                             <Image
                                 src='/images/icon(logo)/youtube-logo-light.svg'
-                                alt='YouTube'
+                                alt={t('youtubeAlt')}
                                 width={32}
                                 height={32}
                             />
@@ -69,7 +71,7 @@ export default function Footer() {
                         >
                             <Image
                                 src='/images/icon(logo)/ins-logo-light.svg'
-                                alt='Instagram'
+                                alt={t('instagramAlt')}
                                 width={32}
                                 height={32}
                             />
@@ -78,7 +80,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <div className='text-center'>
-                        <p className='most-white text-xs'>2025©WAKARAN ENGISH</p>
+                        <p className='most-white text-xs'>{t('copyright')}</p>
                     </div>
                 </div>
 
@@ -86,7 +88,7 @@ export default function Footer() {
                 <div className='block md:hidden'>
                     {/* Top Section */}
                     <div className='mb-6 text-left'>
-                        <p className='most-white mb-2 text-base'>Education Website for English Leaners</p>
+                        <p className='most-white mb-2 text-base'>{t('subtitle')}</p>
                         <h1 className='most-white text-2xl font-bold tracking-wider'>WAKARAN ENGLISH</h1>
                     </div>
 
@@ -98,37 +100,37 @@ export default function Footer() {
                                 href='#about'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
-                                About Us
+                                {t('about')}
                             </a>
                             <a
                                 href='#projects'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
-                                Projects
+                                {t('projects')}
                             </a>
                             <a
                                 href='#members'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
-                                Members
+                                {t('members')}
                             </a>
                             <a
                                 href='#blogs'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
-                                Blogs
+                                {t('blogs')}
                             </a>
                             <a
                                 href='#contact'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
-                                Contact
+                                {t('contact')}
                             </a>
                         </div>
 
                         {/* Copyright - Right Side */}
                         <div className='text-right'>
-                            <p className='most-white text-xs'>2025©WAKARAN ENGISH</p>
+                            <p className='most-white text-xs'>{t('copyright')}</p>
                         </div>
                     </div>
                 </div>

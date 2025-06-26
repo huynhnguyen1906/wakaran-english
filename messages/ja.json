@@ -108,5 +108,16 @@
         "youtubeLogoAlt": "Youtubeのロゴ",
         "youtubeDescription": "私たちと一緒にもっとも楽しい方法で英語を勉強しませんか",
         "withIain": "イアンとメンバーの集合写真"
+    },
+    "footer": {
+        "subtitle": "英語学習者のための教育ウェブサイト",
+        "about": "私たちについて",
+        "projects": "プロジェクト",
+        "members": "メンバー",
+        "blogs": "ブログ",
+        "contact": "コンタクト",
+        "copyright": "2025©WAKARAN ENGISH",
+        "youtubeAlt": "YouTube",
+        "instagramAlt": "Instagram"
     }
 }

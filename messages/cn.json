@@ -108,5 +108,16 @@
         "youtubeLogoAlt": "YouTube标志",
         "youtubeDescription": "您想和我们一起以最有趣的方式学习英语吗？",
         "withIain": "伊安和成员们的合影"
+    },
+    "footer": {
+        "subtitle": "英语学习者教育网站",
+        "about": "关于我们",
+        "projects": "项目",
+        "members": "成员",
+        "blogs": "博客",
+        "contact": "联系",
+        "copyright": "2025©WAKARAN ENGISH",
+        "youtubeAlt": "YouTube",
+        "instagramAlt": "Instagram"
     }
 }
