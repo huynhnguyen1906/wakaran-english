@@ -51,7 +51,7 @@ export default function MemberCard() {
                                     alt={t(`memberList.${memberKey}.imgAlt`)}
                                     width={500}
                                     height={500}
-                                    className='md:drop-shadow-light md:aspect-square md:w-full md:object-cover md:object-center'
+                                    className='drop-shadow-light md:aspect-square md:w-full md:object-cover md:object-center'
                                 />
                                 <div className='md:flex md:flex-col md:gap-2 md:pt-2 md:pb-12'>
                                     <h3 className='md:text-main-color md:text-2xl md:font-normal'>
