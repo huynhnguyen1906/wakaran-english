@@ -15,7 +15,7 @@ export default function MobileHamburgerMenu() {
     const t = useTranslations('header')
 
     return (
-        <div className='fixed top-0 z-50 flex h-[60px] w-full items-center justify-between bg-[linear-gradient(to_bottom,rgba(255,255,255,1)_0%,rgba(255,255,255,0.9)_40%,rgba(255,255,255,0.6)_70%,rgba(255,255,255,0.2)_100%)] px-8 backdrop-blur-sm'>
+        <div className='fixed top-0 z-50 flex h-[60px] w-full items-center justify-between bg-[linear-gradient(to_bottom,rgba(255,255,255,1)_0%,rgba(255,255,255,0.8)_60%,rgba(255,255,255,0.6)_70%,rgba(255,255,255,0.4)_85%,rgba(255,255,255,0)_100%)] px-8'>
             {/* Hamburger Button */}
             <h1 className='text-lg font-bold'>WAKARAN ENGLISH</h1>
             <button
@@ -50,7 +50,7 @@ export default function MobileHamburgerMenu() {
 
             {/* Menu Panel */}
             <div
-                className={`fixed inset-0 z-40 h-[100vh] transform bg-[linear-gradient(90deg,rgba(254,254,254,0.4)_-30%,#FEFEFE_50%)] backdrop-blur-sm transition-transform duration-300 ease-in-out ${
+                className={`fixed inset-0 z-40 h-[100vh] transform bg-[linear-gradient(90deg,rgba(254,254,254,0.7)_-70%,#FEFEFE_60%)] backdrop-blur-sm transition-transform duration-300 ease-in-out ${
                     open ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
