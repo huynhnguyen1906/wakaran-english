@@ -84,7 +84,7 @@ export default function Header() {
             </div>
 
             {/* Mobile Header */}
-            <div className='block md:hidden'>
+            <div className='block h-[90px] bg-white md:hidden'>
                 <MobileHamburgerMenu />
             </div>
         </header>
