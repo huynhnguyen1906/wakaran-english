@@ -50,7 +50,7 @@ export default function MobileHamburgerMenu() {
 
             {/* Menu Panel */}
             <div
-                className={`fixed inset-0 z-40 h-[100vh] transform bg-[linear-gradient(90deg,rgba(254,254,254,0.7)_-70%,#FEFEFE_60%)] backdrop-blur-sm transition-transform duration-300 ease-in-out ${
+                className={`fixed inset-0 z-40 h-[100vh] transform bg-[linear-gradient(90deg,rgba(254,254,254,0.7)_40%,#FEFEFE_70%)] backdrop-blur-sm transition-transform duration-300 ease-in-out ${
                     open ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
