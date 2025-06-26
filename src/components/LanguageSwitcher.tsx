@@ -112,23 +112,27 @@ export default function LanguageSwitcher() {
             )}
 
             {/* Mobile Dropdown */}
-            {isOpen && (
-                <div className='absolute right-0 z-10 mt-0 w-32 rounded-md py-1 md:hidden'>
-                    {routing.locales.map((lang) => (
-                        <Link
-                            href='/'
-                            key={lang}
-                            locale={lang}
-                            className={`flex items-center justify-end gap-1 px-2 py-1 text-xs ${
-                                locale === lang ? 'font-bold' : ''
-                            }`}
-                            onClick={() => setIsOpen(false)}
-                        >
-                            {languages[lang as keyof typeof languages]}
-                        </Link>
-                    ))}
-                </div>
-            )}
+            <div
+                className={`absolute right-0 z-10 mt-0 w-32 transform rounded-md py-1 transition-all duration-300 ease-out md:hidden ${
+                    isOpen 
+                        ? 'translate-y-0 opacity-100 pointer-events-auto' 
+                        : 'pointer-events-none -translate-y-2 opacity-0'
+                }`}
+            >
+                {routing.locales.map((lang) => (
+                    <Link
+                        href='/'
+                        key={lang}
+                        locale={lang}
+                        className={`flex items-center justify-end gap-1 px-2 py-1 text-xs ${
+                            locale === lang ? 'font-bold' : ''
+                        }`}
+                        onClick={() => setIsOpen(false)}
+                    >
+                        {languages[lang as keyof typeof languages]}
+                    </Link>
+                ))}
+            </div>
         </div>
     )
 }
