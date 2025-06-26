@@ -102,10 +102,12 @@
         "instagramQr": "WakaranEnglish的Instagram二维码",
         "instagramAlt": "WakaranEnglish的Instagram",
         "instagramLogoAlt": "Instagram标志",
+        "instagramDescriptionMobile": "我们正在分享关于大阪的各种信息！\n请查看！",
         "instagramDescription": "我们正在分享关于大阪的各种信息！请查看！",
         "youtubeQr": "WakaranEnglish的YouTube二维码",
         "youtubeAlt": "WakaranEnglish的YouTube",
         "youtubeLogoAlt": "YouTube标志",
+        "youtubeDescriptionMobile": "您想和我们一起以最有趣的方式\n学习英语吗？",
         "youtubeDescription": "您想和我们一起以最有趣的方式学习英语吗？",
         "withIain": "伊安和成员们的合影"
     },
