@@ -113,10 +113,10 @@ export default function LanguageSwitcher() {
 
             {/* Mobile Dropdown */}
             <div
-                className={`absolute right-0 z-10 mt-0 w-32 transform rounded-md py-1 transition-all duration-300 ease-out md:hidden ${
-                    isOpen 
-                        ? 'translate-y-0 opacity-100 pointer-events-auto' 
-                        : 'pointer-events-none -translate-y-2 opacity-0'
+                className={`absolute right-0 z-10 mt-0 w-32 transform rounded-md py-1 transition-all duration-100 ease-out md:hidden ${
+                    isOpen ?
+                        'pointer-events-auto translate-y-0 opacity-100'
+                    :   'pointer-events-none -translate-y-2 opacity-0'
                 }`}
             >
                 {routing.locales.map((lang) => (
