@@ -7,6 +7,7 @@ import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 
 import LanguageSwitcher from './LanguageSwitcher'
+import MobileHamburgerMenu from './MobileHamburgerMenu'
 
 export default function Header() {
     const t = useTranslations('header')
@@ -14,6 +15,7 @@ export default function Header() {
 
     return (
         <header className='w-full'>
+            {/* Desktop Header */}
             <div className='relative mx-auto hidden max-w-[1120px] px-5 md:block lg:px-0'>
                 <div className='top absolute right-0 h-[325px] w-[325px]'>
                     <Image
@@ -79,6 +81,11 @@ export default function Header() {
                         <LanguageSwitcher />
                     </nav>
                 </div>
+            </div>
+
+            {/* Mobile Header */}
+            <div className='block md:hidden'>
+                <MobileHamburgerMenu />
             </div>
         </header>
     )
