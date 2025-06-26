@@ -15,7 +15,7 @@ export default function MobileHamburgerMenu() {
     const t = useTranslations('header')
 
     return (
-        <div className='fixed top-0 z-50 flex h-[60px] w-full items-center justify-between bg-[linear-gradient(to_bottom,rgba(255,255,255,1)_0%,rgba(255,255,255,0.8)_60%,rgba(255,255,255,0.6)_70%,rgba(255,255,255,0.4)_85%,rgba(255,255,255,0)_100%)] px-8'>
+        <div className='fixed top-0 z-50 flex h-[60px] w-full items-center justify-between bg-[linear-gradient(to_bottom,rgba(255,255,255,1)_0%,rgba(255,255,255,0.8)_60%,rgba(255,255,255,0.6)_70%,rgba(255,255,255,0.4)_85%,rgba(255,255,255,0)_100%)] px-6'>
             {/* Hamburger Button */}
             <h1 className='text-lg font-bold'>WAKARAN ENGLISH</h1>
             <button
@@ -54,7 +54,7 @@ export default function MobileHamburgerMenu() {
                     open ? 'translate-x-0' : 'translate-x-full'
                 }`}
             >
-                <div className='flex h-full flex-col items-end justify-between px-8 py-12'>
+                <div className='flex h-full flex-col items-end justify-between px-6 py-12'>
                     <div className='mt-[80px] flex flex-col gap-6 text-right text-base text-black'>
                         <Link
                             href='/'
