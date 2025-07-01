@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl'
 
 export default function SelfIntroduction() {
     const t = useTranslations('selfIntroduction')
+    const VIDEO_ID = 'yWG-eflBvyI'
 
     return (
         <div className='mx-auto w-full max-w-[1120px] px-6 lg:px-0'>
@@ -22,26 +23,42 @@ export default function SelfIntroduction() {
                 <br />
                 <span className='main-color'>{t('titleHighlight')}</span>
             </h3>
-            <p className='text-sub-color mx-auto mb-4 w-4/5 text-center text-base leading-8 max-md:w-full max-md:text-left'>
+            <p className='text-sub-color mx-auto mb-4 w-full text-center text-base leading-8 max-md:w-full max-md:text-left'>
                 {renderTextWithLineBreaks(t('description'))}
             </p>
             <div className='w-full'>
-                <div className='relative aspect-video w-full overflow-hidden rounded-2xl md:px-6'>
-                    <Image
-                        src='/images/introductionThumb.webp'
-                        alt={t('thumbnailAlt')}
-                        fill
-                        className='object-cover object-center'
-                    />
-                    <Link href=''>
+                {/* モバイル用サムネ&リンク */}
+                <div className='drop-shadow-media relative aspect-video w-full overflow-hidden rounded-2xl md:px-6'>
+                    {/* スマホ用サムネ&リンク */}
+                    <div className='relative h-full w-full lg:hidden'>
                         <Image
-                            src='/images/playButton.png'
-                            alt={t('playButtonAlt')}
-                            width={82}
-                            height={58}
-                            className='drop-shadow-playBtn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover object-center max-md:h-[44px] max-md:w-[62px]'
+                            src='/images/introductionThumb.webp'
+                            alt={t('thumbnailAlt')}
+                            fill
+                            className='object-cover object-center'
                         />
-                    </Link>
+                        <Link href='https://www.youtube.com/watch?v=yWG-eflBvyI'>
+                            <Image
+                                src='/images/playButton.png'
+                                alt={t('playButtonAlt')}
+                                width={82}
+                                height={58}
+                                className='drop-shadow-playBtn absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-cover object-center max-md:h-[44px] max-md:w-[62px]'
+                            />
+                        </Link>
+                    </div>
+                    {/* PC用サムネ&リンク */}
+                    <iframe
+                        width='560'
+                        height='315'
+                        src={`https://www.youtube.com/embed/${VIDEO_ID}?si=eyWMwOU1i5VSQOQH`}
+                        title='YouTube video player'
+                        frameBorder='0'
+                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                        referrerPolicy='strict-origin-when-cross-origin'
+                        allowFullScreen
+                        className='absolute inset-0 hidden h-full w-full lg:block'
+                    />
                 </div>
             </div>
         </div>
