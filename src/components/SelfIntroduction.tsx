@@ -27,7 +27,6 @@ export default function SelfIntroduction() {
                 {renderTextWithLineBreaks(t('description'))}
             </p>
             <div className='w-full'>
-                {/* モバイル用サムネ&リンク */}
                 <div className='drop-shadow-media relative aspect-video w-full overflow-hidden rounded-2xl md:px-6'>
                     {/* スマホ用サムネ&リンク */}
                     <div className='relative h-full w-full lg:hidden'>
