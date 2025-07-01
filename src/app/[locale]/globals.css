@@ -57,7 +57,13 @@
 
 /* Drop Shadow */
 .drop-shadow-light {
-    filter: drop-shadow(0 0 15px rgba(34, 34, 34, 0.25));
+    filter: none;
+}
+
+@media (min-width: 768px) {
+    .drop-shadow-light {
+        filter: drop-shadow(0 0 15px rgba(34, 34, 34, 0.25));
+    }
 }
 
 /* Play Button */
