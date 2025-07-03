@@ -71,6 +71,10 @@
     filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
 }
 
+.drop-shadow-inside {
+    box-shadow: inset 0px -30px 30px 0px rgba(34, 34, 34, 0.13);
+}
+
 .drop-shadow-media {
     filter: drop-shadow(0 0 10px rgba(175, 175, 175, 0.5));
 }
