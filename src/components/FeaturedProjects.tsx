@@ -83,7 +83,10 @@ export default function FeaturedProjects() {
                                 fill
                                 className='object-cover object-center'
                             />
-                            <Link href=''>
+                            <Link
+                                href='https://youtube.com/shorts/25g5uEODNig?si=WC1lanNjwbnrbv63'
+                                target='_blank'
+                            >
                                 <Image
                                     src='/images/playButton.png'
                                     alt={t('playButtonAlt')}
