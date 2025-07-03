@@ -78,11 +78,12 @@ export default function FeaturedProjects() {
                             className='scrollbar-hide relative h-[478px] w-[413px] shrink-0 max-md:h-[354px] max-md:w-[305px]'
                         >
                             <Image
-                                src='/images/shortsThumb.png'
+                                src='/images/yuki_iainThumb.webp'
                                 alt={t('thumbnailAlt')}
                                 fill
-                                className='object-cover object-center'
+                                className='rounded-3xl object-cover object-[50%_70%]'
                             />
+                            <div className='pointer-events-none absolute inset-x-0 bottom-0 h-1/3 rounded-3xl rounded-t-none bg-gradient-to-t from-black/60' />
                             <Link
                                 href='https://youtube.com/shorts/25g5uEODNig?si=WC1lanNjwbnrbv63'
                                 target='_blank'
