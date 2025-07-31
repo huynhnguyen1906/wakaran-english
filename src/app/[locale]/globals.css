@@ -11,6 +11,10 @@
     --color-most-white: #fefefe;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 /* Main Color */
 .main-color {
     color: var(--color-primary);

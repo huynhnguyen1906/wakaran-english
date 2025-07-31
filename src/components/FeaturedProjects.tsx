@@ -67,7 +67,10 @@ export default function FeaturedProjects() {
         }
     }
     return (
-        <div className='mx-auto mb-20 w-full max-w-[1120px] max-md:mb-12 max-md:px-6'>
+        <div
+            id='projects'
+            className='mx-auto mb-20 w-full max-w-[1120px] max-md:mb-12 max-md:px-6'
+        >
             <div className='mx-auto md:px-6 lg:px-0'>
                 {/* PC用h2 */}
                 <h2 className='mb-4 hidden font-semibold md:block md:text-4xl md:leading-14 lg:text-5xl lg:leading-18'>

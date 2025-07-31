@@ -8,7 +8,10 @@ export default function Members() {
     const t = useTranslations('members')
 
     return (
-        <div className='mx-auto mt-12 mb-6 px-6 md:relative md:max-w-[1120px] md:pt-48 md:pb-24'>
+        <div
+            id='members'
+            className='mx-auto mt-12 mb-6 px-6 md:relative md:max-w-[1120px] md:pt-48 md:pb-24'
+        >
             <div
                 className='drop-shadow-light md:sticky md:top-1/2 md:z-20 md:flex md:-translate-y-1/2 md:flex-col md:items-center md:justify-center md:text-center'
                 style={{ mixBlendMode: 'difference' }}

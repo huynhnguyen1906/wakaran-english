@@ -16,7 +16,10 @@ export default function Contact() {
     }
 
     return (
-        <div className='bg-[#E1D9D6] p-6 md:py-12'>
+        <div
+            id='contact'
+            className='bg-[#E1D9D6] p-6 md:py-12'
+        >
             <div className='text-main-color mx-auto md:max-w-[1120px]'>
                 <p className='hidden md:mb-6 md:block md:text-center md:text-2xl'>{t('subtitle')}</p>
                 <h2 className='mb-2 text-2xl font-semibold md:mb-4 md:text-center md:text-4xl lg:text-5xl lg:leading-16'>
