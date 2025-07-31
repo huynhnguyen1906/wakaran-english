@@ -4,6 +4,8 @@ import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { NextIntlClientProvider, hasLocale } from 'next-intl'
 
+import ClarityAnalytics from '@/components/Microsoft/ClarityAnalytics'
+
 import './globals.css'
 
 const poppins = Poppins({
@@ -31,6 +33,7 @@ export default async function LocaleLayout({
         >
             <body className='bg-bgcolor no-scroll-x'>
                 <NextIntlClientProvider>{children}</NextIntlClientProvider>
+                <ClarityAnalytics />
             </body>
         </html>
     )
