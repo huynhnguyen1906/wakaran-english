@@ -1,14 +1,17 @@
-'use client'
+// src/app/about/page.tsx（例）
+import { fetchFeaturedProjects } from '@/lib/fetchFeaturedProjects'
 
 import AboutUs from './AboutUs'
 import Projects from './FeaturedProjects'
 import Introduction from './SelfIntroduction'
 
-export default function Abouts() {
+export default async function Abouts() {
+    const projects = await fetchFeaturedProjects()
+
     return (
         <div className='w-full'>
             <AboutUs />
-            <Projects />
+            <Projects projects={projects} />
             <Introduction />
         </div>
     )
