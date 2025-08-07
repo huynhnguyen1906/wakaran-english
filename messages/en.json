@@ -93,6 +93,9 @@
         "detailBtn": "view article",
         "nextBtnAlt": "this blog's detail"
     },
+    "blog-list":{
+        
+    },
     "contact": {
         "subtitle": "Let’s get social!",
         "titleTop": "we’d love to see you online!",
