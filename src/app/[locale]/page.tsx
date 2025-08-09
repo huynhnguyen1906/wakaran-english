@@ -4,6 +4,7 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
+import LatestPosts from '@/components/LatestPosts'
 import Members from '@/components/Members'
 
 export default function HomePage() {
@@ -14,6 +15,7 @@ export default function HomePage() {
             <Abouts />
             <Members />
             <Blog />
+            <LatestPosts />
             <Contact />
             <Footer />
         </div>

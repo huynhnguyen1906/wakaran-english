@@ -121,5 +121,13 @@
         "copyright": "2025©WAKARAN ENGISH",
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
+    },
+    "recommendPosts": {
+        "title": "推荐博客",
+        "blogTitle": "这是我的第一篇博客！",
+        "blogContent": "大家好！我是来自WAKARAN ENGLISH的ikuchan！\n在这一年里，我将和大家一起学习英语...",
+        "previousButton": "上一个",
+        "nextButton": "下一个",
+        "detailBtn": "阅读更多"
     }
 }

@@ -122,8 +122,8 @@
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
     },
-    "latestPosts": {
-        "title": "Latest Posts",
+    "recommendPosts": {
+        "title": "Recommend Posts",
         "blogTitle": "THERE IS MY FIRST BLOG!",
         "blogContent": "Hi there! I’m ikuchan from Wakaran English!\nI’m here to study English with you for this one year...",
         "previousButton": "Previous",

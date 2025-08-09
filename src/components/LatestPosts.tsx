@@ -7,7 +7,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 
 export default function LatestPosts() {
-    const t = useTranslations('latestPosts')
+    const t = useTranslations('recommendPosts')
     const scrollRef = useRef<HTMLDivElement>(null)
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [canScrollRight, setCanScrollRight] = useState(true)
