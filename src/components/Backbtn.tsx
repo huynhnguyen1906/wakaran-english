@@ -5,11 +5,15 @@ import {
     BreadcrumbItem,
     BreadcrumbLink,
     BreadcrumbList,
-    // BreadcrumbPage,
+    BreadcrumbPage,
     BreadcrumbSeparator,
 } from './ui/breadcrumb'
 
-const Backbtn = () => {
+interface BackbtnProps {
+    blogTitle?: string
+}
+
+const Backbtn = ({ blogTitle }: BackbtnProps) => {
     return (
         <div>
             <Breadcrumb>
@@ -21,10 +25,14 @@ const Backbtn = () => {
                     <BreadcrumbItem>
                         <BreadcrumbLink href='/blogs'>Blogs</BreadcrumbLink>
                     </BreadcrumbItem>
-                    {/* <BreadcrumbSeparator /> */}
-                    {/* <BreadcrumbItem>
-                        <BreadcrumbPage>Breadcrumb</BreadcrumbPage>
-                    </BreadcrumbItem> */}
+                    {blogTitle && (
+                        <>
+                            <BreadcrumbSeparator />
+                            <BreadcrumbItem>
+                                <BreadcrumbPage>{blogTitle}</BreadcrumbPage>
+                            </BreadcrumbItem>
+                        </>
+                    )}
                 </BreadcrumbList>
             </Breadcrumb>
         </div>
