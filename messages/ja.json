@@ -128,6 +128,8 @@
         "blogContent": "こんにちは！WAKARANENGLISHのいくちゃんです！\nこの1年間、皆さんと一緒に英語を勉強していきたいと思います...",
         "previousButton": "前へ",
         "nextButton": "次へ",
-        "detailBtn": "続きを読む"
+        "detailBtn": "続きを読む",
+        "dummyTitle": "ブログ",
+        "dummyDescription": "準備中..."
     }
 }

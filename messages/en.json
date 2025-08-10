@@ -91,7 +91,9 @@
         "blogTitle": "blog",
         "blogDescription": "Coming Soon...",
         "detailBtn": "view article",
-        "nextBtnAlt": "this blog's detail"
+        "nextBtnAlt": "this blog's detail",
+        "defaultTitle": "Blog",
+        "defaultDescription": "Coming Soon..."
     },
     "contact": {
         "subtitle": "Let’s get social!",
@@ -128,6 +130,8 @@
         "blogContent": "Hi there! I’m ikuchan from Wakaran English!\nI’m here to study English with you for this one year...",
         "previousButton": "Previous",
         "nextButton": "Next",
-        "detailBtn": "Read More"
+        "detailBtn": "Read More",
+        "dummyTitle": "Blog",
+        "dummyDescription": "Coming Soon..."
     }
 }

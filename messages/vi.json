@@ -128,6 +128,8 @@
         "blogContent": "Xin chào! Tôi là ikuchan đến từ Wakaran English!\nTôi sẽ học tiếng Anh cùng với các bạn trong một năm nay...",
         "previousButton": "Trước",
         "nextButton": "Tiếp",
-        "detailBtn": "Xem thêm"
+        "detailBtn": "Xem thêm",
+        "dummyTitle": "Blog",
+        "dummyDescription": "Đang chuẩn bị..."
     }
 }
