@@ -13,7 +13,7 @@ import Subscribe from './Subscribe'
 
 const BlogList = () => {
     return (
-        <div>
+        <div className='bg-[#EDECE8]'>
             <Header />
             <BlogCardLists />
             {/* <Blog/> */}

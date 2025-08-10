@@ -25,8 +25,8 @@ const BlogCardLists = () => {
 
             {/* header-section */}
             <header className='grid gap-4'>
-                <h1 className='main-color text-[32px] font-bold md:text-[48px]'>ALL BLOGS</h1>
-                <p className='text-sub-colo text-16px md:text-[24px]'>
+                <h1 className='main-color text-[32px] font-bold md:text-[48px]'>ALL BLOGS <span className='text-[12px] md:text-[24px]'>( 69 Posts )</span></h1>
+                <p className='text-[#4c4c4c] text-[14px] md:text-[24px]'>
                     We also share cool things about life in Osaka, and our members write blogs to help you learn and
                     connect.
                 </p>
@@ -36,7 +36,7 @@ const BlogCardLists = () => {
             <section className='grid md:grid-cols-5'>
                 {[...Array(10)].map((_, i) => (
                     <div
-                        className='mt-[32px] flex gap-[8px] md:block'
+                        className='mt-[32px] flex gap-[8px] md:block md:border-b-0 md:pb-0 border-b-2 pb-4'
                         key={i}
                     >
                         <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
