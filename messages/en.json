@@ -95,6 +95,9 @@
         "defaultTitle": "Blog",
         "defaultDescription": "Coming Soon..."
     },
+    "blog-list":{
+        
+    },
     "contact": {
         "subtitle": "Let’s get social!",
         "titleTop": "we’d love to see you online!",
