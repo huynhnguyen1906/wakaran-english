@@ -1,12 +1,12 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import LatestPosts from '@/components/LatestPosts'
+import RecommendPosts from '@/components/RecommendPosts'
 
 export default function BlogDetail() {
     return (
         <div>
             <Header />
-            <LatestPosts />
+            <RecommendPosts />
             <Footer />
         </div>
     )
