@@ -21,7 +21,7 @@ const BlogList = () => {
             {/* <LatestPosts/> */}
             {/* <PopularBlog/> */}
             <Subscribe />
-            <div className='my-[192px]'>
+            <div className='md:my-[192px] my-[80px]'>
                 <SelfIntroduction />
             </div>
             <Footer />
