@@ -121,5 +121,15 @@
         "copyright": "2025©WAKARAN ENGISH",
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
+    },
+    "recommendPosts": {
+        "title": "Bài viết đề xuất",
+        "blogTitle": "ĐÂY LÀ BLOG ĐẦU TIÊN CỦA TÔI!",
+        "blogContent": "Xin chào! Tôi là ikuchan đến từ Wakaran English!\nTôi sẽ học tiếng Anh cùng với các bạn trong một năm nay...",
+        "previousButton": "Trước",
+        "nextButton": "Tiếp",
+        "detailBtn": "Xem thêm",
+        "dummyTitle": "Blog",
+        "dummyDescription": "Đang chuẩn bị..."
     }
 }
