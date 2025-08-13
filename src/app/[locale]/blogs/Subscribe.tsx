@@ -6,34 +6,38 @@ import blogImage from '../../../../public/images/withiain.webp'
 
 const Subscribe = () => {
     return (
-        <div className='mx-auto my-20 w-full max-w-[1120px] px-6'>
-            <div className='grid grid-cols-2 items-center justify-between gap-10 rounded-2xl bg-[#ff5e2d]'>
-                <div className='space-y-6 md:ms-10'>
-                    <h1 className='text-main-color most-white text-3xl font-bold'>
+        <div className='mx-auto md:max-w-[1120px] md:px-6 md:py-0 md:mt-0 mt-[-120px]'>
+            <div className='grid items-center justify-between bg-[#ff5e2d] bg-radial-[at_200%_20%] from-[#FEFEFE] to-[#ff5e2d] to-80% md:grid-cols-2 pb-[48px] md:pb-0 md:gap-10 md:rounded-2xl'>
+                <div className='space-y-3 px-[16px] py-[40px] md:ms-10 md:space-y-6'>
+                    <h1 className='text-main-color most-white text-[24px] font-bold md:text-3xl'>
                         We’d love to see you online! Follow us below!
                     </h1>
-                    <p className='most-white'>Follow us on Instagram for daily stories in Osaka!</p>
-                    <button className='flex items-center gap-4 most-white-bg rounded-lg px-6 py-3' >
+                    <p className='most-white text-[16px] md:text-[16px]'>
+                        Follow us on Instagram for daily stories in Osaka!
+                    </p>
+                    <button className='most-white-bg mt-[24px] flex items-center gap-4 rounded-lg px-8 py-3 md:mt-0 md:px-8 md:py-2'>
                         <a href='https://www.youtube.com/@WakaranEnglish'>Youtube</a>
-                        <Image
-                            src='/images/playButton.png'
-                            // alt={t('playButtonAlt')}
-                            alt='Play Button'
-                            width={45}
-                            height={45}
-                            className='object-cover'
-                        />
+                        <div className='relative h-[20px] w-[20px] md:h-[45px] md:w-[45px]'>
+                            <Image
+                                src='/images/playButton.png'
+                                // alt={t('playButtonAlt')}
+                                alt='Play Button'
+                                fill
+                                className='object-cover'
+                            />
+                        </div>
                     </button>
-                    
                 </div>
 
-                <div className='relative h-[400px] w-full overflow-hidden rounded-2xl'>
-                    <Image
-                        src={blogImage}
-                        alt='Subscribe Image'
-                        className='rounded-2xl object-cover'
-                        fill
-                    />
+                <div className='px-[16px] md:px-0'>
+                    <div className='relative h-[200px] w-full overflow-hidden md:h-[400px]'>
+                        <Image
+                            src={blogImage}
+                            alt='Subscribe Image'
+                            className='object-cover rounded-md md:rounded-2xl'
+                            fill
+                        />
+                    </div>
                 </div>
             </div>
         </div>

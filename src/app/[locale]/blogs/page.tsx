@@ -13,7 +13,7 @@ import Subscribe from './Subscribe'
 
 const BlogList = () => {
     return (
-        <div>
+        <div className='bg-[#EDECE8]'>
             <Header />
             <BlogCardLists />
             {/* <Blog/> */}
@@ -21,7 +21,7 @@ const BlogList = () => {
             {/* <LatestPosts/> */}
             {/* <PopularBlog/> */}
             <Subscribe />
-            <div className='my-[192px]'>
+            <div className='md:my-[192px] my-[80px]'>
                 <SelfIntroduction />
             </div>
             <Footer />

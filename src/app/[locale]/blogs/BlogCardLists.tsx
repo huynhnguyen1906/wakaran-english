@@ -33,30 +33,30 @@ const blogData = [
 
 const BlogCardLists = () => {
     return (
-        <div className='mx-auto mt-[40px] mb-48 w-full max-w-[1120px]'>
+        <div className='mx-auto mt-[40px] mb-48 w-full max-w-[1120px] px-5'>
             {/* page-navigation-btn */}
             <div className='mb-[40px]'>
+                <Backbtn />
                 <Backbtn />
             </div>
 
             {/* header-section */}
             <header className='grid gap-4'>
-                <h1 className='main-color text-4xl font-bold'>ALL BLOGS</h1>
-                <p className='text-sub-color'>
+                <h1 className='main-color text-[32px] font-bold md:text-[48px]'>ALL BLOGS <span className='text-[12px] md:text-[24px]'>( 69 Posts )</span></h1>
+                <p className='text-[#4c4c4c] text-[14px] md:text-[24px]'>
                     We also share cool things about life in Osaka, and our members write blogs to help you learn and
                     connect.
                 </p>
             </header>
 
             {/* blog-card-section */}
-            <section className='grid grid-cols-5'>
-                {blogData.map((blog) => (
-                    <Link
-                        key={blog.id}
-                        href={`/blogs/${blog.id}`}
-                        className='mt-[32px] block transition-transform hover:scale-105'
+            <section className='grid md:grid-cols-5'>
+                {[...Array(10)].map((_, i) => (
+                    <div
+                        className='mt-[32px] flex gap-[8px] md:block md:border-b-0 md:pb-0 border-b-2 pb-4'
+                        key={i}
                     >
-                        <div className='card-image relative h-[115px] w-[205px]'>
+                        <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
                             <Image
                                 fill
                                 alt='blog-card-image'
@@ -64,12 +64,19 @@ const BlogCardLists = () => {
                                 className='rounded-lg object-cover'
                             />
                         </div>
-                        <div className='card-desc mt-[8px]'>
-                            <p className='text-main-color font-semibold'>{blog.title}</p>
-                        </div>
-                        <div className='mt-[16px]'>
-                            <p className='text-sm'>Post Member：{blog.author}</p>
-                            <p className='off-color text-sm'>Posted day {blog.date}</p>
+
+                        <div>
+                            <div className='card-desc mt-[8px]'>
+                                <p className='text-main-color text-[16px] font-semibold'>WE ARE WAKARAN ENGLISH!</p>
+                            </div>
+                            <div className='mt-[16px] flex gap-[8px] md:block'>
+                                <p className='text-[12px]'>
+                                    <span className='hidden md:inline'>Post Member:</span> HuYnH
+                                </p>
+                                <p className='off-color text-[12px]'>
+                                    <span className='hidden md:inline'>Posted day </span> 2025/07/08
+                                </p>
+                            </div>
                         </div>
                     </Link>
                 ))}
