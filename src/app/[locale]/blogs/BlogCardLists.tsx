@@ -2,8 +2,6 @@ import React from 'react'
 
 import Image from 'next/image'
 
-import { Link } from '@/i18n/navigation'
-
 import Backbtn from '@/components/Backbtn'
 import {
     Pagination,
@@ -17,33 +15,20 @@ import {
 
 import cardImage from '../../../../public/images/heroImg.jpg'
 
-// ダミーブログデータ
-const blogData = [
-    { id: 1, title: 'WE ARE WAKARAN ENGLISH!', author: 'HuYnH', date: '2025/07/08' },
-    { id: 2, title: 'Learning English in Osaka', author: 'Yuki', date: '2025/07/07' },
-    { id: 3, title: 'Cultural Exchange Experience', author: 'Aya', date: '2025/07/06' },
-    { id: 4, title: 'English Study Tips', author: 'Iain', date: '2025/07/05' },
-    { id: 5, title: 'Life in Japan as International Student', author: 'HuYnH', date: '2025/07/04' },
-    { id: 6, title: 'Japanese vs English Grammar', author: 'Yuki', date: '2025/07/03' },
-    { id: 7, title: 'Best Places to Practice English', author: 'Aya', date: '2025/07/02' },
-    { id: 8, title: 'Language Exchange Events', author: 'Iain', date: '2025/07/01' },
-    { id: 9, title: 'Motivation for Language Learning', author: 'HuYnH', date: '2025/06/30' },
-    { id: 10, title: 'Common English Mistakes', author: 'Yuki', date: '2025/06/29' },
-]
-
 const BlogCardLists = () => {
     return (
         <div className='mx-auto mt-[40px] mb-48 w-full max-w-[1120px] px-5'>
             {/* page-navigation-btn */}
             <div className='mb-[40px]'>
                 <Backbtn />
-                <Backbtn />
             </div>
 
             {/* header-section */}
             <header className='grid gap-4'>
-                <h1 className='main-color text-[32px] font-bold md:text-[48px]'>ALL BLOGS <span className='text-[12px] md:text-[24px]'>( 69 Posts )</span></h1>
-                <p className='text-[#4c4c4c] text-[14px] md:text-[24px]'>
+                <h1 className='main-color text-[32px] font-bold md:text-[48px]'>
+                    ALL BLOGS <span className='text-[12px] md:text-[24px]'>( 69 Posts )</span>
+                </h1>
+                <p className='text-[14px] text-[#4c4c4c] md:text-[24px]'>
                     We also share cool things about life in Osaka, and our members write blogs to help you learn and
                     connect.
                 </p>
@@ -53,7 +38,7 @@ const BlogCardLists = () => {
             <section className='grid md:grid-cols-5'>
                 {[...Array(10)].map((_, i) => (
                     <div
-                        className='mt-[32px] flex gap-[8px] md:block md:border-b-0 md:pb-0 border-b-2 pb-4'
+                        className='mt-[32px] flex gap-[8px] border-b-2 pb-4 md:block md:border-b-0 md:pb-0'
                         key={i}
                     >
                         <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
@@ -78,7 +63,7 @@ const BlogCardLists = () => {
                                 </p>
                             </div>
                         </div>
-                    </Link>
+                    </div>
                 ))}
             </section>
 
