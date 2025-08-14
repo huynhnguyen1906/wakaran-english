@@ -14,8 +14,12 @@ import {
 } from '@/components/ui/pagination'
 
 import cardImage from '../../../../public/images/heroImg.jpg'
+import { useTranslations } from 'next-intl'
 
 const BlogCardLists = () => {
+
+    const t = useTranslations('blog');
+
     return (
         <div className='mx-auto mt-[40px] mb-48 w-full max-w-[1120px] px-5'>
             {/* page-navigation-btn */}
@@ -25,10 +29,11 @@ const BlogCardLists = () => {
 
             {/* header-section */}
             <header className='grid gap-4'>
-                <h1 className='main-color text-[32px] font-bold md:text-[48px]'>ALL BLOGS <span className='text-[12px] md:text-[24px]'>( 69 Posts )</span></h1>
-                <p className='text-[#4c4c4c] text-[14px] md:text-[24px]'>
-                    We also share cool things about life in Osaka, and our members write blogs to help you learn and
-                    connect.
+                <h1 className='main-color text-[32px] font-bold md:text-[48px]'>
+                    ALL BLOGS <span className='text-[12px] md:text-[24px]'>( 69 Posts )</span>
+                </h1>
+                <p className='text-[14px] text-[#4c4c4c] md:text-[24px]'>
+                    {t('description')}
                 </p>
             </header>
 
@@ -36,7 +41,7 @@ const BlogCardLists = () => {
             <section className='grid md:grid-cols-5'>
                 {[...Array(10)].map((_, i) => (
                     <div
-                        className='mt-[32px] flex gap-[8px] md:block md:border-b-0 md:pb-0 border-b-2 pb-4'
+                        className='mt-[32px] flex gap-[8px] border-b-2 pb-4 md:block md:border-b-0 md:pb-0'
                         key={i}
                     >
                         <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
@@ -75,7 +80,7 @@ const BlogCardLists = () => {
                         <PaginationItem className='flex'>
                             {[...Array(3)].map((_, i) => (
                                 <div key={i}>
-                                    <PaginationLink href='#'>{i}</PaginationLink>
+                                    <PaginationLink href='#'>{i + 1}</PaginationLink>
                                 </div>
                             ))}
                         </PaginationItem>

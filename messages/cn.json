@@ -93,6 +93,10 @@
         "detailBtn": "查看文章",
         "nextBtnAlt": "此博客的详情"
     },
+    "subscribe": {
+        "title": "期待您的线上见面！请在下方关注我们！",
+        "desc": "在 Instagram 上关注我们，获取大阪每日精彩内容！"
+    },
     "contact": {
         "subtitle": "让我们一起兴奋起来！",
         "titleTop": "期待您在社交媒体上关注我们！",
