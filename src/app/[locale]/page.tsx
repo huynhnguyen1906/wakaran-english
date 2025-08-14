@@ -6,14 +6,18 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Members from '@/components/Members'
 
-export default function HomePage() {
+import { fetchPopularPosts } from '@/lib/fetchPopularPosts'
+
+export default async function HomePage() {
+    const blogPosts = await fetchPopularPosts()
+
     return (
         <div className='w-full'>
             <Header />
             <Hero />
             <Abouts />
             <Members />
-            <Blog />
+            <Blog blogPosts={blogPosts} />
             <Contact />
             <Footer />
         </div>
