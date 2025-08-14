@@ -16,12 +16,8 @@ const BlogList = () => {
         <div className='bg-[#EDECE8]'>
             <Header />
             <BlogCardLists />
-            {/* <Blog/> */}
-
-            {/* <LatestPosts/> */}
-            {/* <PopularBlog/> */}
             <Subscribe />
-            <div className='md:my-[192px] my-[80px]'>
+            <div className='my-[80px] md:my-[192px]'>
                 <SelfIntroduction />
             </div>
             <Footer />

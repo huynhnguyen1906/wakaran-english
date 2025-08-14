@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { useTranslations } from 'next-intl'
 
@@ -38,9 +39,10 @@ const BlogCardLists = () => {
             {/* blog-card-section */}
             <section className='grid md:grid-cols-5'>
                 {[...Array(10)].map((_, i) => (
-                    <div
+                    <Link
                         className='mt-[32px] flex gap-[8px] border-b-2 pb-4 md:block md:border-b-0 md:pb-0'
                         key={i}
+                        href={`/blog/${i}`}
                     >
                         <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
                             <Image
@@ -64,7 +66,7 @@ const BlogCardLists = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </section>
 
