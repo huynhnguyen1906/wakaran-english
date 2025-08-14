@@ -98,6 +98,10 @@
     "blog-list":{
         
     },
+    "subscribe": {
+        "title": "We’d love to see you online! Follow us below!",
+        "desc": "Follow us on Instagram for daily stories in Osaka!"
+    },
     "contact": {
         "subtitle": "Let’s get social!",
         "titleTop": "we’d love to see you online!",

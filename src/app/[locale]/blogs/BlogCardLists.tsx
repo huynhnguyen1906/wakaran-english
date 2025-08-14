@@ -2,6 +2,8 @@ import React from 'react'
 
 import Image from 'next/image'
 
+import { useTranslations } from 'next-intl'
+
 import Backbtn from '@/components/Backbtn'
 import {
     Pagination,
@@ -16,6 +18,8 @@ import {
 import cardImage from '../../../../public/images/heroImg.jpg'
 
 const BlogCardLists = () => {
+    const t = useTranslations('blog')
+
     return (
         <div className='mx-auto mt-[40px] mb-48 w-full max-w-[1120px] px-5'>
             {/* page-navigation-btn */}
@@ -28,10 +32,7 @@ const BlogCardLists = () => {
                 <h1 className='main-color text-[32px] font-bold md:text-[48px]'>
                     ALL BLOGS <span className='text-[12px] md:text-[24px]'>( 69 Posts )</span>
                 </h1>
-                <p className='text-[14px] text-[#4c4c4c] md:text-[24px]'>
-                    We also share cool things about life in Osaka, and our members write blogs to help you learn and
-                    connect.
-                </p>
+                <p className='text-[14px] text-[#4c4c4c] md:text-[24px]'>{t('description')}</p>
             </header>
 
             {/* blog-card-section */}
@@ -77,7 +78,7 @@ const BlogCardLists = () => {
                         <PaginationItem className='flex'>
                             {[...Array(3)].map((_, i) => (
                                 <div key={i}>
-                                    <PaginationLink href='#'>{i}</PaginationLink>
+                                    <PaginationLink href='#'>{i + 1}</PaginationLink>
                                 </div>
                             ))}
                         </PaginationItem>

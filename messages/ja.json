@@ -50,7 +50,11 @@
                 "name": "aya",
                 "msg": "洋楽大好きでーす！ 海外にも行ってみたい！",
                 "mobileMsg": "洋楽大好きでーす!",
-                "tags": ["兵庫県", "女性", "ESFJ"]
+                "tags": [
+                    "兵庫県",
+                    "女性",
+                    "ESFJ"
+                ]
             },
             "futama": {
                 "imgPath": "/images/futama.webp",
@@ -58,7 +62,11 @@
                 "name": "ふうたま",
                 "msg": "海外文化に興味があります！",
                 "mobileMsg": "海外文化に興味があります！",
-                "tags": ["兵庫県", "男性", "ENFP"]
+                "tags": [
+                    "兵庫県",
+                    "男性",
+                    "ENFP"
+                ]
             },
             "ikuchan": {
                 "imgPath": "/images/ikuchan.webp",
@@ -66,7 +74,11 @@
                 "name": "いくちゃん",
                 "msg": "ヨーロッパに行ってみたい！！！",
                 "mobileMsg": "ヨーロッパに行ってみたい！！！",
-                "tags": ["沖縄県", "男性", "INFP"]
+                "tags": [
+                    "沖縄県",
+                    "男性",
+                    "INFP"
+                ]
             },
             "huynh": {
                 "imgPath": "/images/huynh.webp",
@@ -74,7 +86,11 @@
                 "name": "HuYnH",
                 "msg": "日本で生活するのに精一杯です :((((",
                 "mobileMsg": "日本で生活するのに精一杯 :((((",
-                "tags": ["ベトナム", "男性", "ENTP"]
+                "tags": [
+                    "ベトナム",
+                    "男性",
+                    "ENTP"
+                ]
             },
             "yuki": {
                 "imgPath": "/images/yuki.webp",
@@ -82,7 +98,11 @@
                 "name": "ユキ a.k.a Alex",
                 "msg": "言語を勉強する時に一番大事なのは「Speaking」です!",
                 "mobileMsg": "Speakingが大事!",
-                "tags": ["ミャンマー", "男性", "ENFJ"]
+                "tags": [
+                    "ミャンマー",
+                    "男性",
+                    "ENFJ"
+                ]
             }
         }
     },
@@ -92,6 +112,10 @@
         "blogDescription": "準備中...",
         "detailBtn": "記事を見る",
         "nextBtnAlt": "このブログの詳細"
+    },
+    "subscribe": {
+        "title": "オンラインでお会いできるのを楽しみにしています！下記からフォローしてください！",
+        "desc": "大阪の日々のストーリーをお届けするInstagramをフォローしてください！"
     },
     "contact": {
         "subtitle": "一緒に盛り上がろう!",
