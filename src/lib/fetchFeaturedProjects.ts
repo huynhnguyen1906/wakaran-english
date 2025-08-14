@@ -20,7 +20,8 @@ interface WPProjectFromAPI {
 }
 
 export async function fetchFeaturedProjects(): Promise<ProjectCard[]> {
-    const endpoint = 'http://api.wakaran-eng.com/wp-json/api/v1/feature-projects'
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL
+    const endpoint = `${baseUrl}/wp-json/api/v1/feature-projects`
     const res = await fetch(endpoint, { cache: 'no-store' })
     if (!res.ok) throw new Error(`WP API ${res.status}`)
 

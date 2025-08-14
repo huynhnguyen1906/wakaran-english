@@ -34,7 +34,7 @@
         "greeting": "Hello",
         "title": "WE ARE",
         "titleHighlight": "WAKARAN ENGLISH!",
-        "description": "We are a group of students from ECC Computer College's Website Design Course, creating English-learning content \nto improve our skills and connect with learners like you.",
+        "description": "We are students learning web design, creating English learning content while \nimproving our skills and aiming to connect with English learners like you.",
         "thumbnailAlt": "Self Introduction Thumbnail",
         "playButtonAlt": "YouTube Play Button"
     },
@@ -95,9 +95,7 @@
         "defaultTitle": "Blog",
         "defaultDescription": "Coming Soon..."
     },
-    "blog-list":{
-        
-    },
+    "blog-list": {},
     "subscribe": {
         "title": "We’d love to see you online! Follow us below!",
         "desc": "Follow us on Instagram for daily stories in Osaka!"
