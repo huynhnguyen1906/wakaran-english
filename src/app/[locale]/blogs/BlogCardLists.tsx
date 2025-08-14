@@ -42,7 +42,7 @@ const BlogCardLists = () => {
                     <Link
                         className='mt-[32px] flex gap-[8px] border-b-2 pb-4 md:block md:border-b-0 md:pb-0'
                         key={i}
-                        href={`/blog/${i}`}
+                        href={`/blogs/${i}`}
                     >
                         <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
                             <Image

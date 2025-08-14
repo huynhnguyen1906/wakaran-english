@@ -8,7 +8,7 @@ import Members from '@/components/Members'
 
 export default function HomePage() {
     return (
-        <div className='w-full'>
+        <div className='w-full bg-[#EDECE8]'>
             <Header />
             <Hero />
             <Abouts />

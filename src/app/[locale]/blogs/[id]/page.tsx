@@ -16,7 +16,7 @@ export default function BlogDetail({ params }: BlogDetailProps) {
     const blogId = parseInt(params.id)
 
     return (
-        <div className='bg-[#edece8] md:bg-[#fefefe]'>
+        <div>
             <Header />
 
             <div className='md mx-auto mt-[40px] mb-24 w-full max-w-[1120px] px-6'>
