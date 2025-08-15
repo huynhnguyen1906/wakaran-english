@@ -93,9 +93,16 @@
         "detailBtn": "記事を見る",
         "nextBtnAlt": "このブログの詳細"
     },
+    "blogList": {
+        "title": "すべてのブログ",
+        "postsCount": "件の投稿",
+        "postMember": "投稿者:",
+        "postDate": "投稿日",
+        "noPostsFound": "投稿が見つかりませんでした。"
+    },
     "subscribe": {
         "title": "オンラインでお会いできるのを楽しみにしています！下記からフォローしてください！",
-        "desc": "大阪の日々のストーリーをお届けするInstagramをフォローしてください！"
+        "desc": "インタビューを中心に動画アップしています！ぜひチャンネル登録してチェックしてください"
     },
     "contact": {
         "subtitle": "一緒に盛り上がろう!",

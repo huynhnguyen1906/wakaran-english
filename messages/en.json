@@ -95,10 +95,17 @@
         "defaultTitle": "Blog",
         "defaultDescription": "Coming Soon..."
     },
+    "blogList": {
+        "title": "ALL BLOGS",
+        "postsCount": "Posts",
+        "postMember": "Post Member:",
+        "postDate": "Posted day",
+        "noPostsFound": "No posts found."
+    },
     "blog-list": {},
     "subscribe": {
         "title": "We’d love to see you online! Follow us below!",
-        "desc": "Follow us on Instagram for daily stories in Osaka!"
+        "desc": "I mainly upload interview videos! Please subscribe to my channel and check them out."
     },
     "contact": {
         "subtitle": "Let’s get social!",

@@ -1,7 +1,9 @@
 import React from 'react'
 
 import Image from 'next/image'
-import Link from 'next/link'
+
+import { Link } from '@/i18n/navigation'
+import { getTranslations } from 'next-intl/server'
 
 import Backbtn from '@/components/Backbtn'
 import {
@@ -18,8 +20,25 @@ import { type BlogPost, fetchBlogPosts } from '@/lib/fetchBlogPosts'
 
 import cardImage from '../../../../public/images/heroImg.jpg'
 
-const BlogCardLists = async () => {
+const BlogCardLists = async ({ params }: { params: Promise<{ locale: string }> }) => {
+    const { locale } = await params
+    const t = await getTranslations('blogList')
     const posts = await fetchBlogPosts()
+
+    // ロケールに基づく日付フォーマット
+    const getLocalizedDateFormat = (locale: string) => {
+        switch (locale) {
+            case 'en':
+                return 'en-US'
+            case 'cn':
+                return 'zh-CN'
+            case 'vi':
+                return 'vi-VN'
+            case 'ja':
+            default:
+                return 'ja-JP'
+        }
+    }
 
     return (
         <div className='mx-auto mt-[40px] mb-48 w-full max-w-[1120px] px-5'>
@@ -31,7 +50,10 @@ const BlogCardLists = async () => {
             {/* header-section */}
             <header className='grid gap-4'>
                 <h1 className='main-color text-[32px] font-bold md:text-[48px]'>
-                    ALL BLOGS <span className='text-[12px] md:text-[24px]'>( {posts.length} Posts )</span>
+                    {t('title')}{' '}
+                    <span className='text-[12px] md:text-[24px]'>
+                        ( {posts.length} {t('postsCount')} )
+                    </span>
                 </h1>
                 <p className='text-[14px] text-[#4c4c4c] md:text-[24px]'></p>
             </header>
@@ -62,18 +84,21 @@ const BlogCardLists = async () => {
                                 </div>
                                 <div className='mt-[16px] flex gap-[8px] md:block'>
                                     <p className='text-[12px]'>
-                                        <span className='hidden md:inline'>Post Member:</span> {post.author.name}
+                                        <span className='hidden md:inline'>{t('postMember')} </span>
+                                        {post.author.name}
                                     </p>
                                     <p className='text-[12px] text-[#8D8D8D]'>
-                                        <span className='hidden md:inline'>Posted day </span>
-                                        {new Date(post.date.published).toLocaleDateString('ja-JP')}
+                                        <span className='hidden md:inline'>{t('postDate')} </span>
+                                        {new Date(post.date.published).toLocaleDateString(
+                                            getLocalizedDateFormat(locale)
+                                        )}
                                     </p>
                                 </div>
                             </div>
                         </Link>
                     ))
                 :   <div className='col-span-full mt-[32px] text-center'>
-                        <p className='text-[16px] text-[#4c4c4c]'>投稿が見つかりませんでした。</p>
+                        <p className='text-[16px] text-[#4c4c4c]'>{t('noPostsFound')}</p>
                     </div>
                 }
             </section>

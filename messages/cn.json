@@ -93,9 +93,16 @@
         "detailBtn": "查看文章",
         "nextBtnAlt": "此博客的详情"
     },
+    "blogList": {
+        "title": "所有博客",
+        "postsCount": "篇文章",
+        "postMember": "发布者：",
+        "postDate": "发布日期",
+        "noPostsFound": "未找到文章。"
+    },
     "subscribe": {
         "title": "期待您的线上见面！请在下方关注我们！",
-        "desc": "在 Instagram 上关注我们，获取大阪每日精彩内容！"
+        "desc": "我主要上传采访视频！请订阅我的频道并关注"
     },
     "contact": {
         "subtitle": "让我们一起兴奋起来！",

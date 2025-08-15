@@ -11,11 +11,11 @@ import Subscribe from './Subscribe'
 
 // import Blog from '@/components/Blog'
 
-const BlogList = () => {
+const BlogList = async ({ params }: { params: Promise<{ locale: string }> }) => {
     return (
         <div className='bg-[#EDECE8]'>
             <Header />
-            <BlogCardLists />
+            <BlogCardLists params={params} />
             <Subscribe />
             <div className='my-[80px] md:my-[192px]'>
                 <SelfIntroduction />

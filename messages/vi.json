@@ -93,9 +93,16 @@
         "detailBtn": "Xem bài viết",
         "nextBtnAlt": "Chi tiết blog này"
     },
+    "blogList": {
+        "title": "TẤT CẢ BLOG",
+        "postsCount": "Bài viết",
+        "postMember": "Tác giả:",
+        "postDate": "Ngày đăng",
+        "noPostsFound": "Không tìm thấy bài viết nào."
+    },
     "subscribe": {
         "title": "Chúng tôi rất mong được gặp bạn trực tuyến! Hãy theo dõi chúng tôi bên dưới!",
-        "desc": "Theo dõi chúng tôi trên Instagram để cập nhật những câu chuyện hàng ngày ở Osaka!"
+        "desc": "Tôi chủ yếu đăng các video phỏng vấn! Hãy đăng ký kênh của tôi và theo dõi nhé"
     },
     "contact": {
         "subtitle": "Hãy cùng nhau hào hứng!",
