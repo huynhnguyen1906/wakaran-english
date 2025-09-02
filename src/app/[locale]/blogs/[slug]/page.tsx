@@ -1,4 +1,5 @@
 // import Image from 'next/image'
+import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { formatDate } from '@/utils/textUtils'
@@ -8,6 +9,9 @@ import Backbtn from '@/components/Backbtn'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import RecommendPostsServer from '@/components/RecommendPostsServer'
+
+import { generateBlogMetadata } from '@/lib/metadata'
+import { generateBlogPostSchema, generateBreadcrumbSchema } from '@/lib/structuredData'
 
 interface BlogDetailProps {
     params: Promise<{
@@ -68,6 +72,31 @@ async function fetchBlogPost(slug: string): Promise<WordPressPost | null> {
     }
 }
 
+// Generate metadata for blog post
+export async function generateMetadata({ params }: BlogDetailProps): Promise<Metadata> {
+    const { locale, slug } = await params
+
+    // Fetch blog post data for metadata
+    const post = await fetchBlogPost(slug)
+
+    if (!post) {
+        return {
+            title: 'Post Not Found | Wakaran English',
+            description: 'The requested blog post could not be found.',
+        }
+    }
+
+    return generateBlogMetadata(
+        post.title,
+        post.excerpt,
+        slug,
+        locale,
+        post.date.published,
+        post.author.name,
+        post.featured_image?.url
+    )
+}
+
 export default async function BlogDetail({ params }: BlogDetailProps) {
     const { slug } = await params
 
@@ -81,8 +110,38 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
         notFound()
     }
 
+    // Generate structured data
+    const blogPostSchema = generateBlogPostSchema(
+        post.title,
+        post.content,
+        post.date.published,
+        post.author.name,
+        post.featured_image?.url,
+        `/${slug}/blogs/${slug}`
+    )
+
+    const breadcrumbSchema = generateBreadcrumbSchema([
+        { name: 'Home', url: `/${slug}` },
+        { name: 'Blogs', url: `/${slug}/blogs` },
+        { name: post.title, url: `/${slug}/blogs/${slug}` },
+    ])
+
     return (
         <div>
+            {/* Structured Data */}
+            <script
+                type='application/ld+json'
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(blogPostSchema),
+                }}
+            />
+            <script
+                type='application/ld+json'
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(breadcrumbSchema),
+                }}
+            />
+
             <Header />
 
             <div className='mx-auto mt-[40px] mb-24 w-full max-w-[1120px] px-6'>
