@@ -3,6 +3,8 @@
 import { useEffect, useRef, useState } from 'react'
 
 import Image from 'next/image'
+import Link from 'next/link'
+import { useParams } from 'next/navigation'
 
 import { useTranslations } from 'next-intl'
 
@@ -11,6 +13,7 @@ type Post = {
     title: string
     description: string
     imageUrl: string
+    slug: string
 }
 
 type Props = {
@@ -19,6 +22,8 @@ type Props = {
 
 export default function RecommendPostsClient({ initialPosts }: Props) {
     const t = useTranslations('recommendPosts')
+    const params = useParams()
+    const locale = params.locale as string
     const scrollRef = useRef<HTMLDivElement>(null)
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [canScrollRight, setCanScrollRight] = useState(true)
@@ -44,6 +49,7 @@ export default function RecommendPostsClient({ initialPosts }: Props) {
                 title: t('dummyTitle'),
                 description: t('dummyDescription'),
                 imageUrl: '/images/heroImg_phone.webp',
+                slug: '', // dummy slug
             })
         }
 
@@ -99,16 +105,31 @@ export default function RecommendPostsClient({ initialPosts }: Props) {
                                         {truncate(p.description || t('dummyDescription'), 60)}
                                     </p>
                                 </div>
-                                <button className='text-bg-color most-white flex items-center gap-2 rounded-[10px] px-10 py-3 text-sm hover:cursor-pointer md:rounded-xl md:text-base'>
-                                    {t('detailBtn')}
-                                    <Image
-                                        src='/images/next_btn.svg'
-                                        alt={t('nextButton')}
-                                        width={24}
-                                        height={24}
-                                        className='aspect-square w-5 md:w-6'
-                                    />
-                                </button>
+                                {p.slug ?
+                                    <Link
+                                        href={`/${locale}/blogs/${p.slug}`}
+                                        className='text-bg-color most-white inline-flex items-center gap-x-1 rounded-[10px] px-12 py-3.5 text-sm md:rounded-xl md:px-10 md:py-3 md:text-base'
+                                    >
+                                        {t('detailBtn')}
+                                        <Image
+                                            src='/images/next_btn.svg'
+                                            alt={t('nextButton')}
+                                            width={24}
+                                            height={24}
+                                            className='aspect-square w-5 md:w-6'
+                                        />
+                                    </Link>
+                                :   <button className='text-bg-color most-white inline-flex items-center gap-x-1 rounded-[10px] px-12 py-3.5 text-sm md:rounded-xl md:px-10 md:py-3 md:text-base'>
+                                        {t('detailBtn')}
+                                        <Image
+                                            src='/images/next_btn.svg'
+                                            alt={t('nextButton')}
+                                            width={24}
+                                            height={24}
+                                            className='aspect-square w-5 md:w-6'
+                                        />
+                                    </button>
+                                }
                             </div>
                         )
                     })}

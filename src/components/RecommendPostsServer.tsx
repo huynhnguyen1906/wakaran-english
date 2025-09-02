@@ -5,6 +5,7 @@ type Post = {
     title: string
     description: string
     imageUrl: string
+    slug: string
 }
 
 type WordPressPost = {
@@ -43,6 +44,7 @@ function transformWordPressPost(wpPost: WordPressPost): Post {
         title: wpPost.title,
         description: wpPost.excerpt,
         imageUrl: wpPost.featured_image?.url || '/images/heroImg.jpg',
+        slug: wpPost.slug,
     }
 }
 
