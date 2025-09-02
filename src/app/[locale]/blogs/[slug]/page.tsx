@@ -11,6 +11,7 @@ interface BlogDetailProps {
 }
 
 export default async function BlogDetail({ params }: BlogDetailProps) {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { locale, slug } = await params
     const blogId = parseInt(slug)
 
