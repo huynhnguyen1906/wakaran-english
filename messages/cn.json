@@ -142,5 +142,9 @@
         "detailBtn": "阅读更多",
         "dummyTitle": "博客",
         "dummyDescription": "准备中..."
+    },
+    "blogDetail": {
+        "views": "回视听",
+        "by": "by"
     }
 }

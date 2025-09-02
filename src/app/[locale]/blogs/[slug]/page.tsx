@@ -2,6 +2,7 @@
 import { notFound } from 'next/navigation'
 
 import { formatDate } from '@/utils/textUtils'
+import { getTranslations } from 'next-intl/server'
 
 import Backbtn from '@/components/Backbtn'
 import Footer from '@/components/Footer'
@@ -70,6 +71,9 @@ async function fetchBlogPost(slug: string): Promise<WordPressPost | null> {
 export default async function BlogDetail({ params }: BlogDetailProps) {
     const { slug } = await params
 
+    // Get translations
+    const t = await getTranslations('blogDetail')
+
     // Fetch blog post data
     const post = await fetchBlogPost(slug)
 
@@ -116,9 +120,11 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
                                         d='M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z'
                                     />
                                 </svg>
-                                {post.views} views
+                                {post.views} {t('views')}
                             </span>
-                            <span>by {post.author.name}</span>
+                            <span>
+                                {t('by')} {post.author.name}
+                            </span>
                         </div>
 
                         {/* Featured Image */}

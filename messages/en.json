@@ -145,5 +145,9 @@
         "detailBtn": "Read More",
         "dummyTitle": "Blog",
         "dummyDescription": "Coming Soon..."
+    },
+    "blogDetail": {
+        "views": "Views",
+        "by": "by"
     }
 }

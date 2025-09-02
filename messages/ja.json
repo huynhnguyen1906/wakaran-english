@@ -142,5 +142,9 @@
         "detailBtn": "続きを読む",
         "dummyTitle": "ブログ",
         "dummyDescription": "準備中..."
+    },
+    "blogDetail": {
+        "views": "回視聴",
+        "by": "投稿者"
     }
 }

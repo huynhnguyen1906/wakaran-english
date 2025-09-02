@@ -142,5 +142,9 @@
         "detailBtn": "Xem thêm",
         "dummyTitle": "Blog",
         "dummyDescription": "Đang chuẩn bị..."
+    },
+    "blogDetail": {
+        "views": "Lượt xem",
+        "by": "bởi"
     }
 }
