@@ -25,7 +25,7 @@ export const defaultSEO: Record<string, SEOConfig> = {
             'English study',
             'English improvement',
         ],
-        image: '/images/wakaranenglogo1.png',
+        image: '/images/heroImg_phone.webp',
     },
     vi: {
         title: 'Wakaran English - Học Tiếng Anh Thú Vị & Tương Tác',
@@ -43,7 +43,7 @@ export const defaultSEO: Record<string, SEOConfig> = {
             'nghiên cứu tiếng Anh',
             'cải thiện tiếng Anh',
         ],
-        image: '/images/wakaranenglogo1.png',
+        image: '/images/heroImg_phone.webp',
     },
     ja: {
         title: 'Wakaran English - 楽しくインタラクティブな英語学習',
@@ -61,7 +61,7 @@ export const defaultSEO: Record<string, SEOConfig> = {
             '英語研究',
             '英語向上',
         ],
-        image: '/images/wakaranenglogo1.png',
+        image: '/images/heroImg_phone.webp',
     },
     cn: {
         title: 'Wakaran English - 有趣互动的英语学习',
@@ -79,14 +79,14 @@ export const defaultSEO: Record<string, SEOConfig> = {
             '英语研究',
             '英语提高',
         ],
-        image: '/images/wakaranenglogo1.png',
+        image: '/images/heroImg_phone.webp',
     },
 }
 
 export function generateMetadata(config: SEOConfig, locale: string): Metadata {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wakaran-eng.com'
     const url = config.url ? `${baseUrl}${config.url}` : `${baseUrl}/${locale}`
-    const imageUrl = config.image ? `${baseUrl}${config.image}` : `${baseUrl}/images/wakaranenglogo1.png`
+    const imageUrl = config.image ? `${baseUrl}${config.image}` : `${baseUrl}/images/heroImg_phone.webp`
 
     return {
         title: config.title,
@@ -166,7 +166,7 @@ export function generateBlogMetadata(
 ): Metadata {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wakaran-eng.com'
     const url = `${baseUrl}/${locale}/blogs/${slug}`
-    const imageUrl = image || `${baseUrl}/images/wakaranenglogo1.png`
+    const imageUrl = image || `${baseUrl}/images/heroImg_phone.webp`
 
     return {
         title: `${title} | Wakaran English`,

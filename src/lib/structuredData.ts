@@ -13,7 +13,7 @@ export function generateOrganizationSchema(): JSONLDData {
         name: 'Wakaran English',
         description: 'Educational website for English learners with fun and interactive content.',
         url: baseUrl,
-        logo: `${baseUrl}/images/wakaranenglogo1.png`,
+        logo: `${baseUrl}/images/heroImg_phone.webp`,
         sameAs: ['https://www.youtube.com/@wakaran-english', 'https://www.instagram.com/wakaran_english/'],
         foundingDate: '2024',
         contactPoint: {
@@ -51,7 +51,7 @@ export function generateEducationalOrganizationSchema(): JSONLDData {
         name: 'Wakaran English',
         description: 'Educational platform for English language learning',
         url: baseUrl,
-        logo: `${baseUrl}/images/wakaranenglogo1.png`,
+        logo: `${baseUrl}/images/heroImg_phone.webp`,
         educationalCredentialAwarded: 'English Language Skills',
         hasOfferCatalog: {
             '@type': 'OfferCatalog',
@@ -81,7 +81,7 @@ export function generateBlogPostSchema(
     url?: string
 ): JSONLDData {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wakaran-eng.com'
-    const imageUrl = image || `${baseUrl}/images/wakaranenglogo1.png`
+    const imageUrl = image || `${baseUrl}/images/heroImg_phone.webp`
     const postUrl = url || baseUrl
 
     return {
