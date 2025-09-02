@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { renderTextWithLineBreaks } from '@/utils/textUtils'
+import { formatDate, renderTextWithLineBreaks } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
 import { VideoCardSkeleton } from '@/components/VideoCardSkeleton'
@@ -142,9 +142,7 @@ export default function FeaturedProjects({ projects }: Props) {
 
                                     <div className='absolute bottom-4 left-4 flex flex-col'>
                                         {!isDummy && (
-                                            <p className='text-base text-white'>
-                                                {new Date(v.publishedAt).toLocaleDateString()}
-                                            </p>
+                                            <p className='text-base text-white'>{formatDate(v.publishedAt)}</p>
                                         )}
                                         <p className='text-xl font-medium text-white max-md:text-base'>
                                             {isDummy ? 'coming soon...' : v.title}
