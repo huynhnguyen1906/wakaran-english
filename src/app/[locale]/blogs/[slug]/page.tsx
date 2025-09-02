@@ -2,6 +2,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
+import { processWordPressContent } from '@/utils/imageUtils'
 import { formatDate } from '@/utils/textUtils'
 import { getTranslations } from 'next-intl/server'
 
@@ -204,7 +205,7 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
                     {/* Post Content - WordPress Gutenberg Blocks */}
                     <div
                         className='wp-block-library prose prose-lg max-w-none overflow-hidden'
-                        dangerouslySetInnerHTML={{ __html: post.content }}
+                        dangerouslySetInnerHTML={{ __html: processWordPressContent(post.content) }}
                     />
                 </article>
             </div>
