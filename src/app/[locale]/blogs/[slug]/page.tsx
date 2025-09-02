@@ -138,7 +138,7 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
 
                     {/* Post Content - WordPress Gutenberg Blocks */}
                     <div
-                        className='wp-block-library prose prose-lg max-w-none'
+                        className='wp-block-library prose prose-lg max-w-none overflow-hidden'
                         dangerouslySetInnerHTML={{ __html: post.content }}
                     />
                 </article>

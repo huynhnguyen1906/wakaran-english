@@ -4,11 +4,22 @@
 /* Base block styles */
 .wp-block-library {
     line-height: 1.6;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* Global text wrapping for all elements */
+.wp-block-library * {
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Paragraph blocks */
 .wp-block-library p {
     margin-bottom: 1.5em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Heading blocks */
@@ -372,7 +383,7 @@
     .wp-block-library iframe {
         min-height: 400px;
     }
-    
+
     .wp-block-embed iframe,
     .wp-block-embed-youtube iframe {
         height: 400px;
@@ -380,8 +391,37 @@
 }
 
 @media (max-width: 768px) {
+    /* Force text wrapping on mobile */
+    .wp-block-library * {
+        word-wrap: break-word;
+        word-break: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
+
+    /* Prevent horizontal scrolling */
+    .wp-block-library {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /* Ensure paragraphs and text blocks don't overflow */
+    .wp-block-library p,
+    .wp-block-library div,
+    .wp-block-library span {
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Long text and URLs */
+    .wp-block-library a {
+        word-break: break-all;
+    }
+
     .wp-block-library h1 {
         font-size: 2rem;
+        word-wrap: break-word;
     }
     .wp-block-library h2 {
         font-size: 1.75rem;
