@@ -7,6 +7,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import ClarityAnalytics from '@/components/Microsoft/ClarityAnalytics'
 
 import './globals.css'
+import './wp-blocks.css'
 
 const poppins = Poppins({
     subsets: ['latin'],
