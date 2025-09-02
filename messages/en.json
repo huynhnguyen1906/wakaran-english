@@ -34,7 +34,7 @@
         "greeting": "Hello",
         "title": "WE ARE",
         "titleHighlight": "WAKARAN ENGLISH!",
-        "description": "We are a group of students from ECC Computer College's Website Design Course, creating English-learning content \nto improve our skills and connect with learners like you.",
+        "description": "We are students learning web design, creating English learning content while \nimproving our skills and aiming to connect with English learners like you.",
         "thumbnailAlt": "Self Introduction Thumbnail",
         "playButtonAlt": "YouTube Play Button"
     },
@@ -91,7 +91,21 @@
         "blogTitle": "blog",
         "blogDescription": "Coming Soon...",
         "detailBtn": "view article",
-        "nextBtnAlt": "this blog's detail"
+        "nextBtnAlt": "this blog's detail",
+        "defaultTitle": "Blog",
+        "defaultDescription": "Coming Soon..."
+    },
+    "blogList": {
+        "title": "ALL BLOGS",
+        "postsCount": "Posts",
+        "postMember": "Post Member:",
+        "postDate": "Posted day",
+        "noPostsFound": "No posts found."
+    },
+    "blog-list": {},
+    "subscribe": {
+        "title": "We’d love to see you online! Follow us below!",
+        "desc": "I mainly upload interview videos! Please subscribe to my channel and check them out."
     },
     "contact": {
         "subtitle": "Let’s get social!",
@@ -121,5 +135,15 @@
         "copyright": "2025©WAKARAN ENGISH",
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
+    },
+    "recommendPosts": {
+        "title": "Recommend Posts",
+        "blogTitle": "THERE IS MY FIRST BLOG!",
+        "blogContent": "Hi there! I’m ikuchan from Wakaran English!\nI’m here to study English with you for this one year...",
+        "previousButton": "Previous",
+        "nextButton": "Next",
+        "detailBtn": "Read More",
+        "dummyTitle": "Blog",
+        "dummyDescription": "Coming Soon..."
     }
 }

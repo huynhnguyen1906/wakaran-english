@@ -34,7 +34,7 @@
         "greeting": "こんにちは",
         "title": "私たちは",
         "titleHighlight": "WAKARAN ENGLISH！",
-        "description": "私たちはECCコンピュータ専門学校のWebデザインコースに通う学生で、英語学習のコンテンツを作りながら\n自分たちのスキルを伸ばしつつ英語学習者のみなさんとつながることを目指しています。",
+        "description": "私たちはWebデザインを学ぶ学生で、英語学習のコンテンツを作りながら\n自分たちのスキルを伸ばしつつ英語学習者のみなさんとつながることを目指しています。",
         "thumbnailAlt": "自己紹介サムネイル",
         "playButtonAlt": "YouTube再生ボタン"
     },
@@ -93,6 +93,17 @@
         "detailBtn": "記事を見る",
         "nextBtnAlt": "このブログの詳細"
     },
+    "blogList": {
+        "title": "すべてのブログ",
+        "postsCount": "件の投稿",
+        "postMember": "投稿者:",
+        "postDate": "投稿日",
+        "noPostsFound": "投稿が見つかりませんでした。"
+    },
+    "subscribe": {
+        "title": "オンラインでお会いできるのを楽しみにしています！下記からフォローしてください！",
+        "desc": "インタビューを中心に動画アップしています！ぜひチャンネル登録してチェックしてください"
+    },
     "contact": {
         "subtitle": "一緒に盛り上がろう!",
         "titleTop": "SNSでのフォローお待ちしています!",
@@ -121,5 +132,15 @@
         "copyright": "2025©WAKARAN ENGISH",
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
+    },
+    "recommendPosts": {
+        "title": "おすすめの記事",
+        "blogTitle": "私の初めてのブログ投稿です！",
+        "blogContent": "こんにちは！WAKARANENGLISHのいくちゃんです！\nこの1年間、皆さんと一緒に英語を勉強していきたいと思います...",
+        "previousButton": "前へ",
+        "nextButton": "次へ",
+        "detailBtn": "続きを読む",
+        "dummyTitle": "ブログ",
+        "dummyDescription": "準備中..."
     }
 }
