@@ -44,9 +44,19 @@ export function processWordPressContent(content: string): string {
     if (!content) return content
 
     // Replace HTTP image sources with proxy URLs
-    return content.replace(/<img([^>]*)\ssrc=['"]http:\/\/([^'"]*)['"]/g, (match, attributes, url) => {
+    let processedContent = content.replace(/<img([^>]*)\ssrc=['"]http:\/\/([^'"]*)['"]/g, (match, attributes, url) => {
         const fullUrl = `http://${url}`
         const proxyUrl = getProxyImageUrl(fullUrl)
         return `<img${attributes} src="${proxyUrl}"`
     })
+
+    // Also handle srcset attributes for responsive images
+    processedContent = processedContent.replace(/srcset=['"]([^'"]*http:\/\/[^'"]*)['"]/g, (match, srcsetValue) => {
+        const processedSrcset = srcsetValue.replace(/http:\/\/([^\s,]+)/g, (urlMatch: string) =>
+            getProxyImageUrl(urlMatch)
+        )
+        return `srcset="${processedSrcset}"`
+    })
+
+    return processedContent
 }
