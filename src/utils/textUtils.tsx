@@ -17,3 +17,16 @@ export const renderTextWithLineBreaks = (text: string): React.ReactElement => {
         </>
     )
 }
+
+/**
+ * サーバーとクライアント間で一貫した日付フォーマットを提供します
+ * @param date - DateオブジェクトまたはDate文字列
+ * @returns YYYY/MM/DD形式の文字列
+ */
+export const formatDate = (date: string | Date): string => {
+    const d = new Date(date)
+    const year = d.getFullYear()
+    const month = String(d.getMonth() + 1).padStart(2, '0')
+    const day = String(d.getDate()).padStart(2, '0')
+    return `${year}/${month}/${day}`
+}

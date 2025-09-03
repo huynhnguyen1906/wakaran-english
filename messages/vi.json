@@ -34,7 +34,7 @@
         "greeting": "Xin chào",
         "title": "CHÚNG TÔI LÀ",
         "titleHighlight": "WAKARAN ENGLISH!",
-        "description": "Chúng tôi là một nhóm sinh viên từ Khóa học Thiết kế Website của Trường Cao đẳng Máy tính ECC, tạo ra nội dung học tiếng Anh để cải thiện kỹ năng của chúng tôi và kết nối với những người học như bạn.",
+        "description": "Chúng tôi là những sinh viên đang học thiết kế web, tạo ra nội dung học tiếng Anh trong khi \ncải thiện kỹ năng của mình và hướng tới việc kết nối với những người học tiếng Anh.",
         "thumbnailAlt": "Hình thu nhỏ tự giới thiệu",
         "playButtonAlt": "Nút phát YouTube"
     },
@@ -93,6 +93,17 @@
         "detailBtn": "Xem bài viết",
         "nextBtnAlt": "Chi tiết blog này"
     },
+    "blogList": {
+        "title": "TẤT CẢ BLOG",
+        "postsCount": "Bài viết",
+        "postMember": "Tác giả:",
+        "postDate": "Ngày đăng",
+        "noPostsFound": "Không tìm thấy bài viết nào."
+    },
+    "subscribe": {
+        "title": "Chúng tôi rất mong được gặp bạn trực tuyến! Hãy theo dõi chúng tôi bên dưới!",
+        "desc": "Tôi chủ yếu đăng các video phỏng vấn! Hãy đăng ký kênh của tôi và theo dõi nhé"
+    },
     "contact": {
         "subtitle": "Hãy cùng nhau hào hứng!",
         "titleTop": "Chúng tôi đang chờ bạn theo dõi trên mạng xã hội!",
@@ -131,5 +142,9 @@
         "detailBtn": "Xem thêm",
         "dummyTitle": "Blog",
         "dummyDescription": "Đang chuẩn bị..."
+    },
+    "blogDetail": {
+        "views": "Lượt xem",
+        "by": "bởi"
     }
 }

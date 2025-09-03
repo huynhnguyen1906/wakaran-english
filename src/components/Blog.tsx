@@ -45,7 +45,7 @@ export default function Blog({ blogPosts }: Props) {
                 </section>
                 <div className='text-end'>
                     <Link
-                        href={'#'}
+                        href={'/blogs'}
                         className='bg-[url("/images/more_btn.svg")] bg-contain bg-bottom bg-no-repeat pr-6 text-lg font-normal md:pr-14 md:text-2xl'
                     >
                         See All

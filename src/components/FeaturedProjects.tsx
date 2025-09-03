@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { renderTextWithLineBreaks } from '@/utils/textUtils'
+import { formatDate, renderTextWithLineBreaks } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
 import { VideoCardSkeleton } from '@/components/VideoCardSkeleton'
@@ -59,7 +59,10 @@ export default function FeaturedProjects({ projects }: Props) {
     }
 
     return (
-        <div className='mx-auto mb-20 w-full max-w-[1120px] max-md:mb-12 max-md:px-6'>
+        <div
+            id='projects'
+            className='mx-auto mb-20 w-full max-w-[1120px] max-md:mb-12 max-md:px-6'
+        >
             <div className='mx-auto md:px-6 lg:px-0'>
                 {/* PC用h2 */}
                 <h2 className='mb-4 hidden font-semibold md:block md:text-4xl md:leading-14 lg:text-5xl lg:leading-18'>
@@ -139,9 +142,7 @@ export default function FeaturedProjects({ projects }: Props) {
 
                                     <div className='absolute bottom-4 left-4 flex flex-col'>
                                         {!isDummy && (
-                                            <p className='text-base text-white'>
-                                                {new Date(v.publishedAt).toLocaleDateString()}
-                                            </p>
+                                            <p className='text-base text-white'>{formatDate(v.publishedAt)}</p>
                                         )}
                                         <p className='text-xl font-medium text-white max-md:text-base'>
                                             {isDummy ? 'coming soon...' : v.title}

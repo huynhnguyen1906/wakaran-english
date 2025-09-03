@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import Image from 'next/image'
 
-import { Link } from '@/i18n/navigation'
+import { Link, usePathname } from '@/i18n/navigation'
 import { routing } from '@/i18n/routing'
 import { useLocale } from 'next-intl'
 import { useTranslations } from 'next-intl'
@@ -10,6 +10,7 @@ import { useTranslations } from 'next-intl'
 export default function LanguageSwitcher() {
     const t = useTranslations('header')
     const locale = useLocale()
+    const pathname = usePathname()
     const [isOpen, setIsOpen] = useState(false)
 
     const languages = {
@@ -91,7 +92,7 @@ export default function LanguageSwitcher() {
                 <div className='absolute right-0 z-10 mt-2 hidden w-48 rounded-md bg-[#fefefe] py-2 shadow-lg md:block'>
                     {routing.locales.map((lang) => (
                         <Link
-                            href='/'
+                            href={pathname}
                             key={lang}
                             locale={lang}
                             className={`flex items-center gap-2 px-4 py-2 text-sm hover:bg-gray-100 ${
@@ -121,7 +122,7 @@ export default function LanguageSwitcher() {
             >
                 {routing.locales.map((lang) => (
                     <Link
-                        href='/'
+                        href={pathname}
                         key={lang}
                         locale={lang}
                         className={`flex items-center justify-end gap-1 px-2 py-1 text-xs ${
