@@ -87,7 +87,7 @@
         }
     },
     "blog": {
-        "description": "我们还会分享大阪生活的有趣信息，成员们会撰写博客来帮助大家的学习和交流",
+        "description": "请一定要查看我们成员自由撰写的博客！",
         "blogTitle": "博客",
         "blogDescription": "准备中...",
         "detailBtn": "查看文章",
@@ -113,13 +113,13 @@
         "instagramQr": "WakaranEnglish的Instagram二维码",
         "instagramAlt": "WakaranEnglish的Instagram",
         "instagramLogoAlt": "Instagram标志",
-        "instagramDescriptionMobile": "我们正在分享关于大阪的各种信息！\n请查看！",
-        "instagramDescription": "我们正在分享关于大阪的各种信息！请查看！",
+        "instagramDescriptionMobile": "我们上传视频花絮和\n与英语相关的帖子！",
+        "instagramDescription": "我们上传视频花絮和与英语相关的帖子！",
         "youtubeQr": "WakaranEnglish的YouTube二维码",
         "youtubeAlt": "WakaranEnglish的YouTube",
         "youtubeLogoAlt": "YouTube标志",
-        "youtubeDescriptionMobile": "您想和我们一起以最有趣的方式\n学习英语吗？",
-        "youtubeDescription": "您想和我们一起以最有趣的方式学习英语吗？",
+        "youtubeDescriptionMobile": "您想和我们一起通过视频\n愉快地学习英语吗？",
+        "youtubeDescription": "您想和我们一起通过视频愉快地学习英语吗？",
         "withIain": "伊安和成员们的合影"
     },
     "footer": {
