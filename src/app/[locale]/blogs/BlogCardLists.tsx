@@ -3,6 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 
 import { Link } from '@/i18n/navigation'
+import { decodeHtmlEntities } from '@/utils/textUtils'
 import { getTranslations } from 'next-intl/server'
 
 import Backbtn from '@/components/Backbtn'
@@ -61,42 +62,47 @@ const BlogCardLists = async ({ params }: { params: Promise<{ locale: string }> }
             {/* blog-card-section */}
             <section className='grid md:grid-cols-5'>
                 {posts.length > 0 ?
-                    posts.map((post: BlogPost) => (
-                        <Link
-                            className='mt-[32px] flex gap-[8px] border-b-2 pb-4 md:block md:border-b-0 md:pb-0'
-                            key={post.id}
-                            href={`/blogs/${post.slug}`}
-                        >
-                            <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
-                                <Image
-                                    fill
-                                    alt={post.featured_image?.alt || post.title}
-                                    src={post.featured_image?.medium || cardImage}
-                                    className='rounded-lg object-cover'
-                                />
-                            </div>
+                    posts.map((post: BlogPost) => {
+                        const decodedTitle = decodeHtmlEntities(post.title)
+                        const decodedAlt = decodeHtmlEntities(post.featured_image?.alt || post.title)
 
-                            <div>
-                                <div className='card-desc mt-[8px]'>
-                                    <p className='text-main-color line-clamp-2 text-[16px] font-semibold'>
-                                        {post.title}
-                                    </p>
+                        return (
+                            <Link
+                                className='mt-[32px] flex gap-[8px] border-b-2 pb-4 md:block md:border-b-0 md:pb-0'
+                                key={post.id}
+                                href={`/blogs/${post.slug}`}
+                            >
+                                <div className='card-image relative h-[72px] w-[72px] md:h-[115px] md:w-[205px]'>
+                                    <Image
+                                        fill
+                                        alt={decodedAlt}
+                                        src={post.featured_image?.medium || cardImage}
+                                        className='rounded-lg object-cover'
+                                    />
                                 </div>
-                                <div className='mt-[16px] flex gap-[8px] md:block'>
-                                    <p className='text-[12px]'>
-                                        <span className='hidden md:inline'>{t('postMember')} </span>
-                                        {post.author.name}
-                                    </p>
-                                    <p className='text-[12px] text-[#8D8D8D]'>
-                                        <span className='hidden md:inline'>{t('postDate')} </span>
-                                        {new Date(post.date.published).toLocaleDateString(
-                                            getLocalizedDateFormat(locale)
-                                        )}
-                                    </p>
+
+                                <div>
+                                    <div className='card-desc mt-[8px]'>
+                                        <p className='text-main-color line-clamp-2 text-[16px] font-semibold'>
+                                            {decodedTitle}
+                                        </p>
+                                    </div>
+                                    <div className='mt-[16px] flex gap-[8px] md:block'>
+                                        <p className='text-[12px]'>
+                                            <span className='hidden md:inline'>{t('postMember')} </span>
+                                            {post.author.name}
+                                        </p>
+                                        <p className='text-[12px] text-[#8D8D8D]'>
+                                            <span className='hidden md:inline'>{t('postDate')} </span>
+                                            {new Date(post.date.published).toLocaleDateString(
+                                                getLocalizedDateFormat(locale)
+                                            )}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </Link>
-                    ))
+                            </Link>
+                        )
+                    })
                 :   <div className='col-span-full mt-[32px] text-center'>
                         <p className='text-[16px] text-[#4c4c4c]'>{t('noPostsFound')}</p>
                     </div>

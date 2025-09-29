@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { decodeHtmlEntities } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
 interface BlogCardProps {
@@ -12,6 +13,9 @@ interface BlogCardProps {
 
 export default function BlogCard({ title, description, imageUrl, slug }: BlogCardProps = {}) {
     const t = useTranslations('blog')
+
+    const safeTitle = decodeHtmlEntities(title ?? t('blogTitle'))
+    const safeDescription = decodeHtmlEntities(description ?? t('blogDescription'))
 
     return (
         <>
@@ -28,11 +32,9 @@ export default function BlogCard({ title, description, imageUrl, slug }: BlogCar
                     )}
                 </div>
                 <div className='mt-2 mb-4 md:my-4'>
-                    <h3 className='text-main-color mb-2 text-base font-semibold md:text-2xl'>
-                        {title || t('blogTitle')}
-                    </h3>
+                    <h3 className='text-main-color mb-2 text-base font-semibold md:text-2xl'>{safeTitle}</h3>
                     <p className='text-sub-color [display:-webkit-box] max-h-[3.375rem] min-h-[3.375rem] overflow-hidden text-sm leading-tight font-normal [-webkit-box-orient:vertical] [-webkit-line-clamp:3] md:max-h-[4.5rem] md:min-h-[4.5rem] md:text-base md:leading-normal'>
-                        {description || t('blogDescription')}
+                        {safeDescription}
                     </p>
                 </div>
                 <Link

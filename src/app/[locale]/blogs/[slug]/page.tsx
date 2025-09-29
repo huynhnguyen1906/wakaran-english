@@ -3,7 +3,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { processWordPressContent } from '@/utils/imageUtils'
-import { formatDate } from '@/utils/textUtils'
+import { decodeHtmlEntities, formatDate } from '@/utils/textUtils'
 import { getTranslations } from 'next-intl/server'
 
 import Backbtn from '@/components/Backbtn'
@@ -87,8 +87,10 @@ export async function generateMetadata({ params }: BlogDetailProps): Promise<Met
         }
     }
 
+    const decodedTitle = decodeHtmlEntities(post.title)
+
     return generateBlogMetadata(
-        post.title,
+        decodedTitle,
         post.excerpt,
         slug,
         locale,
@@ -111,9 +113,11 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
         notFound()
     }
 
+    const decodedTitle = decodeHtmlEntities(post.title)
+
     // Generate structured data
     const blogPostSchema = generateBlogPostSchema(
-        post.title,
+        decodedTitle,
         post.content,
         post.date.published,
         post.author.name,
@@ -124,7 +128,7 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
     const breadcrumbSchema = generateBreadcrumbSchema([
         { name: 'Home', url: `/${slug}` },
         { name: 'Blogs', url: `/${slug}/blogs` },
-        { name: post.title, url: `/${slug}/blogs/${slug}` },
+        { name: decodedTitle, url: `/${slug}/blogs/${slug}` },
     ])
 
     return (
@@ -148,14 +152,14 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
             <div className='mx-auto mt-[40px] mb-24 w-full max-w-[1120px] px-6'>
                 {/* page-navigation-btn */}
                 <div className='mb-[40px]'>
-                    <Backbtn blogTitle={post.title} />
+                    <Backbtn blogTitle={decodedTitle} />
                 </div>
 
                 {/* Blog Post Content */}
                 <article className='wp-block-post-content'>
                     {/* Post Header */}
                     <header className='mb-8'>
-                        <h1 className='mb-4 text-3xl leading-tight font-bold md:text-4xl'>{post.title}</h1>
+                        <h1 className='mb-4 text-3xl leading-tight font-bold md:text-4xl'>{decodedTitle}</h1>
 
                         {/* Post Meta */}
                         <div className='mb-6 flex flex-wrap items-center gap-4 text-sm text-gray-600'>

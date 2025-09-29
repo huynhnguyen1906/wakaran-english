@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { formatDate, renderTextWithLineBreaks } from '@/utils/textUtils'
+import { decodeHtmlEntities, formatDate, renderTextWithLineBreaks } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
 import { VideoCardSkeleton } from '@/components/VideoCardSkeleton'
@@ -101,6 +101,7 @@ export default function FeaturedProjects({ projects }: Props) {
                         ))
                     :   projects.map((v) => {
                             const isDummy = v.publishedAt === ''
+                            const decodedTitle = decodeHtmlEntities(v.title)
                             return (
                                 <div
                                     key={v.id}
@@ -119,24 +120,27 @@ export default function FeaturedProjects({ projects }: Props) {
                                     :   <>
                                             <Image
                                                 src={v.thumbnail}
-                                                alt={v.title}
+                                                alt={decodedTitle}
                                                 fill
                                                 className='rounded-3xl object-cover object-[50%_70%]'
                                             />
                                             <div className='pointer-events-none absolute inset-x-0 bottom-0 h-1/3 rounded-3xl rounded-t-none bg-gradient-to-t from-black/60' />
-                                            <Link
-                                                href={`https://youtube.com/watch?v=${v.id}`}
-                                                target='_blank'
-                                                className='absolute inset-0 flex items-center justify-center'
-                                            >
-                                                <Image
-                                                    src='/images/playButton.png'
-                                                    alt={t('playButtonAlt')}
-                                                    width={82}
-                                                    height={58}
-                                                    className='drop-shadow-playBtn max-md:h-[44px] max-md:w-[62px]'
-                                                />
-                                            </Link>
+                                            {v.youtube && (
+                                                <Link
+                                                    href={v.youtube}
+                                                    target='_blank'
+                                                    rel='noopener noreferrer'
+                                                    className='absolute inset-0 flex items-center justify-center'
+                                                >
+                                                    <Image
+                                                        src='/images/playButton.png'
+                                                        alt={t('playButtonAlt')}
+                                                        width={82}
+                                                        height={58}
+                                                        className='drop-shadow-playBtn max-md:h-[44px] max-md:w-[62px]'
+                                                    />
+                                                </Link>
+                                            )}
                                         </>
                                     }
 
@@ -145,7 +149,7 @@ export default function FeaturedProjects({ projects }: Props) {
                                             <p className='text-base text-white'>{formatDate(v.publishedAt)}</p>
                                         )}
                                         <p className='text-xl font-medium text-white max-md:text-base'>
-                                            {isDummy ? 'coming soon...' : v.title}
+                                            {isDummy ? 'coming soon...' : decodedTitle}
                                         </p>
                                     </div>
                                 </div>

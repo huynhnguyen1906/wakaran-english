@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
 
+import { decodeHtmlEntities } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
 type Post = {
@@ -79,6 +80,8 @@ export default function RecommendPostsClient({ initialPosts }: Props) {
                     className='scrollbar-hide flex gap-4 overflow-x-auto pr-6 md:pr-0'
                 >
                     {posts.map((p, i) => {
+                        const decodedTitle = decodeHtmlEntities(p.title || t('dummyTitle'))
+                        const decodedDescription = decodeHtmlEntities(p.description || t('dummyDescription'))
                         const isPlaceholder = p.imageUrl?.endsWith('heroImg_phone.webp') || (p.id ?? 0) < 0
                         const fitClass = isPlaceholder ? 'object-contain' : 'object-cover object-center'
 
@@ -99,10 +102,10 @@ export default function RecommendPostsClient({ initialPosts }: Props) {
                                 </div>
                                 <div className='mt-4 w-full'>
                                     <p className='main-color mb-2 text-base font-semibold md:mb-4 md:text-2xl'>
-                                        {p.title || t('dummyTitle')}
+                                        {decodedTitle}
                                     </p>
                                     <p className='text-sub-color [display:-webkit-box] max-h-[3.375rem] min-h-[3.375rem] overflow-hidden text-sm leading-tight font-normal [-webkit-box-orient:vertical] [-webkit-line-clamp:3] md:max-h-[4.5rem] md:min-h-[4.5rem] md:text-base md:leading-normal'>
-                                        {truncate(p.description || t('dummyDescription'), 60)}
+                                        {truncate(decodedDescription, 60)}
                                     </p>
                                 </div>
                                 {p.slug ?
