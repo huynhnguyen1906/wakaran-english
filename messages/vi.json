@@ -87,7 +87,7 @@
         }
     },
     "blog": {
-        "description": "Chúng tôi cũng chia sẻ thông tin hấp dẫn về cuộc sống ở Osaka, và các thành viên sẽ viết blog để hỗ trợ việc học tập và giao lưu của mọi người",
+        "description": "Hãy nhất định xem những blog mà các thành viên của chúng tôi viết một cách tự do!",
         "blogTitle": "Blog",
         "blogDescription": "Đang chuẩn bị...",
         "detailBtn": "Xem bài viết",
@@ -113,13 +113,13 @@
         "instagramQr": "Mã QR Instagram của WakaranEnglish",
         "instagramAlt": "Instagram WakaranEnglish",
         "instagramLogoAlt": "Logo Instagram",
-        "instagramDescriptionMobile": "Chúng tôi đang chia sẻ mọi thứ về Osaka!\nHãy kiểm tra nhé!",
-        "instagramDescription": "Chúng tôi đang chia sẻ mọi thứ về Osaka! Hãy kiểm tra nhé!",
+        "instagramDescriptionMobile": "Chúng tôi đăng tải hậu trường video và\ncác bài viết liên quan đến tiếng Anh!",
+        "instagramDescription": "Chúng tôi đăng tải hậu trường video và các bài viết liên quan đến tiếng Anh!",
         "youtubeQr": "Mã QR YouTube của WakaranEnglish",
         "youtubeAlt": "YouTube WakaranEnglish",
         "youtubeLogoAlt": "Logo YouTube",
-        "youtubeDescriptionMobile": "Bạn có muốn học tiếng Anh với chúng tôi theo cách thú vị nhất\nkhông?",
-        "youtubeDescription": "Bạn có muốn học tiếng Anh với chúng tôi theo cách thú vị nhất không?",
+        "youtubeDescriptionMobile": "Bạn có muốn cùng học tiếng Anh vui vẻ\nqua video của chúng tôi không?",
+        "youtubeDescription": "Bạn có muốn cùng học tiếng Anh vui vẻ qua video của chúng tôi không?",
         "withIain": "Ảnh nhóm của Iain và các thành viên"
     },
     "footer": {
