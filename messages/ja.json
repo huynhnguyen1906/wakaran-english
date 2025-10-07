@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "title": "私たちがどのように楽しく英語を学んでいるか見に来てください！",
+        "desc": "ネイティブスピーカーへのインタビューなど、英語のスピーキング力を向上させる動画を共有しています！",
+        "alt": "Wakaran Englishのバナー画像"
+    }, 
     "header": {
         "subtitle": "英語学習者向け教育サイト",
         "about": "私たちについて",
@@ -34,7 +39,7 @@
         "greeting": "こんにちは",
         "title": "私たちは",
         "titleHighlight": "WAKARAN ENGLISH！",
-        "description": "私たちはECCコンピュータ専門学校のWebデザインコースに通う学生で、英語学習のコンテンツを作りながら\n自分たちのスキルを伸ばしつつ英語学習者のみなさんとつながることを目指しています。",
+        "description": "私たちはWebデザインを学ぶ学生で、英語学習のコンテンツを作りながら\n自分たちのスキルを伸ばしつつ英語学習者のみなさんとつながることを目指しています。",
         "thumbnailAlt": "自己紹介サムネイル",
         "playButtonAlt": "YouTube再生ボタン"
     },
@@ -50,11 +55,7 @@
                 "name": "aya",
                 "msg": "洋楽大好きでーす！ 海外にも行ってみたい！",
                 "mobileMsg": "洋楽大好きでーす!",
-                "tags": [
-                    "兵庫県",
-                    "女性",
-                    "ESFJ"
-                ]
+                "tags": ["兵庫県", "女性", "ESFJ"]
             },
             "futama": {
                 "imgPath": "/images/futama.webp",
@@ -62,11 +63,7 @@
                 "name": "ふうたま",
                 "msg": "海外文化に興味があります！",
                 "mobileMsg": "海外文化に興味があります！",
-                "tags": [
-                    "兵庫県",
-                    "男性",
-                    "ENFP"
-                ]
+                "tags": ["兵庫県", "男性", "ENFP"]
             },
             "ikuchan": {
                 "imgPath": "/images/ikuchan.webp",
@@ -74,11 +71,7 @@
                 "name": "いくちゃん",
                 "msg": "ヨーロッパに行ってみたい！！！",
                 "mobileMsg": "ヨーロッパに行ってみたい！！！",
-                "tags": [
-                    "沖縄県",
-                    "男性",
-                    "INFP"
-                ]
+                "tags": ["沖縄県", "男性", "INFP"]
             },
             "huynh": {
                 "imgPath": "/images/huynh.webp",
@@ -86,11 +79,7 @@
                 "name": "HuYnH",
                 "msg": "日本で生活するのに精一杯です :((((",
                 "mobileMsg": "日本で生活するのに精一杯 :((((",
-                "tags": [
-                    "ベトナム",
-                    "男性",
-                    "ENTP"
-                ]
+                "tags": ["ベトナム", "男性", "ENTP"]
             },
             "yuki": {
                 "imgPath": "/images/yuki.webp",
@@ -98,24 +87,27 @@
                 "name": "ユキ a.k.a Alex",
                 "msg": "言語を勉強する時に一番大事なのは「Speaking」です!",
                 "mobileMsg": "Speakingが大事!",
-                "tags": [
-                    "ミャンマー",
-                    "男性",
-                    "ENFJ"
-                ]
+                "tags": ["ミャンマー", "男性", "ENFJ"]
             }
         }
     },
     "blog": {
-        "description": "また、大阪での生活の魅力的な情報も共有し、メンバーがブログを書いて皆さんの学習や交流のお手伝いをします",
+        "description": "メンバーが自由に書くブログもぜひチェックしてください!",
         "blogTitle": "ブログ",
         "blogDescription": "準備中...",
         "detailBtn": "記事を見る",
         "nextBtnAlt": "このブログの詳細"
     },
+    "blogList": {
+        "title": "すべてのブログ",
+        "postsCount": "件の投稿",
+        "postMember": "投稿者:",
+        "postDate": "投稿日",
+        "noPostsFound": "投稿が見つかりませんでした。"
+    },
     "subscribe": {
         "title": "オンラインでお会いできるのを楽しみにしています！下記からフォローしてください！",
-        "desc": "大阪の日々のストーリーをお届けするInstagramをフォローしてください！"
+        "desc": "インタビューを中心に動画アップしています！ぜひチャンネル登録してチェックしてください"
     },
     "contact": {
         "subtitle": "一緒に盛り上がろう!",
@@ -126,13 +118,13 @@
         "instagramQr": "WakaranEnglishのInstagramQRコード",
         "instagramAlt": "WakaranEnglishのInstagram",
         "instagramLogoAlt": "Instagramのロゴ",
-        "instagramDescriptionMobile": "大阪についてのアレコレを発信中！\nぜひチェック！",
-        "instagramDescription": "大阪についてのアレコレを発信中！ぜひチェック！",
+        "instagramDescriptionMobile": "動画のオフショットや英語に関する投稿を\nアップしています!",
+        "instagramDescription": "動画のオフショットや英語に関する投稿をアップしています!",
         "youtubeQr": "WakaranEnglishのYoutubeQRコード",
         "youtubeAlt": "WakaranEnglishのYoutube",
         "youtubeLogoAlt": "Youtubeのロゴ",
-        "youtubeDescriptionMobile": "私たちと一緒にもっとも楽しい方法で\n英語を勉強しませんか",
-        "youtubeDescription": "私たちと一緒にもっとも楽しい方法で英語を勉強しませんか",
+        "youtubeDescriptionMobile": "私たちの動画で一緒に楽しく英語を勉強してみませんか",
+        "youtubeDescription": "私たちの動画で一緒に楽しく英語を勉強してみませんか",
         "withIain": "イアンとメンバーの集合写真"
     },
     "footer": {
@@ -145,5 +137,19 @@
         "copyright": "2025©WAKARAN ENGISH",
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
+    },
+    "recommendPosts": {
+        "title": "おすすめの記事",
+        "blogTitle": "私の初めてのブログ投稿です！",
+        "blogContent": "こんにちは！WAKARANENGLISHのいくちゃんです！\nこの1年間、皆さんと一緒に英語を勉強していきたいと思います...",
+        "previousButton": "前へ",
+        "nextButton": "次へ",
+        "detailBtn": "続きを読む",
+        "dummyTitle": "ブログ",
+        "dummyDescription": "準備中..."
+    },
+    "blogDetail": {
+        "views": "回視聴",
+        "by": "投稿者"
     }
 }

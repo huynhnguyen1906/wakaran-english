@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "title": "来看看我们是如何用有趣的方式学习英语的吧！",
+        "desc": "我们通过分享视频来提高英语口语技能，比如与母语者的采访等！",
+        "alt": "Wakaran English的横幅图片"
+    }, 
     "header": {
         "subtitle": "英语学习者教育网站",
         "about": "关于我们",
@@ -34,7 +39,7 @@
         "greeting": "你好",
         "title": "我们是",
         "titleHighlight": "WAKARAN ENGLISH！",
-        "description": "我们是网页设计课的学生，我们通过制作关于英语学习的内容来提高我们的英语水平，\n并希望能与像您一样的学习者建立联系。",
+        "description": "我们是学习网页设计的学生，在制作英语学习内容的同时\n提高自己的技能，旨在与英语学习者建立联系。",
         "thumbnailAlt": "自我介绍缩略图",
         "playButtonAlt": "YouTube播放按钮"
     },
@@ -87,15 +92,22 @@
         }
     },
     "blog": {
-        "description": "我们还会分享大阪生活的有趣信息，成员们会撰写博客来帮助大家的学习和交流",
+        "description": "请一定要查看我们成员自由撰写的博客！",
         "blogTitle": "博客",
         "blogDescription": "准备中...",
         "detailBtn": "查看文章",
         "nextBtnAlt": "此博客的详情"
     },
+    "blogList": {
+        "title": "所有博客",
+        "postsCount": "篇文章",
+        "postMember": "发布者：",
+        "postDate": "发布日期",
+        "noPostsFound": "未找到文章。"
+    },
     "subscribe": {
         "title": "期待您的线上见面！请在下方关注我们！",
-        "desc": "在 Instagram 上关注我们，获取大阪每日精彩内容！"
+        "desc": "我主要上传采访视频！请订阅我的频道并关注"
     },
     "contact": {
         "subtitle": "让我们一起兴奋起来！",
@@ -106,13 +118,13 @@
         "instagramQr": "WakaranEnglish的Instagram二维码",
         "instagramAlt": "WakaranEnglish的Instagram",
         "instagramLogoAlt": "Instagram标志",
-        "instagramDescriptionMobile": "我们正在分享关于大阪的各种信息！\n请查看！",
-        "instagramDescription": "我们正在分享关于大阪的各种信息！请查看！",
+        "instagramDescriptionMobile": "我们上传视频花絮和\n与英语相关的帖子！",
+        "instagramDescription": "我们上传视频花絮和与英语相关的帖子！",
         "youtubeQr": "WakaranEnglish的YouTube二维码",
         "youtubeAlt": "WakaranEnglish的YouTube",
         "youtubeLogoAlt": "YouTube标志",
-        "youtubeDescriptionMobile": "您想和我们一起以最有趣的方式\n学习英语吗？",
-        "youtubeDescription": "您想和我们一起以最有趣的方式学习英语吗？",
+        "youtubeDescriptionMobile": "您想和我们一起通过视频\n愉快地学习英语吗？",
+        "youtubeDescription": "您想和我们一起通过视频愉快地学习英语吗？",
         "withIain": "伊安和成员们的合影"
     },
     "footer": {
@@ -125,5 +137,19 @@
         "copyright": "2025©WAKARAN ENGISH",
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
+    },
+    "recommendPosts": {
+        "title": "推荐博客",
+        "blogTitle": "这是我的第一篇博客！",
+        "blogContent": "大家好！我是来自WAKARAN ENGLISH的ikuchan！\n在这一年里，我将和大家一起学习英语...",
+        "previousButton": "上一个",
+        "nextButton": "下一个",
+        "detailBtn": "阅读更多",
+        "dummyTitle": "博客",
+        "dummyDescription": "准备中..."
+    },
+    "blogDetail": {
+        "views": "回视听",
+        "by": "by"
     }
 }

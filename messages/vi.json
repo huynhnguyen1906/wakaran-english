@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "title": "Hãy đến và xem cách chúng tôi học tiếng Anh một cách vui nhộn!",
+        "desc": "Chúng tôi đang cải thiện kỹ năng nói tiếng Anh bằng cách chia sẻ các video như phỏng vấn với người bản ngữ!",
+        "alt": "Hình ảnh biểu ngữ Wakaran English"
+    }, 
     "header": {
         "subtitle": "Trang web giáo dục dành cho người học tiếng Anh",
         "about": "Về chúng tôi",
@@ -34,7 +39,7 @@
         "greeting": "Xin chào",
         "title": "CHÚNG TÔI LÀ",
         "titleHighlight": "WAKARAN ENGLISH!",
-        "description": "Chúng tôi là một nhóm sinh viên từ Khóa học Thiết kế Website của Trường Cao đẳng Máy tính ECC, tạo ra nội dung học tiếng Anh để cải thiện kỹ năng của chúng tôi và kết nối với những người học như bạn.",
+        "description": "Chúng tôi là những sinh viên đang học thiết kế web, tạo ra nội dung học tiếng Anh trong khi \ncải thiện kỹ năng của mình và hướng tới việc kết nối với những người học tiếng Anh.",
         "thumbnailAlt": "Hình thu nhỏ tự giới thiệu",
         "playButtonAlt": "Nút phát YouTube"
     },
@@ -50,11 +55,7 @@
                 "name": "aya",
                 "msg": "Tôi rất yêu nhạc phương Tây! Tôi cũng muốn đi du lịch nước ngoài!",
                 "mobileMsg": "Tôi rất yêu nhạc phương Tây!",
-                "tags": [
-                    "Hyogo",
-                    "Nữ",
-                    "ESFJ"
-                ]
+                "tags": ["Hyogo", "Nữ", "ESFJ"]
             },
             "futama": {
                 "imgPath": "/images/futama.webp",
@@ -62,11 +63,7 @@
                 "name": "Futama",
                 "msg": "Tôi quan tâm đến văn hóa nước ngoài!",
                 "mobileMsg": "Tôi quan tâm đến văn hóa nước ngoài!",
-                "tags": [
-                    "Hyogo",
-                    "Nam",
-                    "ENFP"
-                ]
+                "tags": ["Hyogo", "Nam", "ENFP"]
             },
             "ikuchan": {
                 "imgPath": "/images/ikuchan.webp",
@@ -74,11 +71,7 @@
                 "name": "Ikuchan",
                 "msg": "Tôi muốn đến châu Âu!!!",
                 "mobileMsg": "Tôi muốn đến châu Âu!!!",
-                "tags": [
-                    "Okinawa",
-                    "Nam",
-                    "INFP"
-                ]
+                "tags": ["Okinawa", "Nam", "INFP"]
             },
             "huynh": {
                 "imgPath": "/images/huynh.webp",
@@ -86,11 +79,7 @@
                 "name": "HuYnH",
                 "msg": "Tôi đang cố gắng hết sức để sống ở Nhật Bản :((((",
                 "mobileMsg": "Cố gắng sống ở Nhật :((((",
-                "tags": [
-                    "Việt Nam",
-                    "Nam",
-                    "ENTP"
-                ]
+                "tags": ["Việt Nam", "Nam", "ENTP"]
             },
             "yuki": {
                 "imgPath": "/images/yuki.webp",
@@ -98,24 +87,27 @@
                 "name": "Yuki a.k.a Alex",
                 "msg": "Điều quan trọng nhất khi học ngôn ngữ là 'Nói'!",
                 "mobileMsg": "Nói là quan trọng!",
-                "tags": [
-                    "Myanmar",
-                    "Nam",
-                    "ENFJ"
-                ]
+                "tags": ["Myanmar", "Nam", "ENFJ"]
             }
         }
     },
     "blog": {
-        "description": "Chúng tôi cũng chia sẻ thông tin hấp dẫn về cuộc sống ở Osaka, và các thành viên sẽ viết blog để hỗ trợ việc học tập và giao lưu của mọi người",
+        "description": "Hãy nhất định xem những blog mà các thành viên của chúng tôi viết một cách tự do!",
         "blogTitle": "Blog",
         "blogDescription": "Đang chuẩn bị...",
         "detailBtn": "Xem bài viết",
         "nextBtnAlt": "Chi tiết blog này"
     },
+    "blogList": {
+        "title": "TẤT CẢ BLOG",
+        "postsCount": "Bài viết",
+        "postMember": "Tác giả:",
+        "postDate": "Ngày đăng",
+        "noPostsFound": "Không tìm thấy bài viết nào."
+    },
     "subscribe": {
         "title": "Chúng tôi rất mong được gặp bạn trực tuyến! Hãy theo dõi chúng tôi bên dưới!",
-        "desc": "Theo dõi chúng tôi trên Instagram để cập nhật những câu chuyện hàng ngày ở Osaka!"
+        "desc": "Tôi chủ yếu đăng các video phỏng vấn! Hãy đăng ký kênh của tôi và theo dõi nhé"
     },
     "contact": {
         "subtitle": "Hãy cùng nhau hào hứng!",
@@ -126,13 +118,13 @@
         "instagramQr": "Mã QR Instagram của WakaranEnglish",
         "instagramAlt": "Instagram WakaranEnglish",
         "instagramLogoAlt": "Logo Instagram",
-        "instagramDescriptionMobile": "Chúng tôi đang chia sẻ mọi thứ về Osaka!\nHãy kiểm tra nhé!",
-        "instagramDescription": "Chúng tôi đang chia sẻ mọi thứ về Osaka! Hãy kiểm tra nhé!",
+        "instagramDescriptionMobile": "Chúng tôi đăng tải hậu trường video và\ncác bài viết liên quan đến tiếng Anh!",
+        "instagramDescription": "Chúng tôi đăng tải hậu trường video và các bài viết liên quan đến tiếng Anh!",
         "youtubeQr": "Mã QR YouTube của WakaranEnglish",
         "youtubeAlt": "YouTube WakaranEnglish",
         "youtubeLogoAlt": "Logo YouTube",
-        "youtubeDescriptionMobile": "Bạn có muốn học tiếng Anh với chúng tôi theo cách thú vị nhất\nkhông?",
-        "youtubeDescription": "Bạn có muốn học tiếng Anh với chúng tôi theo cách thú vị nhất không?",
+        "youtubeDescriptionMobile": "Bạn có muốn cùng học tiếng Anh vui vẻ\nqua video của chúng tôi không?",
+        "youtubeDescription": "Bạn có muốn cùng học tiếng Anh vui vẻ qua video của chúng tôi không?",
         "withIain": "Ảnh nhóm của Iain và các thành viên"
     },
     "footer": {
@@ -145,5 +137,19 @@
         "copyright": "2025©WAKARAN ENGISH",
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
+    },
+    "recommendPosts": {
+        "title": "Bài viết đề xuất",
+        "blogTitle": "ĐÂY LÀ BLOG ĐẦU TIÊN CỦA TÔI!",
+        "blogContent": "Xin chào! Tôi là ikuchan đến từ Wakaran English!\nTôi sẽ học tiếng Anh cùng với các bạn trong một năm nay...",
+        "previousButton": "Trước",
+        "nextButton": "Tiếp",
+        "detailBtn": "Xem thêm",
+        "dummyTitle": "Blog",
+        "dummyDescription": "Đang chuẩn bị..."
+    },
+    "blogDetail": {
+        "views": "Lượt xem",
+        "by": "bởi"
     }
 }

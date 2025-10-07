@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "title": "Come and See how we Learn English in funny way",
+        "desc": "We’re working to improve our English speaking skills by sharing videos that help us practice like interviews with native speakers!",
+        "alt": "Wakaran English Banner Image"
+    },
     "header": {
         "subtitle": "Education Website for English Learners",
         "about": "About Us",
@@ -34,7 +39,7 @@
         "greeting": "Hello",
         "title": "WE ARE",
         "titleHighlight": "WAKARAN ENGLISH!",
-        "description": "We are a group of students from ECC Computer College's Website Design Course, creating English-learning content \nto improve our skills and connect with learners like you.",
+        "description": "We are students learning web design, creating English learning content while \nimproving our skills and aiming to connect with English learners like you.",
         "thumbnailAlt": "Self Introduction Thumbnail",
         "playButtonAlt": "YouTube Play Button"
     },
@@ -50,7 +55,11 @@
                 "name": "aya",
                 "msg": "I love Western music! I want to travel abroad too!",
                 "mobileMsg": "I love Western music!",
-                "tags": ["Hyogo", "Female", "ESFJ"]
+                "tags": [
+                    "Hyogo",
+                    "Female",
+                    "ESFJ"
+                ]
             },
             "futama": {
                 "imgPath": "/images/futama.webp",
@@ -58,7 +67,11 @@
                 "name": "Futama",
                 "msg": "I'm interested in foreign cultures!",
                 "mobileMsg": "I'm interested in foreign cultures!",
-                "tags": ["Hyogo", "Male", "ENFP"]
+                "tags": [
+                    "Hyogo",
+                    "Male",
+                    "ENFP"
+                ]
             },
             "ikuchan": {
                 "imgPath": "/images/ikuchan.webp",
@@ -66,7 +79,11 @@
                 "name": "Ikuchan",
                 "msg": "I want to go to Europe!!!",
                 "mobileMsg": "I want to go to Europe!!!",
-                "tags": ["Okinawa", "Male", "INFP"]
+                "tags": [
+                    "Okinawa",
+                    "Male",
+                    "INFP"
+                ]
             },
             "huynh": {
                 "imgPath": "/images/huynh.webp",
@@ -74,7 +91,11 @@
                 "name": "HuYnH",
                 "msg": "I'm doing my best to live in Japan :((((",
                 "mobileMsg": "Doing my best in Japan :((((",
-                "tags": ["Vietnam", "Male", "ENTP"]
+                "tags": [
+                    "Vietnam",
+                    "Male",
+                    "ENTP"
+                ]
             },
             "yuki": {
                 "imgPath": "/images/yuki.webp",
@@ -82,23 +103,34 @@
                 "name": "Yuki a.k.a Alex",
                 "msg": "The most important thing when studying languages is 'Speaking'!",
                 "mobileMsg": "Speaking is important!",
-                "tags": ["Myanmar", "Male", "ENFJ"]
+                "tags": [
+                    "Myanmar",
+                    "Male",
+                    "ENFJ"
+                ]
             }
         }
     },
     "blog": {
-        "description": "We also share cool things about life in Osaka, and our members write blogs to help you learn and connect.",
+        "description": "Please also check out the blogs that our members write freely!",
         "blogTitle": "blog",
         "blogDescription": "Coming Soon...",
         "detailBtn": "view article",
-        "nextBtnAlt": "this blog's detail"
+        "nextBtnAlt": "this blog's detail",
+        "defaultTitle": "Blog",
+        "defaultDescription": "Coming Soon..."
     },
-    "blog-list":{
-        
+    "blogList": {
+        "title": "ALL BLOGS",
+        "postsCount": "Posts",
+        "postMember": "Post Member:",
+        "postDate": "Posted day",
+        "noPostsFound": "No posts found."
     },
+    "blog-list": {},
     "subscribe": {
         "title": "We’d love to see you online! Follow us below!",
-        "desc": "Follow us on Instagram for daily stories in Osaka!"
+        "desc": "I mainly upload interview videos! Please subscribe to my channel and check them out."
     },
     "contact": {
         "subtitle": "Let’s get social!",
@@ -109,13 +141,13 @@
         "instagramQr": "WakaranEnglish Instagram QR Code",
         "instagramAlt": "WakaranEnglish Instagram",
         "instagramLogoAlt": "Instagram Logo",
-        "instagramDescriptionMobile": "We're sharing all about Osaka!\nPlease check it out!",
-        "instagramDescription": "We're sharing all about Osaka! Please check it out!",
+        "instagramDescriptionMobile": "We upload behind-the-scenes videos and\nEnglish-related posts!",
+        "instagramDescription": "We upload behind-the-scenes videos and English-related posts!",
         "youtubeQr": "WakaranEnglish YouTube QR Code",
         "youtubeAlt": "WakaranEnglish YouTube",
         "youtubeLogoAlt": "YouTube Logo",
-        "youtubeDescriptionMobile": "Would you like to study English with us in the most enjoyable way?",
-        "youtubeDescription": "Would you like to study English with us in the most enjoyable way?",
+        "youtubeDescriptionMobile": "Would you like to study English together with our videos?",
+        "youtubeDescription": "Would you like to study English together with our videos?",
         "withIain": "Group photo of Iain and members"
     },
     "footer": {
@@ -129,12 +161,18 @@
         "youtubeAlt": "YouTube",
         "instagramAlt": "Instagram"
     },
-    "latestPosts": {
-        "title": "Latest Posts",
+    "recommendPosts": {
+        "title": "Recommend Posts",
         "blogTitle": "THERE IS MY FIRST BLOG!",
         "blogContent": "Hi there! I’m ikuchan from Wakaran English!\nI’m here to study English with you for this one year...",
         "previousButton": "Previous",
         "nextButton": "Next",
-        "detailBtn": "Read More"
+        "detailBtn": "Read More",
+        "dummyTitle": "Blog",
+        "dummyDescription": "Coming Soon..."
+    },
+    "blogDetail": {
+        "views": "Views",
+        "by": "by"
     }
 }

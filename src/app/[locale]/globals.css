@@ -1,5 +1,5 @@
 @import 'tailwindcss';
-@import "tw-animate-css";
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -44,6 +44,10 @@
     --sidebar-accent-foreground: oklch(0.205 0 0);
     --sidebar-border: oklch(0.922 0 0);
     --sidebar-ring: oklch(0.708 0 0);
+}
+
+body {
+    scroll-behavior: smooth;
 }
 
 /* Main Color */
@@ -104,6 +108,10 @@
 /* Play Button */
 .drop-shadow-playBtn {
     filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.5));
+}
+
+.drop-shadow-inside {
+    box-shadow: inset 0px -30px 30px 0px rgba(34, 34, 34, 0.13);
 }
 
 .drop-shadow-media {
@@ -192,10 +200,10 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+    body {
+        @apply bg-background text-foreground;
     }
 }

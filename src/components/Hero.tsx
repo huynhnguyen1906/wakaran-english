@@ -2,23 +2,24 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-// import { useTranslations } from 'use-intl'
+import { useTranslations } from 'use-intl'
+
+// import HeroImg from '@/assets/images/heroImg.jpg'
 
 export default function Hero() {
 
-    // const t = useTranslations('hero');
+    const t = useTranslations('banner');
 
     return (
         <div>
-            <div className='mt-4 mb-[140px] hidden md:block w-full bg-[url(/images/wakaranenglish_banner_bg.png)] bg-no-repeat bg-bottom bg-cover py-[48px]'>
+            <div className='mt-4 mb-[140px] hidden md:block w-full  bg-no-repeat bg-bottom bg-cover py-[48px]'>
                 <div className='mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-4'>
                     <div className='grid gap-8'>
                         <h1 className='text-4xl font-bold'>
-                            Come and See how we <span className='text-[#FF5E2D]'> Learn English </span>in funny way
+                            {t('title')}
                         </h1>
                         <p className='text-[#333333] tracking-wide'>
-                            We’re working to improve our English speaking skills by sharing videos that help us practice
-                            like interviews with native speakers!
+                            {t('desc')}
                         </p>
                         <Link
                             href='https://www.youtube.com/@WakaranEnglish'
@@ -27,7 +28,7 @@ export default function Hero() {
                         >
                             <Image
                                 src='/images/playbutton.png'
-                                alt='Play Button Icon'
+                                alt={t('alt')}
                                 width={40}
                                 height={40}
                                 className='mr-2 inline-block'

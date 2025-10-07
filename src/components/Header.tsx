@@ -47,7 +47,7 @@ export default function Header() {
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
                                 <Link
-                                    href='/projects'
+                                    href='#projects'
                                     className={pathname === '/projects' ? 'font-bold' : ''}
                                 >
                                     {t('projects')}
@@ -55,7 +55,7 @@ export default function Header() {
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
                                 <Link
-                                    href='/members'
+                                    href='#members'
                                     className={pathname === '/members' ? 'font-bold' : ''}
                                 >
                                     {t('members')}
@@ -71,7 +71,7 @@ export default function Header() {
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
                                 <Link
-                                    href='/contact'
+                                    href='#contact'
                                     className={pathname === '/contact' ? 'font-bold' : ''}
                                 >
                                     {t('contact')}
