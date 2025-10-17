@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "title": "Hãy đến và xem cách chúng tôi học tiếng Anh một cách vui nhộn!",
+        "desc": "Chúng tôi đang cải thiện kỹ năng nói tiếng Anh bằng cách chia sẻ các video như phỏng vấn với người bản ngữ!",
+        "alt": "Hình ảnh biểu ngữ Wakaran English"
+    }, 
     "header": {
         "subtitle": "Trang web giáo dục dành cho người học tiếng Anh",
         "about": "Về chúng tôi",
