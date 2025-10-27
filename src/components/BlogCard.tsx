@@ -19,7 +19,7 @@ export default function BlogCard({ title, description, imageUrl, slug }: BlogCar
 
     return (
         <>
-            <article className='most-white-bg most-white w-[calc(100%-64px)] flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink-0'>
+            <article className='most-white-bg most-white w-[calc(100%-64px)]  flex-shrink-0 rounded-2xl px-2 pt-2 pb-4 md:w-1/3 md:flex-shrink-0'>
                 <div className='aspect-[4/3] rounded-lg'>
                     {imageUrl && (
                         <Image
@@ -32,7 +32,7 @@ export default function BlogCard({ title, description, imageUrl, slug }: BlogCar
                     )}
                 </div>
                 <div className='mt-2 mb-4 md:my-4'>
-                    <h3 className='text-main-color mb-2 text-base font-semibold md:text-2xl'>{safeTitle}</h3>
+                    <h3 className='text-main-color mb-2 text-base font-semibold md:text-2xl [display:-webkit-box] max-h-[3.375rem] min-h-[4rem] [-webkit-box-orient:vertical] overflow-hidden [-webkit-line-clamp:2]'>{safeTitle}</h3>
                     <p className='text-sub-color [display:-webkit-box] max-h-[3.375rem] min-h-[3.375rem] overflow-hidden text-sm leading-tight font-normal [-webkit-box-orient:vertical] [-webkit-line-clamp:3] md:max-h-[4.5rem] md:min-h-[4.5rem] md:text-base md:leading-normal'>
                         {safeDescription}
                     </p>
