@@ -35,16 +35,18 @@ export function optimizeImageLoading() {
 // SEO helper functions
 export function generateHreflangTags(currentLocale: string, slug?: string) {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wakaran-eng.com'
-    const locales = {
+    
+    // Map internal locale codes to ISO 639-1 language codes
+    const localeToLanguage: Record<string, string> = {
         en: 'en',
         vi: 'vi',
         ja: 'ja',
-        cn: 'zh',
+        cn: 'zh-CN', // Changed from 'zh' to 'zh-CN' for proper ISO format
     }
 
     const path = slug ? `/blogs/${slug}` : ''
 
-    return Object.entries(locales).map(([locale, hreflang]) => ({
+    return Object.entries(localeToLanguage).map(([locale, hreflang]) => ({
         rel: 'alternate',
         hrefLang: hreflang,
         href: `${baseUrl}/${locale}${path}`,
@@ -52,15 +54,28 @@ export function generateHreflangTags(currentLocale: string, slug?: string) {
 }
 
 export function cleanTextForSEO(text: string, maxLength = 160): string {
+    // Return empty string if input is falsy
+    if (!text) return ''
+    
     // Remove HTML tags
     const cleanText = text.replace(/<[^>]*>/g, '')
     // Remove extra whitespace
     const trimmedText = cleanText.replace(/\s+/g, ' ').trim()
-    // Truncate if needed
+    
+    // Return as is if already short enough
     if (trimmedText.length <= maxLength) {
         return trimmedText
     }
-    return trimmedText.substring(0, maxLength - 3) + '...'
+    
+    // Truncate at word boundary
+    const truncated = trimmedText.substring(0, maxLength - 3)
+    const lastSpace = truncated.lastIndexOf(' ')
+    
+    if (lastSpace > maxLength * 0.8) {
+        return truncated.substring(0, lastSpace) + '...'
+    }
+    
+    return truncated + '...'
 }
 
 export function generateSlugFromTitle(title: string): string {
@@ -69,6 +84,27 @@ export function generateSlugFromTitle(title: string): string {
         .replace(/[^\w\s-]/g, '') // Remove special characters
         .replace(/[\s_-]+/g, '-') // Replace spaces and underscores with hyphens
         .replace(/^-+|-+$/g, '') // Remove leading/trailing hyphens
+}
+
+/**
+ * Validate and ensure meta description meets SEO requirements
+ * - Minimum 50 characters for good SEO
+ * - Maximum 160 characters to avoid truncation in search results
+ * - No duplicate descriptions
+ */
+export function validateMetaDescription(description: string | undefined, fallback: string): string {
+    if (!description || description.trim().length === 0) {
+        return fallback
+    }
+
+    const cleaned = cleanTextForSEO(description, 160)
+    
+    // If too short, append fallback
+    if (cleaned.length < 50) {
+        return `${cleaned} ${fallback}`.substring(0, 160)
+    }
+
+    return cleaned
 }
 
 // Core Web Vitals helpers

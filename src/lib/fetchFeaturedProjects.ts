@@ -14,7 +14,7 @@ interface WPProjectFromAPI {
         project_date_formatted: string
     }
     featured_image: {
-        medium: string
+        large: string
     }
     youtube_url: string | null
 }
@@ -27,12 +27,11 @@ export async function fetchFeaturedProjects(): Promise<ProjectCard[]> {
 
     const data = await res.json()
     const raw: WPProjectFromAPI[] = data.projects
-
     const projects: ProjectCard[] = raw.map((p) => ({
         id: p.id,
         title: p.title,
         publishedAt: p.date.project_date,
-        thumbnail: p.featured_image?.medium ?? '/images/heroImg_phone.webp',
+        thumbnail: p.featured_image?.large ?? '/images/heroImg_phone.webp',
         youtube: p.youtube_url ?? null,
     }))
 

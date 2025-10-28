@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
 
+import { validateMetaDescription } from './seoUtils'
+
 export interface SEOConfig {
     title: string
     description: string
@@ -88,6 +90,9 @@ export function generateMetadata(config: SEOConfig, locale: string): Metadata {
     const url = config.url ? `${baseUrl}${config.url}` : `${baseUrl}/${locale}`
     const imageUrl = config.image ? `${baseUrl}${config.image}` : `${baseUrl}/images/heroImg_phone.webp`
 
+    // Convert locale to OpenGraph format (uses underscore)
+    const ogLocale = locale === 'cn' ? 'zh_CN' : locale === 'ja' ? 'ja_JP' : locale === 'vi' ? 'vi_VN' : 'en_US'
+
     return {
         title: config.title,
         description: config.description,
@@ -110,7 +115,7 @@ export function generateMetadata(config: SEOConfig, locale: string): Metadata {
                     alt: config.title,
                 },
             ],
-            locale: locale,
+            locale: ogLocale,
             type: 'website',
         },
 
@@ -141,14 +146,15 @@ export function generateMetadata(config: SEOConfig, locale: string): Metadata {
             google: 'googlebadeb436b82f9aba',
         },
 
-        // Canonical URL
+        // Canonical URL and alternate languages
         alternates: {
             canonical: url,
             languages: {
-                en: `${baseUrl}/en`,
-                vi: `${baseUrl}/vi`,
-                ja: `${baseUrl}/ja`,
-                zh: `${baseUrl}/cn`,
+                'en': `${baseUrl}/en`,
+                'vi': `${baseUrl}/vi`,
+                'ja': `${baseUrl}/ja`,
+                'zh-CN': `${baseUrl}/cn`, 
+                'x-default': `${baseUrl}/en`, 
             },
         },
     }
@@ -167,17 +173,25 @@ export function generateBlogMetadata(
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://wakaran-eng.com'
     const url = `${baseUrl}/${locale}/blogs/${slug}`
     const imageUrl = image || `${baseUrl}/images/heroImg_phone.webp`
+    
+    const metaDescription = validateMetaDescription(
+        description,
+        'Read this article on Wakaran English - Learn English with engaging content, native speaker interviews, and interactive lessons.'
+    )
+
+    // Convert locale to OpenGraph format (uses underscore)
+    const ogLocale = locale === 'cn' ? 'zh_CN' : locale === 'ja' ? 'ja_JP' : locale === 'vi' ? 'vi_VN' : 'en_US'
 
     return {
         title: `${title} | Wakaran English`,
-        description: description,
+        description: metaDescription,
         authors: [{ name: author || 'Wakaran English Team' }],
         creator: 'Wakaran English',
         publisher: 'Wakaran English',
 
         openGraph: {
             title: title,
-            description: description,
+            description: metaDescription,
             url: url,
             siteName: 'Wakaran English',
             images: [
@@ -188,7 +202,7 @@ export function generateBlogMetadata(
                     alt: title,
                 },
             ],
-            locale: locale,
+            locale: ogLocale,
             type: 'article',
             publishedTime: publishedTime,
             authors: [author || 'Wakaran English Team'],
@@ -197,7 +211,7 @@ export function generateBlogMetadata(
         twitter: {
             card: 'summary_large_image',
             title: title,
-            description: description,
+            description: metaDescription,
             images: [imageUrl],
             creator: '@wakaraneng',
         },
@@ -216,6 +230,13 @@ export function generateBlogMetadata(
 
         alternates: {
             canonical: url,
+            languages: {
+                'en': `${baseUrl}/en/blogs/${slug}`,
+                'vi': `${baseUrl}/vi/blogs/${slug}`,
+                'ja': `${baseUrl}/ja/blogs/${slug}`,
+                'zh-CN': `${baseUrl}/cn/blogs/${slug}`,
+                'x-default': `${baseUrl}/en/blogs/${slug}`,
+            },
         },
     }
 }
