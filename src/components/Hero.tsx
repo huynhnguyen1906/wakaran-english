@@ -2,32 +2,28 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+
 import { useTranslations } from 'use-intl'
 
 // import HeroImg from '@/assets/images/heroImg.jpg'
 
 export default function Hero() {
-
-    const t = useTranslations('banner');
+    const t = useTranslations('banner')
 
     return (
         <div>
-            <div className='mt-4 mb-[140px] hidden md:block w-full  bg-no-repeat bg-bottom bg-cover py-[48px]'>
+            <div className='mt-4 mb-[140px] hidden w-full bg-cover bg-bottom bg-no-repeat py-[48px] md:block'>
                 <div className='mx-auto grid max-w-[1200px] grid-cols-2 items-center gap-4'>
                     <div className='grid gap-8'>
-                        <h1 className='text-4xl font-bold'>
-                            {t('title')}
-                        </h1>
-                        <p className='text-[#333333] tracking-wide'>
-                            {t('desc')}
-                        </p>
+                        <h1 className='text-4xl font-bold'>{t('title')}</h1>
+                        <p className='tracking-wide text-[#333333]'>{t('desc')}</p>
                         <Link
                             href='https://www.youtube.com/@WakaranEnglish'
                             target='_blank'
-                            className='flex w-[300px] items-center justify-center hover:text-amber-50 rounded-md border border-[#FF5E2D] transition hover:bg-[#FF5E2D] py-2'
+                            className='flex w-[300px] items-center justify-center rounded-md border border-[#FF5E2D] py-2 transition hover:bg-[#FF5E2D] hover:text-amber-50'
                         >
                             <Image
-                                src='/images/playbutton.png'
+                                src='/images/playButton.png'
                                 alt={t('alt')}
                                 width={40}
                                 height={40}
