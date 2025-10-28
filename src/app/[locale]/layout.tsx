@@ -49,9 +49,12 @@ export default async function LocaleLayout({
         notFound()
     }
 
+    // Map internal locale to ISO 639-1 language code
+    const htmlLang = locale === 'cn' ? 'zh-CN' : locale
+
     return (
         <html
-            lang={locale}
+            lang={htmlLang}
             className={poppins.className}
         >
             <body className='bg-bgcolor no-scroll-x'>
