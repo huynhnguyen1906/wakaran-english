@@ -101,7 +101,7 @@ export default function FeaturedProjects({ projects }: Props) {
                         ))
                     :   projects.map((v) => {
                             const isDummy = v.publishedAt === ''
-                            const decodedTitle = decodeHtmlEntities(v.title)
+                        const decodedTitle = decodeHtmlEntities(v.title)
                             return (
                                 <div
                                     key={v.id}

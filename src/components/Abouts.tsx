@@ -1,4 +1,3 @@
-// src/app/about/page.tsx（例）
 import { fetchFeaturedProjects } from '@/lib/fetchFeaturedProjects'
 
 import AboutUs from './AboutUs'
