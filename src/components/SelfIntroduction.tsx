@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { renderTextWithLineBreaks } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
+import YouTubeEmbed from './YouTubeEmbed'
+
 export default function SelfIntroduction() {
     const t = useTranslations('selfIntroduction')
     const VIDEO_ID = 'yWG-eflBvyI'
@@ -46,18 +48,14 @@ export default function SelfIntroduction() {
                             />
                         </Link>
                     </div>
-                    {/* PC用サムネ&リンク */}
-                    <iframe
-                        width='560'
-                        height='315'
-                        src={`https://www.youtube.com/embed/${VIDEO_ID}?si=eyWMwOU1i5VSQOQH`}
-                        title='YouTube video player'
-                        frameBorder='0'
-                        allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
-                        referrerPolicy='strict-origin-when-cross-origin'
-                        allowFullScreen
-                        className='absolute inset-0 hidden h-full w-full lg:block'
-                    />
+                    {/* PC用 - Privacy-focused YouTube embed */}
+                    <div className='absolute inset-0 hidden lg:block'>
+                        <YouTubeEmbed
+                            videoId={VIDEO_ID}
+                            title='YouTube video player'
+                            thumbnail='/images/introductionThumb.webp'
+                        />
+                    </div>
                 </div>
             </div>
         </div>

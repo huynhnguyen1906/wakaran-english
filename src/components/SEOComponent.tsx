@@ -62,7 +62,7 @@ export default function SEOComponent({
             />
             <link
                 rel='preconnect'
-                href='https://www.youtube.com'
+                href='https://www.youtube-nocookie.com'
             />
             <link
                 rel='preconnect'
