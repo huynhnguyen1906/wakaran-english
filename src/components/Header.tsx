@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { usePathname } from 'next/navigation'
+import { useParams, usePathname } from 'next/navigation'
 
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
@@ -12,6 +12,8 @@ import MobileHamburgerMenu from './MobileHamburgerMenu'
 export default function Header() {
     const t = useTranslations('header')
     const pathname = usePathname()
+    const params = useParams()
+    const locale = params.locale as string
 
     return (
         <header className='w-full'>
@@ -46,36 +48,36 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
-                                <Link
-                                    href='#projects'
-                                    className={pathname === '/projects' ? 'font-bold' : ''}
+                                <a
+                                    href={`/${locale}#projects`}
+                                    className={pathname === '/#projects' ? 'font-bold' : ''}
                                 >
                                     {t('projects')}
-                                </Link>
+                                </a>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
-                                <Link
-                                    href='#members'
-                                    className={pathname === '/members' ? 'font-bold' : ''}
+                                <a
+                                    href={`/${locale}#members`}
+                                    className={pathname === '/#members' ? 'font-bold' : ''}
                                 >
                                     {t('members')}
-                                </Link>
+                                </a>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
                                 <Link
                                     href='/blogs'
-                                    className={pathname === '/blogs' ? 'font-bold' : ''}
+                                    className={pathname.startsWith('/blogs') ? 'font-bold' : ''}
                                 >
                                     {t('blogs')}
                                 </Link>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
-                                <Link
-                                    href='#contact'
-                                    className={pathname === '/contact' ? 'font-bold' : ''}
+                                <a
+                                    href={`/${locale}#contact`}
+                                    className={pathname === '/#contact' ? 'font-bold' : ''}
                                 >
                                     {t('contact')}
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                         <LanguageSwitcher />

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { usePathname } from 'next/navigation'
+import { useParams, usePathname } from 'next/navigation'
 
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
@@ -12,6 +12,8 @@ import LanguageSwitcher from './LanguageSwitcher'
 export default function MobileHamburgerMenu() {
     const [open, setOpen] = useState(false)
     const pathname = usePathname()
+    const params = useParams()
+    const locale = params.locale as string
     const t = useTranslations('header')
 
     return (
@@ -66,46 +68,46 @@ export default function MobileHamburgerMenu() {
                         >
                             {t('about')}
                         </Link>
-                        <Link
-                            href='/projects'
+                        <a
+                            href={`/${locale}#projects`}
                             onClick={() => setOpen(false)}
                             className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
-                            } ${pathname === '/projects' ? 'font-bold' : ''}`}
+                            } ${pathname === '/#projects' ? 'font-bold' : ''}`}
                             style={{ transitionDelay: open ? '250ms' : '0ms' }}
                         >
                             {t('projects')}
-                        </Link>
-                        <Link
-                            href='/members'
+                        </a>
+                        <a
+                            href={`/${locale}#members`}
                             onClick={() => setOpen(false)}
                             className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
-                            } ${pathname === '/members' ? 'font-bold' : ''}`}
+                            } ${pathname === '/#members' ? 'font-bold' : ''}`}
                             style={{ transitionDelay: open ? '300ms' : '0ms' }}
                         >
                             {t('members')}
-                        </Link>
+                        </a>
                         <Link
                             href='/blogs'
                             onClick={() => setOpen(false)}
                             className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
-                            } ${pathname === '/blogs' ? 'font-bold' : ''}`}
+                            } ${pathname.startsWith('/blogs') ? 'font-bold' : ''}`}
                             style={{ transitionDelay: open ? '350ms' : '0ms' }}
                         >
                             {t('blogs')}
                         </Link>
-                        <Link
-                            href='/contact'
+                        <a
+                            href={`/${locale}#contact`}
                             onClick={() => setOpen(false)}
                             className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
-                            } ${pathname === '/contact' ? 'font-bold' : ''}`}
+                            } ${pathname === '/#contact' ? 'font-bold' : ''}`}
                             style={{ transitionDelay: open ? '400ms' : '0ms' }}
                         >
                             {t('contact')}
-                        </Link>
+                        </a>
                         <div
                             className={`transition-all duration-500 ease-out ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
