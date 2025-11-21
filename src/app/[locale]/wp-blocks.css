@@ -13,7 +13,15 @@
 .wp-block-library * {
     max-width: 100%;
     box-sizing: border-box;
+    /* color: #EC693F; */
 }
+
+/* .post-content h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #EC693F;
+} */
 
 /* Paragraph blocks */
 .wp-block-library p {
@@ -94,6 +102,7 @@
     float: right;
     margin: 0 0 1em 2em;
 }
+
 
 .wp-block-image.aligncenter {
     text-align: center;
@@ -233,7 +242,7 @@
     border: none;
     border-top: 1px solid #e5e7eb;
     margin: 3em auto;
-    width: 100px;
+    width: 100% !important;
 }
 
 /* Spacer block */
