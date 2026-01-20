@@ -22,6 +22,73 @@
     overflow-wrap: break-word;
 }
 
+/* Line breaks - WordPress br tag */
+.wp-block-library br {
+    display: block;
+    margin: 0.5em 0;
+    content: "";
+}
+
+/* Empty paragraphs for spacing (WordPress classic editor) */
+.wp-block-library p:empty {
+    margin: 1em 0;
+    min-height: 1.5em;
+}
+
+/* Classic inline formatting */
+.wp-block-library strong,
+.wp-block-library b {
+    font-weight: 700;
+}
+
+.wp-block-library em,
+.wp-block-library i {
+    font-style: italic;
+}
+
+.wp-block-library u {
+    text-decoration: underline;
+}
+
+.wp-block-library s,
+.wp-block-library strike,
+.wp-block-library del {
+    text-decoration: line-through;
+}
+
+.wp-block-library mark {
+    background-color: #fff3cd;
+    padding: 0.1em 0.3em;
+    border-radius: 2px;
+}
+
+.wp-block-library sub {
+    vertical-align: sub;
+    font-size: 0.8em;
+}
+
+.wp-block-library sup {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+/* Classic blockquote (not wp-block-quote) */
+.wp-block-library blockquote {
+    border-left: 4px solid #e5e7eb;
+    padding-left: 1.5em;
+    margin: 2em 0;
+    font-style: italic;
+    color: #4b5563;
+}
+
+.wp-block-library blockquote p {
+    margin-bottom: 1em;
+}
+
+.wp-block-library blockquote p:last-child {
+    margin-bottom: 0;
+}
+
 /* Heading blocks */
 .wp-block-library h1,
 .wp-block-library h2,
@@ -62,6 +129,31 @@
 
 .wp-block-library li {
     margin-bottom: 0.5em;
+}
+
+.wp-block-library ul ul,
+.wp-block-library ol ol,
+.wp-block-library ul ol,
+.wp-block-library ol ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Link styles */
+.wp-block-library a {
+    color: #3b82f6;
+    text-decoration: underline;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.wp-block-library a:hover {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.wp-block-library a:visited {
+    color: #7c3aed;
 }
 
 /* Image blocks */
@@ -114,10 +206,49 @@
     color: #4b5563;
 }
 
+.wp-block-quote p {
+    margin-bottom: 0.5em;
+}
+
 .wp-block-quote cite {
     font-style: normal;
     font-size: 0.875rem;
     color: #6b7280;
+    display: block;
+    margin-top: 1em;
+}
+
+/* Pullquote block - Large featured quote */
+.wp-block-pullquote {
+    padding: 2em;
+    margin: 3em 0;
+    text-align: center;
+    border-top: 4px solid #e5e7eb;
+    border-bottom: 4px solid #e5e7eb;
+}
+
+.wp-block-pullquote blockquote {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.wp-block-pullquote cite {
+    font-style: normal;
+    font-size: 1rem;
+    color: #6b7280;
+    margin-top: 1em;
+    display: block;
+}
+
+.wp-block-pullquote.is-style-solid-color {
+    background: #f3f4f6;
+    border: none;
+    border-radius: 8px;
 }
 
 /* Code blocks */
@@ -236,9 +367,47 @@
     width: 100px;
 }
 
+.wp-block-separator.is-style-wide {
+    width: 100%;
+}
+
+.wp-block-separator.is-style-dots {
+    border: none;
+    text-align: center;
+    max-width: none;
+    line-height: 1;
+    height: auto;
+}
+
+.wp-block-separator.is-style-dots::before {
+    content: '···';
+    color: #e5e7eb;
+    font-size: 1.5em;
+    letter-spacing: 2em;
+    padding-left: 2em;
+    font-family: serif;
+}
+
 /* Spacer block */
 .wp-block-spacer {
     clear: both;
+}
+
+/* Additional spacing utilities */
+.wp-block-library .has-small-font-size {
+    font-size: 0.875rem;
+}
+
+.wp-block-library .has-medium-font-size {
+    font-size: 1rem;
+}
+
+.wp-block-library .has-large-font-size {
+    font-size: 1.5rem;
+}
+
+.wp-block-library .has-x-large-font-size {
+    font-size: 2rem;
 }
 
 /* Button block */
@@ -533,4 +702,171 @@
     width: 100vw;
     max-width: 100vw;
     margin-left: calc(50% - 50vw);
+}
+/* Additional WordPress blocks */
+
+/* Details/Summary block */
+.wp-block-library details {
+    margin: 1.5em 0;
+    padding: 1em;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.wp-block-library summary {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5em;
+    user-select: none;
+}
+
+.wp-block-library summary:hover {
+    background: #f9fafb;
+}
+
+.wp-block-library details[open] summary {
+    margin-bottom: 1em;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* WordPress classic list styles */
+.wp-block-library ul.disc-list {
+    list-style-type: disc;
+}
+
+.wp-block-library ul.circle-list {
+    list-style-type: circle;
+}
+
+.wp-block-library ul.square-list {
+    list-style-type: square;
+}
+
+.wp-block-library ol.decimal-list {
+    list-style-type: decimal;
+}
+
+.wp-block-library ol.lower-alpha-list {
+    list-style-type: lower-alpha;
+}
+
+.wp-block-library ol.upper-alpha-list {
+    list-style-type: upper-alpha;
+}
+
+/* WordPress text alignment classes */
+.wp-block-library .has-text-align-left {
+    text-align: left;
+}
+
+.wp-block-library .has-text-align-center {
+    text-align: center;
+}
+
+.wp-block-library .has-text-align-right {
+    text-align: right;
+}
+
+.wp-block-library .has-text-align-justify {
+    text-align: justify;
+}
+
+/* WordPress alignment helpers */
+.wp-block-library .alignleft {
+    float: left;
+    margin: 0 1.5em 1em 0;
+}
+
+.wp-block-library .alignright {
+    float: right;
+    margin: 0 0 1em 1.5em;
+}
+
+.wp-block-library .aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* WordPress post content specific */
+.wp-block-post-content {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* Address WordPress empty paragraph spacing issue */
+.wp-block-library p + br {
+    display: block;
+    content: "";
+    margin: 0.5em 0;
+}
+
+.wp-block-library br + br {
+    display: block;
+    content: "";
+    margin: 0.5em 0;
+}
+
+/* WordPress nbsp handling */
+.wp-block-library .nbsp {
+    white-space: pre;
+}
+
+/* Horizontal rule styling */
+.wp-block-library hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 2em 0;
+}
+
+/* WordPress definition list */
+.wp-block-library dl {
+    margin: 1.5em 0;
+}
+
+.wp-block-library dt {
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.wp-block-library dd {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+/* WordPress address block */
+.wp-block-library address {
+    font-style: italic;
+    margin: 1.5em 0;
+}
+
+/* WordPress kbd (keyboard input) */
+.wp-block-library kbd {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 0.1em 0.4em;
+    font-family: 'Monaco', 'Consolas', monospace;
+    font-size: 0.9em;
+}
+
+/* WordPress abbr (abbreviation) */
+.wp-block-library abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+/* WordPress cite tag */
+.wp-block-library cite {
+    font-style: italic;
+}
+
+/* Ensure proper spacing after blocks */
+.wp-block-library > *:last-child {
+    margin-bottom: 0;
+}
+
+.wp-block-library > *:first-child {
+    margin-top: 0;
 }
