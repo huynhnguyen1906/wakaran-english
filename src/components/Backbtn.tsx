@@ -1,9 +1,10 @@
 import React from 'react'
 
+import { Link } from '@/i18n/navigation'
+
 import {
     Breadcrumb,
     BreadcrumbItem,
-    BreadcrumbLink,
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
@@ -19,11 +20,11 @@ const Backbtn = ({ blogTitle }: BackbtnProps) => {
             <Breadcrumb>
                 <BreadcrumbList>
                     <BreadcrumbItem>
-                        <BreadcrumbLink href='/'>Home</BreadcrumbLink>
+                        <Link href='/' className='transition-colors hover:text-foreground'>Home</Link>
                     </BreadcrumbItem>
                     <BreadcrumbSeparator />
                     <BreadcrumbItem>
-                        <BreadcrumbLink href='/blogs'>Blogs</BreadcrumbLink>
+                        <Link href='/blogs' className='transition-colors hover:text-foreground'>Blogs</Link>
                     </BreadcrumbItem>
                     {blogTitle && (
                         <>

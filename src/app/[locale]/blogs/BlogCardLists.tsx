@@ -21,10 +21,31 @@ import { type BlogPost, fetchBlogPosts } from '@/lib/fetchBlogPosts'
 
 import cardImage from '../../../../public/images/heroImg.jpg'
 
-const BlogCardLists = async ({ params }: { params: Promise<{ locale: string }> }) => {
+const BlogCardLists = async ({ params, searchParams }: { 
+    params: Promise<{ locale: string }> 
+    searchParams?: Promise<{ page?: string }> 
+}) => {
     const { locale } = await params
+    const resolvedSearchParams = await searchParams
+    const currentPage = Number(resolvedSearchParams?.page) || 1
     const t = await getTranslations('blogList')
-    const posts = await fetchBlogPosts()
+    const POSTS_PER_PAGE = 15
+
+    // Fetch blog posts with pagination
+    const { posts: allPosts, pagination } = await fetchBlogPosts(currentPage, POSTS_PER_PAGE)
+
+    // When API doesn't support pagination, it returns ALL posts at once
+    // So we need to handle client-side pagination
+    const useClientPagination = !pagination
+    
+    // Calculate total based on API or all posts returned
+    const totalPosts = pagination?.total || allPosts.length
+    const totalPages = pagination?.total_pages || Math.ceil(allPosts.length / POSTS_PER_PAGE)
+    
+    // If using client-side pagination, slice the posts array
+    const posts = useClientPagination 
+        ? allPosts.slice((currentPage - 1) * POSTS_PER_PAGE, currentPage * POSTS_PER_PAGE)
+        : allPosts
 
     // ロケールに基づく日付フォーマット
     const getLocalizedDateFormat = (locale: string) => {
@@ -53,7 +74,7 @@ const BlogCardLists = async ({ params }: { params: Promise<{ locale: string }> }
                 <h1 className='main-color text-[32px] font-bold md:text-[48px]'>
                     {t('title')}{' '}
                     <span className='text-[12px] md:text-[24px]'>
-                        ( {posts.length} {t('postsCount')} )
+                        ( {totalPosts} {t('postsCount')} )
                     </span>
                 </h1>
                 <p className='text-[14px] text-[#4c4c4c] md:text-[24px]'></p>
@@ -110,32 +131,73 @@ const BlogCardLists = async ({ params }: { params: Promise<{ locale: string }> }
             </section>
 
             {/* pagination */}
-            {posts.length > 10 && (
+            {totalPages > 1 ? (
                 <div className='mt-[48px]'>
                     <Pagination>
                         <PaginationContent>
-                            <PaginationItem>
-                                <PaginationPrevious href='#' />
-                            </PaginationItem>
-                            <PaginationItem className='flex'>
-                                {[...Array(Math.min(3, Math.ceil(posts.length / 10)))].map((_, i) => (
-                                    <div key={i}>
-                                        <PaginationLink href='#'>{i + 1}</PaginationLink>
-                                    </div>
-                                ))}
-                            </PaginationItem>
-                            {Math.ceil(posts.length / 10) > 3 && (
+                            {currentPage > 1 && (
                                 <PaginationItem>
-                                    <PaginationEllipsis />
+                                    <PaginationPrevious href={currentPage === 2 ? '/blogs' : `/blogs?page=${currentPage - 1}`} />
                                 </PaginationItem>
                             )}
-                            <PaginationItem>
-                                <PaginationNext href='#' />
+                            
+                            <PaginationItem className='flex gap-1'>
+                                {/* Show first page */}
+                                <PaginationLink 
+                                    href='/blogs'
+                                    isActive={currentPage === 1}
+                                >
+                                    1
+                                </PaginationLink>
+                                
+                                {/* Show ellipsis if current page > 3 */}
+                                {currentPage > 3 && totalPages > 5 && (
+                                    <PaginationEllipsis />
+                                )}
+                                
+                                {/* Show pages around current page */}
+                                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                                    .filter(page => {
+                                        // Show pages adjacent to current page (not first or last)
+                                        if (page === 1 || page === totalPages) return false
+                                        return Math.abs(page - currentPage) <= 1
+                                    })
+                                    .map(page => (
+                                        <PaginationLink 
+                                            key={page}
+                                            href={`/blogs?page=${page}`}
+                                            isActive={currentPage === page}
+                                        >
+                                            {page}
+                                        </PaginationLink>
+                                    ))
+                                }
+                                
+                                {/* Show ellipsis if current page < totalPages - 2 */}
+                                {currentPage < totalPages - 2 && totalPages > 5 && (
+                                    <PaginationEllipsis />
+                                )}
+                                
+                                {/* Show last page if more than 1 page */}
+                                {totalPages > 1 && (
+                                    <PaginationLink 
+                                        href={`/blogs?page=${totalPages}`}
+                                        isActive={currentPage === totalPages}
+                                    >
+                                        {totalPages}
+                                    </PaginationLink>
+                                )}
                             </PaginationItem>
+                            
+                            {currentPage < totalPages && (
+                                <PaginationItem>
+                                    <PaginationNext href={`/blogs?page=${currentPage + 1}`} />
+                                </PaginationItem>
+                            )}
                         </PaginationContent>
                     </Pagination>
                 </div>
-            )}
+            ) : null}
         </div>
     )
 }

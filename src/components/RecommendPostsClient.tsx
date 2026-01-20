@@ -3,7 +3,8 @@
 import { useEffect, useRef, useState } from 'react'
 
 import Image from 'next/image'
-import Link from 'next/link'
+
+import { Link } from '@/i18n/navigation'
 import { useParams } from 'next/navigation'
 
 import { decodeHtmlEntities } from '@/utils/textUtils'
@@ -110,7 +111,7 @@ export default function RecommendPostsClient({ initialPosts }: Props) {
                                 </div>
                                 {p.slug ?
                                     <Link
-                                        href={`/${locale}/blogs/${p.slug}`}
+                                        href={`/blogs/${p.slug}`}
                                         className='text-bg-color most-white inline-flex items-center gap-x-1 rounded-[10px] px-12 py-3.5 text-sm md:rounded-xl md:px-10 md:py-3 md:text-base'
                                     >
                                         {t('detailBtn')}

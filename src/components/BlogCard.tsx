@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
+import { Link } from '@/i18n/navigation'
 import { decodeHtmlEntities } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
 
@@ -38,7 +38,7 @@ export default function BlogCard({ title, description, imageUrl, slug }: BlogCar
                     </p>
                 </div>
                 <Link
-                    href={slug ? `/blogs/${slug}` : '#'}
+                    href={slug ? `/blogs/${slug}` : '/'}
                     className='text-bg-color inline-flex items-center gap-x-1 rounded-[10px] px-12 py-3.5 text-sm md:rounded-xl md:px-10 md:py-3 md:text-base'
                 >
                     {t('detailBtn')}

@@ -11,11 +11,17 @@ import Subscribe from './Subscribe'
 
 // import Blog from '@/components/Blog'
 
-const BlogList = async ({ params }: { params: Promise<{ locale: string }> }) => {
+const BlogList = async ({ 
+    params,
+    searchParams 
+}: { 
+    params: Promise<{ locale: string }>
+    searchParams?: Promise<{ page?: string }> 
+}) => {
     return (
         <div className='bg-[#EDECE8]'>
             <Header />
-            <BlogCardLists params={params} />
+            <BlogCardLists params={params} searchParams={searchParams} />
             <Subscribe />
             <div className='my-[80px] md:my-[192px]'>
                 <SelfIntroduction />

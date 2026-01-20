@@ -25,13 +25,20 @@ export interface BlogPost {
 
 export interface BlogPostsResponse {
     posts: BlogPost[]
+    pagination?: {
+        total: number
+        per_page: number
+        current_page: number
+        total_pages: number
+    }
 }
 
-export async function fetchBlogPosts(): Promise<BlogPost[]> {
+export async function fetchBlogPosts(page: number = 1, perPage: number = 15): Promise<{ posts: BlogPost[]; pagination?: BlogPostsResponse['pagination'] }> {
     try {
         const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL
+        // Note: Current API returns ALL posts at once, doesn't support pagination params yet
         const response = await fetch(`${baseUrl}/wp-json/api/v1/posts`, {
-            cache: 'no-store', // 最新のデータを取得するため
+            cache: 'no-store',
         })
 
         if (!response.ok) {
@@ -39,10 +46,15 @@ export async function fetchBlogPosts(): Promise<BlogPost[]> {
         }
 
         const data: BlogPostsResponse = await response.json()
-        return data.posts
+        
+        // API returns all posts - frontend will handle pagination
+        return {
+            posts: data.posts,
+            pagination: data.pagination // Will be undefined until API supports it
+        }
     } catch (error) {
         console.error('Failed to fetch blog posts:', error)
-        return []
+        return { posts: [] }
     }
 }
 

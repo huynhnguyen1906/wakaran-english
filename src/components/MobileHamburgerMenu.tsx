@@ -68,8 +68,8 @@ export default function MobileHamburgerMenu() {
                         >
                             {t('about')}
                         </Link>
-                        <a
-                            href={`/${locale}#projects`}
+                        <Link
+                            href='/#projects'
                             onClick={() => setOpen(false)}
                             className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
@@ -77,9 +77,9 @@ export default function MobileHamburgerMenu() {
                             style={{ transitionDelay: open ? '250ms' : '0ms' }}
                         >
                             {t('projects')}
-                        </a>
-                        <a
-                            href={`/${locale}#members`}
+                        </Link>
+                        <Link
+                            href='/#members'
                             onClick={() => setOpen(false)}
                             className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
@@ -87,7 +87,7 @@ export default function MobileHamburgerMenu() {
                             style={{ transitionDelay: open ? '300ms' : '0ms' }}
                         >
                             {t('members')}
-                        </a>
+                        </Link>
                         <Link
                             href='/blogs'
                             onClick={() => setOpen(false)}
@@ -98,8 +98,8 @@ export default function MobileHamburgerMenu() {
                         >
                             {t('blogs')}
                         </Link>
-                        <a
-                            href={`/${locale}#contact`}
+                        <Link
+                            href='/#contact'
                             onClick={() => setOpen(false)}
                             className={`relative transition-all duration-500 ease-out after:absolute after:right-0 after:bottom-0 after:h-px after:w-full after:bg-gradient-to-l after:from-black after:to-transparent after:opacity-20 hover:text-gray-600 ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
@@ -107,7 +107,7 @@ export default function MobileHamburgerMenu() {
                             style={{ transitionDelay: open ? '400ms' : '0ms' }}
                         >
                             {t('contact')}
-                        </a>
+                        </Link>
                         <div
                             className={`transition-all duration-500 ease-out ${
                                 open ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'

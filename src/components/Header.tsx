@@ -48,20 +48,20 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
-                                <a
-                                    href={`/${locale}#projects`}
+                                <Link
+                                    href='/#projects'
                                     className={pathname === '/#projects' ? 'font-bold' : ''}
                                 >
                                     {t('projects')}
-                                </a>
+                                </Link>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
-                                <a
-                                    href={`/${locale}#members`}
+                                <Link
+                                    href='/#members'
                                     className={pathname === '/#members' ? 'font-bold' : ''}
                                 >
                                     {t('members')}
-                                </a>
+                                </Link>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
                                 <Link
@@ -72,12 +72,12 @@ export default function Header() {
                                 </Link>
                             </li>
                             <li className='text-base hover:text-[#FF5E2D]'>
-                                <a
-                                    href={`/${locale}#contact`}
+                                <Link
+                                    href='/#contact'
                                     className={pathname === '/#contact' ? 'font-bold' : ''}
                                 >
                                     {t('contact')}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <LanguageSwitcher />

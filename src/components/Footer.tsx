@@ -1,5 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 
+import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
 
 export default function Footer() {
@@ -17,36 +20,36 @@ export default function Footer() {
 
                     {/* Navigation Links */}
                     <div className='mb-16 flex items-center justify-center gap-10'>
-                        <a
-                            href='#about'
+                        <Link
+                            href='/#about'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
                             {t('about')}
-                        </a>
-                        <a
-                            href='#projects'
+                        </Link>
+                        <Link
+                            href='/#projects'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
                             {t('projects')}
-                        </a>
-                        <a
-                            href='#members'
+                        </Link>
+                        <Link
+                            href='/#members'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
                             {t('members')}
-                        </a>
-                        <a
-                            href='#blogs'
+                        </Link>
+                        <Link
+                            href='/#blogs'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
                             {t('blogs')}
-                        </a>
-                        <a
-                            href='#contact'
+                        </Link>
+                        <Link
+                            href='/#contact'
                             className='most-white text-base transition-opacity hover:opacity-80'
                         >
                             {t('contact')}
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Social Media Icons */}
@@ -97,36 +100,36 @@ export default function Footer() {
                     <div className='flex items-end justify-between'>
                         {/* Navigation Links - Left Side */}
                         <div className='flex flex-col gap-2'>
-                            <a
-                                href='#about'
+                            <Link
+                                href='/#about'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
                                 {t('about')}
-                            </a>
-                            <a
-                                href='#projects'
+                            </Link>
+                            <Link
+                                href='/#projects'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
                                 {t('projects')}
-                            </a>
-                            <a
-                                href='#members'
+                            </Link>
+                            <Link
+                                href='/#members'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
                                 {t('members')}
-                            </a>
-                            <a
-                                href='#blogs'
+                            </Link>
+                            <Link
+                                href='/#blogs'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
                                 {t('blogs')}
-                            </a>
-                            <a
-                                href='#contact'
+                            </Link>
+                            <Link
+                                href='/#contact'
                                 className='most-white text-base transition-opacity hover:opacity-80'
                             >
                                 {t('contact')}
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Copyright - Right Side */}
