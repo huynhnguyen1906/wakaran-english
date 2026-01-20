@@ -33,7 +33,7 @@ export interface BlogPostsResponse {
     }
 }
 
-export async function fetchBlogPosts(page: number = 1, perPage: number = 15): Promise<{ posts: BlogPost[]; pagination?: BlogPostsResponse['pagination'] }> {
+export async function fetchBlogPosts(): Promise<{ posts: BlogPost[]; pagination?: BlogPostsResponse['pagination'] }> {
     try {
         const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL
         // Note: Current API returns ALL posts at once, doesn't support pagination params yet

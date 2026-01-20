@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { useParams, usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
@@ -12,8 +12,6 @@ import MobileHamburgerMenu from './MobileHamburgerMenu'
 export default function Header() {
     const t = useTranslations('header')
     const pathname = usePathname()
-    const params = useParams()
-    const locale = params.locale as string
 
     return (
         <header className='w-full'>

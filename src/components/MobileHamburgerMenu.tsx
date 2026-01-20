@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 
-import { useParams, usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 
 import { Link } from '@/i18n/navigation'
 import { useTranslations } from 'next-intl'
@@ -12,8 +12,6 @@ import LanguageSwitcher from './LanguageSwitcher'
 export default function MobileHamburgerMenu() {
     const [open, setOpen] = useState(false)
     const pathname = usePathname()
-    const params = useParams()
-    const locale = params.locale as string
     const t = useTranslations('header')
 
     return (

@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 
 import { Link } from '@/i18n/navigation'
-import { useParams } from 'next/navigation'
 
 import { decodeHtmlEntities } from '@/utils/textUtils'
 import { useTranslations } from 'next-intl'
@@ -24,8 +23,6 @@ type Props = {
 
 export default function RecommendPostsClient({ initialPosts }: Props) {
     const t = useTranslations('recommendPosts')
-    const params = useParams()
-    const locale = params.locale as string
     const scrollRef = useRef<HTMLDivElement>(null)
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [canScrollRight, setCanScrollRight] = useState(true)

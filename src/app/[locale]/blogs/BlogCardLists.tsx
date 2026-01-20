@@ -32,7 +32,7 @@ const BlogCardLists = async ({ params, searchParams }: {
     const POSTS_PER_PAGE = 15
 
     // Fetch blog posts with pagination
-    const { posts: allPosts, pagination } = await fetchBlogPosts(currentPage, POSTS_PER_PAGE)
+    const { posts: allPosts, pagination } = await fetchBlogPosts()
 
     // When API doesn't support pagination, it returns ALL posts at once
     // So we need to handle client-side pagination
